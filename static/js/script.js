@@ -2,6 +2,9 @@ $(function() {
     setTimeout(function() {
         $('.registration').addClass('fade-in-up');
     }, 500);
+    setTimeout(function() {
+        $('.scroll-down').addClass('fade-in-up');
+    }, 1000);
 
     $(window).scroll(function() {
         var percentComplete = function(pageNo) {
@@ -11,36 +14,22 @@ $(function() {
         };
         $('.page[data-page="1"]').each(function() {
             var a = percentComplete(1),
-                rgba = "rgba(50,67,122," + (0.5  + a) + ")";
+                rgba = "rgba(50,67,122," + (0.5 + a) + ")",
+                opacity = 1 - 2*a;
             $(this).css({"background-color": rgba});
+            $(".first-page").css({"opacity": opacity});
         });
+    });
 
-        var $menu = $('nav .menu'),
-            $nav = $('nav'),
-            $header = $('.page[data-page="2"] .header'),
-            difference = $(window).scrollTop() - $nav.offset().top;
-        if (difference >= 0) {
-            $menu.addClass('fixed');
-            $header.addClass('fixed');
-        } else {
-            $menu.removeClass('fixed');
-            $header.removeClass('fixed');
-        }
-
-        var $header = $('.page[data-page="1"] .header'),
-            $firstPage = $('.page[data-page="1"]'),
-            topOfHeader = $header.offset().top,
-            bottomOfHeader = $header.offset().top + $header.outerHeight(),
-            bottomOfFirstPage = $firstPage.offset().top + $firstPage.outerHeight(),
-            topOfVisibleWindow = $(window).scrollTop();
-        console.log(bottomOfHeader, bottomOfFirstPage, topOfVisibleWindow);
-        if ($header.hasClass('fixed') && bottomOfHeader > bottomOfFirstPage) {
-            $header.removeClass('fixed');
-            $header.addClass('bottom');
-        } else if (topOfHeader > topOfVisibleWindow) {
-            $header.addClass('fixed');
-            $header.removeClass('bottom');
-        }
-
+    $('a[href="#register"]').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({'scrollTop': 0}, 500, function() {
+            $('#email').focus();
+        });
+    });
+    $('a[href="#down"]').click(function(e) {
+        e.preventDefault();
+        var dest = $("#down").offset().top;
+        $('html, body').animate({'scrollTop': dest}, 500);
     });
 });

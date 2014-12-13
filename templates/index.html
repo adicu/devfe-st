@@ -35,60 +35,40 @@
         <li id="register" class="page" data-page="1">
             <div class="inner">
                 {{ header("white no-spacer fixed", "DevFest", "2015", "Everyone can build great things.") }}
-                <div class="full-height">
+                <div class="full-height first-page">
                     <div class="registration animated">
                         <form>
                             <input type="email"
                                    name="email"
+                                   id="email"
                                    required
                                    spellcheck="false"
                                    autocomplete="off"
                                    placeholder="you@columbia.edu">
+                            <label for="email">Enter your email to receive updates</label>
                         </form>
                     </div>
+                    <div class="scroll-down animated">
+                        <a href="#down">
+                            <p>Learn More</p>
+                            <p><i class="fa fa-chevron-down"></i></p>
+                        </a>
+                    </div>
                 </div>
-                <div class="centered">
-                    <p class="focus">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about learning, community, and building amazing things with technology.</p>
+                <div class="centered" id="down">
+                    <p class="focus focus-centered">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about learning, community, and building amazing things with technology.</p>
+                    <p class="focus focus-centered">Join us January 31st – February 7th.  Registration opens soon.</p>
                     <p class="focus focus-centered">
                         <a class="white-inverse button" href="#register">
-                            Register
+                            Stay Informed
                         </a>
                     </p>
                 </div>
             </div>
         </li>
-        <li class="page white with-nav" data-page="2">
-            <div class="inner">
-                {{ header("blue", "About", "ADI", "") }}
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="#register">
-                                <p>About</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#register">
-                                <p>Register</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#register">
-                                <p>Register</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <h4>Images</h4>
-                <img src="{{ url_for('static', filename='img/room.jpg') }}">
-                <img src="{{ url_for('static', filename='img/room.jpg') }}">
-                <img src="{{ url_for('static', filename='img/room.jpg') }}">
-                <img src="{{ url_for('static', filename='img/room.jpg') }}">
-            </div>
-        </li>
         <footer>
-            <div class="credits">
-                <p>Built by <a href="http://danrschlosser.com">Dan</a>. Maintained by <a href="https://adicu.com/labs">ADI Labs</a>.</p>
+            <div class="inner credits">
+                <p>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. Questions?  <a href="mailto:devfest@adicu.com">Shoot us an email</a>.</p>
             </div>
         </footer>
     </ul>

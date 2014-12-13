@@ -7,7 +7,7 @@ $extra-bold: 800;
 $bold: 700;
 $regular: 400;
 $thin: 300;
-$sans: 'Helvetica Neue', Helvetica, Ariel sans-serif;
+$sans: 'Lato', Helvetica, Ariel sans-serif;
 $slab:'Roboto Slab', Georgia, serif;
 
 body, html {
@@ -18,11 +18,11 @@ body, html {
     color: $black;
 }
 
-p {
+p, label {
     margin-bottom: 0.3125rem;
     font-family: $sans;
     font-weight: $thin;
-    font-size: 1.4;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 

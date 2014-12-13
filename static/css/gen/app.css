@@ -49,16 +49,16 @@ body, html {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   color: #111;
 }
 
 /* line 21, /Users/dan/working/devfe-st/static/scss/base.scss */
-p {
+p, label {
   margin-bottom: 0.3125rem;
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
-  font-size: 1.4;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 
@@ -113,7 +113,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 
 /* line 69, /Users/dan/working/devfe-st/static/scss/base.scss */
 h1, .h1, .header .title {
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 6.5rem;
   line-height: 6.5rem;
@@ -121,7 +121,7 @@ h1, .h1, .header .title {
 
 /* line 75, /Users/dan/working/devfe-st/static/scss/base.scss */
 h2, .h2 {
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 3.5rem;
   line-height: 4rem;
@@ -129,7 +129,7 @@ h2, .h2 {
 
 /* line 81, /Users/dan/working/devfe-st/static/scss/base.scss */
 h3, .h3, input {
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3.5rem;
@@ -137,7 +137,7 @@ h3, .h3, input {
 
 /* line 87, /Users/dan/working/devfe-st/static/scss/base.scss */
 h4, .h4 {
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -156,7 +156,7 @@ h5, .h5 {
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1rem;
@@ -205,18 +205,34 @@ p.focus.focus-centered {
 }
 
 /* line 18 */
+.scroll-down {
+  position: absolute;
+  bottom: 3rem;
+  width: 10rem;
+  left: 50%;
+  margin-left: -5rem;
+  text-align: center;
+  opacity: 0;
+}
+/* line 27 */
+.scroll-down p {
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+/* line 33 */
 .body {
   width: 100%;
   height: 100%;
 }
 
-/* line 23 */
+/* line 38 */
 h3 {
   font-size: 1.7rem;
   line-height: 2.5rem;
 }
 
-/* line 29 */
+/* line 44 */
 .background {
   height: 100vh;
   position: fixed;
@@ -224,56 +240,56 @@ h3 {
   width: 100%;
 }
 
-/* line 36 */
+/* line 51 */
 .body {
   position: absolute;
 }
 
-/* line 40 */
+/* line 55 */
 .centered {
   max-width: 70rem;
-  margin: 35rem auto 30rem;
+  margin: 35vh auto 25vh;
 }
 
-/* line 45 */
+/* line 60 */
 .pages {
   z-index: 1;
   width: 100%;
 }
-/* line 48 */
+/* line 63 */
 .pages .page {
   position: relative;
-  background-color: rgba(50, 67, 122, 0.3);
+  background-color: rgba(50, 67, 122, 0.5);
   color: white;
   min-height: 100vh;
 }
-/* line 55 */
+/* line 70 */
 .pages .page .full-height {
   position: relative;
   height: 100vh;
 }
-/* line 60 */
+/* line 75 */
 .pages .page > .inner {
   padding: 1rem 1.5rem;
 }
-/* line 64 */
+/* line 79 */
 .pages .page.white {
   background-color: #eee;
   color: #111;
 }
 
-/* line 72 */
+/* line 87 */
 .page.with-nav .header {
   width: 100%;
   max-width: 70rem;
   background-color: rgba(238, 238, 238, 0.9);
 }
-/* line 77 */
+/* line 92 */
 .page.with-nav > .inner {
   max-width: 70rem;
 }
 
-/* line 83 */
+/* line 98 */
 nav {
   position: absolute;
   left: 73rem;
@@ -284,7 +300,7 @@ nav {
   right: 0;
   top: 0;
 }
-/* line 93 */
+/* line 108 */
 nav ul {
   position: absolute;
   top: 0;
@@ -292,18 +308,18 @@ nav ul {
   width: 10rem;
   left: 0;
 }
-/* line 100 */
+/* line 115 */
 nav ul li a p {
   padding: 1rem 2rem;
 }
-/* line 103 */
+/* line 118 */
 nav ul.fixed {
   position: fixed;
   bottom: auto;
   left: auto;
 }
 
-/* line 112 */
+/* line 128 */
 input {
   background-color: transparent;
   border: 0;
@@ -314,38 +330,50 @@ input {
   border-bottom: 1px solid #eee;
   color: #eee;
   outline: 0;
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 123 */
+/* line 139 */
 input::-webkit-input-placeholder {
   color: #bbb;
+  opacity: 0.7;
 }
-/* line 127 */
+/* line 144 */
 input:-moz-placeholder {
   /* Firefox 18- */
   color: #bbb;
+  opacity: 0.7;
 }
-/* line 131 */
+/* line 149 */
 input::-moz-placeholder {
   /* Firefox 19+ */
   color: #bbb;
+  opacity: 0.7;
 }
-/* line 135 */
+/* line 154 */
 input:-ms-input-placeholder {
   color: #bbb;
+  opacity: 0.7;
 }
 
-/* line 140 */
+/* line 160 */
 footer {
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: #333;
   color: #eee;
-  text-shadow: 0 0 white;
-  -webkit-text-shadow: 0 0 white;
-  -moz-text-shadow: 0 0 white;
+  text-align: center;
+}
+/* line 165 */
+footer > .inner {
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 100%;
+}
+/* line 171 */
+footer a, footer a:hover {
+  text-decoration: underline;
 }
 
-/* line 147 */
+/* line 176 */
 .registration {
   position: absolute;
   height: 2rem;
@@ -353,85 +381,91 @@ footer {
   left: 50%;
   margin-left: -15rem;
   right: 0;
-  bottom: 15rem;
+  bottom: 20rem;
   opacity: 0;
+  text-align: center;
 }
-/* line 157 */
+/* line 187 */
+.registration label {
+  text-shadow: 0 0 #111;
+  -webkit-text-shadow: 0 0 #111;
+  -moz-text-shadow: 0 0 #111;
+}
+/* line 190 */
 .registration input {
   width: 30rem;
 }
 
-/* line 162 */
+/* line 195 */
 .button {
   position: relative;
-  border-radius: 0.5rem;
   padding: 1rem 3rem;
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 169 */
+/* line 202 */
 .button.white {
   background-color: #eee;
   color: #111;
 }
-/* line 173 */
+/* line 206 */
 .button.white-inverse {
   border: 1px solid #eee;
   color: #eee;
 }
-/* line 176 */
+/* line 209 */
 .button.white-inverse:hover {
   background-color: #eee;
   color: #111;
 }
-/* line 182 */
+/* line 215 */
 .button a {
   display: inline-block;
   width: 100%;
   height: 100%;
   display: inline-block;
 }
-/* line 186 */
+/* line 219 */
 .button a:hover {
   color: inherit;
 }
 
-/* line 193 */
+/* line 226 */
 .header {
   margin: -1rem 0 0 -1.5rem;
   padding: 1rem 1.5rem;
   position: absolute;
 }
-/* line 198 */
+/* line 231 */
 .header.fixed {
   position: fixed;
   top: 1rem;
   z-index: 100;
 }
-/* line 204 */
+/* line 237 */
 .header.bottom {
   position: absolute;
   bottom: 0;
 }
-/* line 209 */
+/* line 242 */
 .header.no-spacer + .header-spacer {
   display: none;
 }
-/* line 214 */
+/* line 247 */
 .header.blue .title {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #32437A;
 }
-/* line 218 */
+/* line 251 */
 .header.blue .subtitle {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #333;
 }
-/* line 224 */
+/* line 257 */
 .header .subtitle {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -439,9 +473,9 @@ footer {
   margin-top: -1.5rem;
   color: #bbb;
   font-weight: 400;
-  font-family: "Helvetica Neue", Helvetica, Ariel sans-serif;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 231 */
+/* line 264 */
 .header .title {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -450,39 +484,40 @@ footer {
   color: #eee;
   margin-left: -0.25rem;
 }
-/* line 239 */
+/* line 272 */
 .header .title .bold {
   padding-right: 0.5rem;
 }
 
-/* line 244 */
+/* line 277 */
 .header-spacer {
   height: 6.5rem;
 }
-/* line 246 */
+/* line 279 */
 .header-spacer.with-subtitle {
   height: 10.5rem;
 }
 
-/* line 251 */
+/* line 284 */
 .fixed-spacer {
   height: 15rem;
   width: 100%;
 }
 
-/* line 256 */
+/* line 289 */
 .details {
   margin-top: 3rem;
 }
 
-/* line 260 */
-footer p {
-  margin-left: 1rem;
-}
-
 @media screen and (max-width: 640px) {
-  /* line 265 */
+  /* line 294 */
   .title {
-    font-size: 4rem;
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+
+  /* line 298 */
+  .subtitle {
+    font-size: 2rem !important;
   }
 }

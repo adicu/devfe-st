@@ -15,6 +15,21 @@ p.focus {
     }
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: 3rem;
+    width: 10rem;
+    left: 50%;
+    margin-left: -5rem;
+    text-align: center;
+    opacity: 0;
+
+    p {
+        margin: 0;
+        line-height: 1.2rem;
+    }
+}
+
 .body {
     width: 100%;
     height: 100%;
@@ -39,7 +54,7 @@ h3 {
 
 .centered {
     max-width: $content-width;
-    margin: 35rem auto 30rem;
+    margin: 35vh auto 25vh;
 }
 
 .pages {
@@ -48,7 +63,7 @@ h3 {
     .page {
         @extend .background-image;
         position: relative;
-        background-color: rgba(50,67,122,0.3);
+        background-color: rgba(50,67,122,0.5);
         color: white;
         min-height: 100vh;
 
@@ -109,6 +124,7 @@ nav {
 
 }
 
+$ph-opacity: 0.7;
 input {
     @extend .h3;
     background-color: rgba(0,0,0,0);
@@ -122,26 +138,39 @@ input {
 
     &::-webkit-input-placeholder {
        color: $verylightgray;
+       opacity: $ph-opacity;
     }
 
     &:-moz-placeholder { /* Firefox 18- */
        color: $verylightgray;
+       opacity: $ph-opacity;
     }
 
     &::-moz-placeholder {  /* Firefox 19+ */
        color: $verylightgray;
+       opacity: $ph-opacity;
     }
 
     &:-ms-input-placeholder {
        color: $verylightgray;
+       opacity: $ph-opacity;
     }
 }
 
 footer {
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: $offgray;
     color: $white;
-    @include text-shadow(0, 0, white)
+    text-align: center;
+    & > .inner {
+        margin: 0 auto;
+        max-width: $content-width;
+        width: 100%;
+    }
+
+    a, a:hover {
+        text-decoration: underline;
+    }
 }
 
 .registration {
@@ -152,8 +181,12 @@ footer {
     margin-left: -15rem;
     // left: 2rem;
     right: 0;
-    bottom: 15rem;
+    bottom: 20rem;
     opacity: 0;
+    text-align: center;
+    label {
+        @include text-shadow(0,0, $black);
+    }
     input {
         width: 30rem;
     }
@@ -161,7 +194,7 @@ footer {
 
 .button {
     position: relative;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     padding: 1rem 3rem;
     display: inline-block;
     font-family: $sans;
@@ -257,12 +290,12 @@ footer {
     margin-top: 3rem;
 }
 
-footer p {
-    margin-left: 1rem;
-}
-
 @media screen and (max-width: $phone-max) {
     .title {
-        font-size: 4rem;
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+    .subtitle {
+        font-size: 2rem !important;
     }
 }
