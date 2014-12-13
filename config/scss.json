@@ -1,0 +1,16 @@
+{
+  "app": {
+    "output_folder": "css/gen/",
+    "depends": [
+      "scss/*.scss"
+    ],
+    "rules": {
+      "scss_app": {
+        "output": "app.css",
+        "inputs": [
+          "scss/app.scss"
+        ]
+      }
+    }
+  }
+}

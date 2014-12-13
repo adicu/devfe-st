@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{%- block css -%}
+{{ super() }}
+{% assets "scss_app" %}
+<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+{% endassets %}
+{%- endblock -%}
+{%- block bodyJs -%}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+{%- endblock -%}
+
+
+{% macro header(class, bold, thin, subtitle) %}
+<div class="header {{class}}">
+    <h1 class="title">
+        <span class="bold">{{bold}}</span>{{thin}}
+    </h1>
+    {%- if subtitle -%}
+    <h2 class="subtitle">{{subtitle}}</h2>
+    {%- endif -%}
+</div>
+<div class="header-spacer {%if subtitle %}with-subtitle{% endif %}">
+</div>
+{% endmacro %}
+
+
+{%- block body -%}
+<div class="background"
+     style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
+</div>
+<div class="body">
+    <ul class="pages">
+        <li id="register" class="page" data-page="1">
+            <div class="inner">
+                {{ header("white no-spacer fixed", "DevFest", "2015", "Everyone can build great things.") }}
+                <div class="full-height">
+                    <div class="registration animated">
+                        <form>
+                            <input type="email"
+                                   name="email"
+                                   required
+                                   spellcheck="false"
+                                   autocomplete="off"
+                                   placeholder="you@columbia.edu">
+                        </form>
+                    </div>
+                </div>
+                <div class="centered">
+                    <p class="focus">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about learning, community, and building amazing things with technology.</p>
+                    <p class="focus focus-centered">
+                        <a class="white-inverse button" href="#register">
+                            Register
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li class="page white with-nav" data-page="2">
+            <div class="inner">
+                {{ header("blue", "About", "ADI", "") }}
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#register">
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#register">
+                                <p>Register</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#register">
+                                <p>Register</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <h4>Images</h4>
+                <img src="{{ url_for('static', filename='img/room.jpg') }}">
+                <img src="{{ url_for('static', filename='img/room.jpg') }}">
+                <img src="{{ url_for('static', filename='img/room.jpg') }}">
+                <img src="{{ url_for('static', filename='img/room.jpg') }}">
+            </div>
+        </li>
+        <footer>
+            <div class="credits">
+                <p>Built by <a href="http://danrschlosser.com">Dan</a>. Maintained by <a href="https://adicu.com/labs">ADI Labs</a>.</p>
+            </div>
+        </footer>
+    </ul>
+</div>
+{%- endblock -%}

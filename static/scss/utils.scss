@@ -1,0 +1,32 @@
+@import 'animations';
+
+.background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+@mixin text-shadow($height, $width, $color) {
+    text-shadow: $height $width $color;
+    -webkit-text-shadow: $height $width $color;
+    -moz-text-shadow: $height $width $color;
+
+}
+
+@mixin transition-with-delay($speed, $delay) {
+    -webkit-transition: $speed $delay ease all;
+       -moz-transition: $speed $delay ease all;
+         -o-transition: $speed $delay ease all;
+            transition: $speed $delay ease all;
+}
+@mixin transition($speed) {
+    @include transition-with-delay($speed, 0);
+}
+
+.animated {
+    @include animated(0.5s);
+}

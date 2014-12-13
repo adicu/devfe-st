@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+{%- block head -%}
+    {%- block meta -%}
+    <meta charset="utf-8">
+    <!--
+    HOW TO USE THIS DOCUMENT
+    ========================
+
+     -> Replace the ten numbered and commented out areas with your site's data.
+     -> Extend the established blocks in admin/admin.html and other templates.
+    -->
+    <title>{%- block title%}DevFest{%- endblock -%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{%- block metaDescription -%}
+        ADI's annual week-long app development bonanza — 5 days of workshops followed by a 24-hour hackathon. Learn, code, build something new and compete for awesome prizes. Oh, and there's food. Lots of it.
+        {%- endblock -%}">
+    <meta name="author" content="{%- block author -%}
+        Application Development Intiative
+        {%- endblock author -%}">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Authorship and Publisher Markup -->
+    <meta itemprop="name" content="{{ self.title() }}">
+    <meta itemprop="description" content="{{ self.metaDescription() }}">
+    <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/987267?v=2&amp;s=200">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{%- block metaTwitterHandle -%}
+        adicu
+        {%- endblock -%}">
+    <meta name="twitter:title" content="{{ self.title() }}">
+    <meta name="twitter:description" content="{{ self.metaDescription() }}">
+    <meta name="twitter:creator" content="{{ self.metaTwitterHandle }}">
+    <meta name="twitter:image:src" content="https://avatars1.githubusercontent.com/u/987267?v=2&amp;s=200">
+    <meta name="twitter:domain" content="devfe.st">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:type" content="{%- block metaType -%}website{%- endblock -%}">
+    <meta property="og:url" content="http://devfe.st">
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/987267?v=2&amp;s=200">
+    <meta property="og:description" content="{{ self.metaDescription() }}">
+    {%- endblock meta%}
+
+    {%- block fonts -%}
+    <!-- Web Fonts -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab|Merriweather+Sans:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    {%- endblock fonts -%}
+
+    {%- block css%}
+    <!-- Stylesheet reset -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ url_for('static', filename='css/reset.min.css') }}">
+    {%- endblock css%}
+
+    {%- block js -%}
+    <!-- jQuery -->
+    <script type="text/javascript"
+            src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- JavaScript imports -->
+    {%- endblock js -%}
+
+    {%- block favicon -%}
+    <!-- Favicon.ico -->
+    <link rel="shortcut icon"
+          href=" {{url_for('static', filename='img/favicon.ico') }}"
+          type="image/x-icon">
+    <link rel="icon"
+          href="{{ url_for('static', filename='img/favicon.ico') }}"
+          type="image/x-icon">
+    {%- endblock favicon -%}
+
+    {%- block analytics -%}
+	<!--Google Analytics-->
+    <!-- (10) GOOGLE ANALYTICS JAVASCRIPT GOES HERE -->
+    {%- endblock analytics -%}
+
+{%- endblock head -%}
+</head>
+<body>
+{%- block body -%}{%- endblock body -%}
+{%- block bodyJs -%}{%- endblock bodyJs -%}
+</body>
+</html>
