@@ -15,8 +15,8 @@
     <h1 class="title">
         <span class="bold">{{bold}}</span>{{thin}}
     </h1>
-    {%- if subtitle -%}
-    <h2 class="subtitle">{{subtitle}}</h2>
+    {%- if subtitle or caller -%}
+    <h2 class="subtitle">{{ caller() }}</h2>
     {%- endif -%}
 </div>
 <div class="header-spacer {%if subtitle %}with-subtitle{% endif %}">
@@ -32,10 +32,20 @@
     <ul class="pages">
         <li id="register" class="page" data-page="1">
             <div class="inner">
-                {{ header("white no-spacer fixed", "DevFest", "2015", "Everyone can build great things.") }}
+                {% call header("white no-spacer fixed", "DevFest", "2015") %}
+                    Build something <ul class="adjectives">
+                        <li class="adjective active" data-no="1">amazing</li>
+                        <li class="adjective" data-no="2">crazy</li>
+                        <li class="adjective" data-no="3">musical</li>
+                        <li class="adjective" data-no="4">awesome</li>
+                        <li class="adjective" data-no="5">sciencey</li>
+                        <li class="adjective" data-no="6">you</li>
+                        <li class="adjective" data-no="6">for Columbia</li>
+                    </ul>
+                {% endcall %}
                 <div class="full-height first-page">
                     <div class="registration animated">
-                        <form>
+                        <form method="post" action="">
                             <input type="email"
                                    name="email"
                                    id="email"
@@ -43,7 +53,13 @@
                                    spellcheck="false"
                                    autocomplete="off"
                                    placeholder="you@columbia.edu">
-                            <label for="email">Enter your email to receive updates</label>
+                            <label for="email">
+                            {% if submit %}
+                                <i class="submit-success fa fa-check-circle-o"></i> Thanks!  We'll be in touch.
+                            {% else %}
+                                Enter your email to receive updates
+                            {% endif %}
+                            </label>
                         </form>
                     </div>
                     <div class="scroll-down animated">

@@ -32,4 +32,24 @@ $(function() {
         var dest = $("#down").offset().top;
         $('html, body').animate({'scrollTop': dest}, 500);
     });
+
+    setTimeout(setKey, 3000);
+    function setKey() {
+        var $oldWord = $('.adjective.active'),
+            $newWord = $('.adjective[data-no="' + ($oldWord.data('no') + 1) + '"]');
+        if ($newWord.length == 0) {
+            $newWord = $('.adjective[data-no="1"]');
+        }
+        $newWord.css({"opacity": 0});
+        $oldWord.stop().animate({"opacity": 0}, 200)
+        .promise().done(function() {
+            $oldWord.removeClass('active');
+            $newWord.addClass('active');
+            $newWord.stop().animate({"opacity": 1}, 200)
+            .promise().done(function() {
+                setTimeout(setKey, 3000);
+            });
+        });
+    }
 });
+

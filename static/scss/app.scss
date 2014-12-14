@@ -4,6 +4,19 @@ a:hover {
     color: $verylightgray;
 }
 
+.adjectives {
+    display: inline !important;
+
+    .adjective {
+        @extend .h2;
+        @extend .subtitle;
+        display: none;
+        &.active {
+            display: inline;
+        }
+    }
+}
+
 p.focus {
     margin-bottom: 2rem;
     font-family: $slab;
@@ -154,6 +167,14 @@ input {
     &:-ms-input-placeholder {
        color: $verylightgray;
        opacity: $ph-opacity;
+    }
+}
+form {
+    position: relative;
+    .submit-success {
+        position: absolute;
+        right: -1rem;
+        top: 1rem;
     }
 }
 

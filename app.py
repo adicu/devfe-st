@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask.ext.assets import Environment, Bundle
 from config import config
 import json
@@ -7,9 +7,16 @@ app = Flask(__name__)
 assets = Environment(app)
 app.config.from_object('config.config')
 
-@app.route('/')
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
+    if request.method == 'POST':
+        email = request.form['email']
+        with open(app.config['EMAILS_FILENAME'], 'a') as emails:
+            emails.write(email + '\n')
+        return render_template('index.html', submit=True)
     return render_template('index.html')
+
 
 def register_scss():
     """"""
