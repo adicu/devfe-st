@@ -4,8 +4,6 @@ from config import config
 import json
 
 app = Flask(__name__)
-assets = Environment(app)
-app.config.from_object('config.config')
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -33,6 +31,9 @@ def register_scss():
                                 filters='scss')
                 assets.register(bundle_name, bundle)
 
+assets = Environment(app)
+app.config.from_object('config.config')
+register_scss()
+
 if __name__ == '__main__':
-    register_scss()
     app.run(port=config.PORT, host=config.HOST)

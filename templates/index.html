@@ -2,7 +2,9 @@
 
 {%- block css -%}
 {{ super() }}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/gen/app.css') }}">
+{% assets "scss_app" %}
+<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+{% endassets %}
 {%- endblock -%}
 {%- block bodyJs -%}
 {{ super() }}
