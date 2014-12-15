@@ -29,7 +29,7 @@ $(function() {
     });
     $('a[href="#down"]').click(function(e) {
         e.preventDefault();
-        var dest = $("#down").offset().top;
+        var dest = $(window).height();
         $('html, body').animate({'scrollTop': dest}, 500);
     });
 
