@@ -75,12 +75,9 @@
     top: 0;
     width: 100%;
 
-    // &.bottom {
-    //     position: absolute;
-    //     bottom: 0;
-    //     height: 100%;
-    // }
-    &.with-nav > .inner {
+    &.with-nav {
         right: $navbar-width;
+        left: 0;
+        width: auto;
     }
 }

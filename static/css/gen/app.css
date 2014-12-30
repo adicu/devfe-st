@@ -2006,7 +2006,9 @@ h6, .h6 {
   top: 0;
   width: 100%;
 }
-/* line 83 */
-.background.with-nav > .inner {
+/* line 78 */
+.background.with-nav {
   right: 18rem;
+  left: 0;
+  width: auto;
 }
