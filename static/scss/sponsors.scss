@@ -1,0 +1,92 @@
+.sponsors {
+	text-align: center;
+
+	hr {
+		margin: 3em 0;
+	}
+}
+
+.gold, .silver, .bronze {
+	display: inline-block;
+	margin: 0 10px 10px 10px;
+
+	.inner {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+}
+
+$gold-height: 90px;
+$gold-width: 600px;
+.gold {
+	width: $gold-width;
+	height: $gold-height;
+	max-width: 100%;
+	display: block;
+	margin: 20px auto 10px;
+
+	& > .inner {
+		width: $gold-width;
+		height: $gold-height;
+		max-width: 100%;
+		margin: 0 auto;
+
+		& > a {
+			height: $gold-height;
+
+			& > img {
+				max-width: 100%;
+				max-height: $gold-height;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+$silver-height: 100px;
+$silver-width: 247px;
+.silver{
+	width: $silver-width;
+	height: $silver-height;
+
+	& > .inner {
+		width: $silver-width;
+		height: $silver-height;
+
+		& > a {
+			width: $silver-width;
+			height: $silver-height;
+
+			& > img {
+				max-width: $silver-width;
+				max-height: $silver-height;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+$bronze-height: 80px;
+$bronze-width: 200px;
+.bronze {
+	width: $bronze-width;
+	height: $bronze-height;
+
+	& > .inner {
+		width: $bronze-width;
+		height: $bronze-height;
+
+		& > a {
+			width: $bronze-width;
+			height: $bronze-height;
+
+			& > img {
+				max-width: $bronze-width;
+				max-height: $bronze-height;
+				margin: 0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+@import 'base';
+
+.header {
+    margin: 0 0 0 -2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    @include border-box;
+
+    &.fixed {
+        position: fixed;
+        z-index: 100;
+
+        &.bottom {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+        }
+    }
+
+    &.no-spacer + .header-spacer {
+        display: none;
+    }
+
+    &.blue {
+        .title, .title {
+            @include text-shadow(0,0, $black);
+            color: $blue;
+            a:hover {
+                color: inherit;
+            }
+        }
+        .subtitle {
+            @include text-shadow(0,0, $black);
+            color: $offgray;
+        }
+
+    }
+    .subtitle {
+        @include text-shadow(1px, 1px, $black);
+        margin-top: -0.5rem;
+        color: #bbb;
+        font-weight: $regular;
+        font-family: $sans;
+    }
+    .title {
+        @include text-shadow(1px, 1px, $black);
+        @extend .h1;
+        @extend .upper;
+        color: $white;
+        margin-left: -0.25rem;
+
+        .bold {
+            padding-right: 0.5rem;
+        }
+
+        a:hover {
+            color: $white;
+        }
+    }
+}
+.header-spacer {
+    height: 8.5rem;
+    &.with-subtitle {
+        height: 12.5rem;
+    }
+}
+
+.adjectives {
+    display: inline !important;
+
+    .adjective {
+        @extend .h2;
+        @extend .subtitle;
+        display: none;
+        &.active {
+            display: inline;
+        }
+    }
+}
+
+.fixed-spacer {
+    height: 15rem;
+    width: 100%;
+}
+
+@media screen and (max-width: $phone-max) {
+    .title {
+        font-size: 4rem !important;
+        line-height: 5rem !important;
+    }
+    .subtitle {
+        font-size: 2rem !important;
+    }
+}

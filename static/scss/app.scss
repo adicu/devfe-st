@@ -1,331 +1,92 @@
-@import 'base.scss';
-
-a:hover {
-    color: $verylightgray;
-}
-
-.adjectives {
-    display: inline !important;
-
-    .adjective {
-        @extend .h2;
-        @extend .subtitle;
-        display: none;
-        &.active {
-            display: inline;
-        }
-    }
-}
-
-p.focus {
-    margin-bottom: 2rem;
-    font-family: $slab;
-    font-weight: $thin;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    &.focus-centered {
-        text-align: center;
-    }
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 3rem;
-    width: 10rem;
-    left: 50%;
-    margin-left: -5rem;
-    text-align: center;
-    opacity: 0;
-
-    p {
-        margin: 0;
-        line-height: 1.2rem;
-    }
-}
-
-.body {
-    width: 100%;
-    height: 100%;
-}
-
-h3 {
-    @extend .upper;
-    font-size: 1.7rem;
-    line-height: 2.5rem;
-}
-
-.background {
-    @extend .background-image;
-    height: 100vh;
-    position: fixed;
-    z-index: 0;
-    width: 100%;
-}
-.body {
-    position: absolute;
-}
-
-.centered {
-    max-width: $content-width;
-    margin: 35vh auto 25vh;
-}
+@import 'base';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+@import 'buttons';
+@import 'registration';
+@import 'sponsors';
+@import 'faq';
 
 .pages {
     z-index: 1;
     width: 100%;
+    position: relative;
+    height: 100%;
     .page {
         @extend .background-image;
         position: relative;
         background-color: rgba(50,67,122,0.5);
         color: white;
-        min-height: 100vh;
 
-        .full-height {
+        .sub-page {
             position: relative;
-            height: 100vh;
+            height: 50%;
+            @include border-box;
         }
 
         & > .inner {
-            padding: 1rem 1.5rem;
+            position: relative;
+            padding: 2rem;
+            @include border-box;
         }
 
         &.white {
             background-color: $white;
             color: $black;
-        }
-    }
-}
-
-.page.with-nav {
-    .header {
-        width: 100%;
-        max-width: $content-width;
-        background-color: rgba(238,238,238,0.9)
-    }
-    & > .inner {
-        max-width: $content-width;
-    }
-}
-
-
-nav {
-    position: absolute;
-    left: ($content-width + 3rem);
-    background-color: $offgray;
-    color: $white;
-    padding: 2rem 0;
-    bottom: 0;
-    right: 0;
-    top:0;
-
-    ul {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 10rem;
-        left: 0;
-
-        li a p {
-            padding: 1rem 2rem;
-        }
-        &.fixed {
-            position: fixed;
-            bottom: auto;
-            left: auto;
-        }
-    }
-
-}
-
-$ph-opacity: 0.7;
-input {
-    @extend .h3;
-    background-color: rgba(0,0,0,0);
-    border: 0;
-    text-align: center;
-    @include text-shadow(1px, 1px, $black);
-    border-bottom: 1px solid $white;
-    color: $white;
-    outline: 0;
-    font-family: $sans;
-
-    &::-webkit-input-placeholder {
-       color: $verylightgray;
-       opacity: $ph-opacity;
-    }
-
-    &:-moz-placeholder { /* Firefox 18- */
-       color: $verylightgray;
-       opacity: $ph-opacity;
-    }
-
-    &::-moz-placeholder {  /* Firefox 19+ */
-       color: $verylightgray;
-       opacity: $ph-opacity;
-    }
-
-    &:-ms-input-placeholder {
-       color: $verylightgray;
-       opacity: $ph-opacity;
-    }
-}
-form {
-    position: relative;
-    .submit-success {
-        position: absolute;
-        right: -1rem;
-        top: 1rem;
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        vertical-align: middle;
-        padding: 0.3125rem
-    }
-}
-
-footer {
-    padding: 2rem 1rem;
-    background-color: $offgray;
-    color: $white;
-    text-align: center;
-    & > .inner {
-        margin: 0 auto;
-        max-width: $content-width;
-        width: 100%;
-    }
-
-    a, a:hover {
-        text-decoration: underline;
-    }
-}
-
-.registration {
-    position: absolute;
-    height: 2rem;
-    width: 30rem;
-    left: 50%;
-    margin-left: -15rem;
-    // left: 2rem;
-    right: 0;
-    bottom: 20rem;
-    opacity: 0;
-    text-align: center;
-    label {
-        display: block;
-        margin-top: 1rem;
-        @include text-shadow(1px,1px, $black);
-    }
-    input {
-        width: 30rem;
-    }
-}
-
-.button {
-    position: relative;
-    // border-radius: 0.5rem;
-    padding: 1rem 3rem;
-    display: inline-block;
-    font-family: $sans;
-
-    &.white {
-        background-color: $white;
-        color: $black;
-    }
-    &.white-inverse {
-        border: 1px solid $white;
-        color: $white;
-        &:hover {
-            background-color: $white;
-            color: $black;
-        }
-    }
-
-    a {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        &:hover {
-            color: inherit;
-        }
-            display: inline-block;
-    }
-}
-
-.header {
-    margin: -1rem 0 0 -1.5rem;
-    padding: 1rem 1.5rem;
-    position: absolute;
-
-    &.fixed {
-        position: fixed;
-        top: 1rem;
-        z-index: 100;
-    }
-
-    &.bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    &.no-spacer + .header-spacer {
-        display: none;
-    }
-
-    &.blue {
-        .title {
-            @include text-shadow(0,0, $black);
-            color: $blue;
-        }
-        .subtitle {
-            @include text-shadow(0,0, $black);
-            color: $offgray;
+            .header {
+                background-color: rgba(255,255,255,0.9)
+            }
         }
 
-    }
-    .subtitle {
-        @include text-shadow(1px, 1px, $black);
-        margin-top: -1.5rem;
-        color: #bbb;
-        font-weight: $regular;
-        font-family: $sans;
-    }
-    .title {
-        @include text-shadow(1px, 1px, $black);
-        @extend .h1;
-        @extend .upper;
-        margin-bottom: 1rem;
-        color: $white;
-        margin-left: -0.25rem;
-
-        .bold {
-            padding-right: 0.5rem;
-        }
-        a:hover {
+        &.blue {
+            background-color: $blue;
             color: $white;
+            .header {
+                background-color: rgba(50,67,122,0.9);
+            }
+        }
+        &.with-nav > .inner {
+            padding-right: $navbar-width + 2rem;
+        }
+
+        &.with-image {
+            &:not(:first-child) {
+                height: 120%;
+                background-color: rgba(0,0,0,0);
+                .inner {
+                    height: 100%;
+                    max-height: 100rem;
+                }
+            }
+            // .background {
+            //     position: absolute;
+            //     &.fixed {
+            //         position: fixed;
+            //         right: $navbar-width;
+            //         top: 0;
+            //         bottom: 0;
+            //         z-index: -1px;
+            //     }
+            // }
+
         }
     }
 }
-.header-spacer {
-    height: 6.5rem;
-    &.with-subtitle {
-        height: 10.5rem;
-    }
-}
 
-.fixed-spacer {
-    height: 15rem;
+.background {
+    @extend .background-image;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    top: 0;
     width: 100%;
-}
 
-.details {
-    margin-top: 3rem;
-}
-
-@media screen and (max-width: $phone-max) {
-    .title {
-        font-size: 4rem !important;
-        line-height: 5rem !important;
-    }
-    .subtitle {
-        font-size: 2rem !important;
+    // &.bottom {
+    //     position: absolute;
+    //     bottom: 0;
+    //     height: 100%;
+    // }
+    &.with-nav > .inner {
+        right: $navbar-width;
     }
 }

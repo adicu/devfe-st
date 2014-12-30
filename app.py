@@ -4,6 +4,7 @@ from config import config
 import json
 
 app = Flask(__name__)
+data = {}
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -13,7 +14,15 @@ def index():
         with open(app.config['EMAILS_FILENAME'], 'a') as emails:
             emails.write(email + '\n')
         return render_template('index.html', submit=True)
-    return render_template('index.html')
+    return render_template('index.html', **data)
+
+
+def load_data():
+    """"""
+    global data
+    for name, path in app.config['DATA_FILENAMES'].iteritems():
+        with open(path, 'r') as data_file:
+            data[name] = json.loads(data_file.read())
 
 
 def register_scss():
@@ -34,6 +43,7 @@ def register_scss():
 assets = Environment(app)
 app.config.from_object('config.config')
 register_scss()
+load_data()
 
 if __name__ == '__main__':
     app.run(port=config.PORT, host=config.HOST)

@@ -1,0 +1,100 @@
+{
+	"prizes": [
+		{
+			"title": "1st Prize",
+			"prize": "$1000 and $750 in DigitalOcean credits"
+		},
+		{
+			"title": "2nd Prize",
+			"prize": "$750 and $500 in DigitalOcean credits"
+		},
+		{
+			"title": "3rd Prize",
+			"prize": "$500 and $250 in DigitalOcean credits"
+		}
+	],
+	"sponsor-prizes": [
+		{
+			"title": "Best use of the Twilio API",
+			"prize": "Jawbone JAMBOX Wireless Speaker",
+			"sponsor": {
+				"id": "twilio",
+				"img": "twilio.png",
+				"url": "http://www.twilio.com/"
+			}
+		},
+		{
+			"title": "Best use of Google APIs or best Android app",
+			"prize": "Three Nexus 7s",
+			"sponsor": {
+				"id": "google",
+				"img": "google.png",
+				"url": "http://www.google.com/"
+			}
+		},
+		{
+			"title": "Best use of the SendGrid API",
+			"prize": "FitBits",
+			"sponsor": {
+				"id": "sendgrid",
+				"img": "sendgrid.png",
+				"url": "http://sendgrid.com/"
+			}
+		},
+		{
+			"title": "Best app built using the Mashery API Network",
+			"prize": "BIG JAMBOX or $300 to Amazon",
+			"sponsor": {
+				"id": "mashery",
+				"img": "mashery.png",
+				"url": "http://www.mashery.com/"
+			}
+		},
+		{
+			"title": "The app that makes life so easy",
+			"prize": "$500",
+			"sponsor": {
+				"id": "venmo",
+				"img": "venmo.png",
+				"url": "https://venmo.com/"
+			}
+		},
+		{
+			"title": "Most technically challenging",
+			"prize": "Mini Jambox",
+			"sponsor": {
+				"id": "a16z",
+				"img": "a16z.png",
+				"url": "http://a16z.com/"
+			}
+		},
+		{
+			"title": "Most useful hack for small businesses",
+			"prize": "iPad Minis",
+			"sponsor": {
+				"id": "yext",
+				"img": "yext.png",
+				"url": "http://www.yext.com/"
+			}
+		},
+		{
+			"title": "Best use of Bloomberg API",
+			"prize": "Kindle Fire",
+			"sponsor": {
+				"id": "bloomberg",
+				"img": "bloom.png",
+				"url": "http://www.bloomberg.com/"
+			}
+		},
+		{
+			"title": "Best use of DigitalOcean API",
+			"prize": "$1000 in DigitalOcean credits",
+			"sponsor": {
+				"id": "digitalocean",
+				"img": "digitalocean.png",
+				"url": "https://www.digitalocean.com/"
+			},
+			"class": "med-push-25"
+		}
+	]
+}

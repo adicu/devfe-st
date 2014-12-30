@@ -1,0 +1,17 @@
+@import 'base';
+
+footer {
+    padding: 2rem $navbar-width 2rem 0;
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    & > .inner {
+        margin: 0 auto;
+        max-width: $content-width;
+        width: 100%;
+    }
+
+    a, a:hover {
+        text-decoration: underline;
+    }
+}

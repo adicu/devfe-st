@@ -30,3 +30,22 @@
 .animated {
     @include animated(0.5s);
 }
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: " ";
+        display: block;
+    }
+}
+
+.hidden {
+    display: none;
+}

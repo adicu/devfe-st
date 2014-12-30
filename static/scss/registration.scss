@@ -1,0 +1,88 @@
+@import 'base';
+
+p.focus {
+    @extend .h4;
+    margin-bottom: 1rem;
+    &.focus-centered {
+        text-align: center;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 3rem;
+    width: 10rem;
+    left: 50%;
+    margin-left: -5rem;
+    text-align: center;
+    opacity: 0;
+
+    p {
+        margin: 0;
+        line-height: 1.2rem;
+    }
+}
+
+.centered {
+    max-width: $content-width;
+    padding: 35vh 0 25vh;
+    margin: 0 auto;
+}
+
+#register {
+    height: 200%;
+    min-height: 100rem;
+    position: relative;
+    & > .inner {
+        height: 100%;
+        background-color: rgba(50,67,122,0.5);
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+
+#registration-form {
+    position: relative;
+    .submit-success {
+        position: absolute;
+        right: -1rem;
+        top: 1rem;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        vertical-align: middle;
+        padding: 0.3125rem
+    }
+
+    input {
+        @extend .h3;
+        background-color: rgba(0,0,0,0);
+        border: 0;
+        text-align: center;
+        @include text-shadow(1px, 1px, $black);
+        border-bottom: 1px solid $white;
+        color: $white;
+        outline: 0;
+        font-family: $sans;
+    }
+}
+
+.registration {
+    position: absolute;
+    height: 2rem;
+    width: 30rem;
+    left: 50%;
+    margin-left: -15rem;
+    right: 0;
+    bottom: 20rem;
+    opacity: 0;
+    text-align: center;
+    label {
+        display: block;
+        margin-top: 1rem;
+        @include text-shadow(1px,1px, $black);
+    }
+    input {
+        width: 30rem;
+    }
+}

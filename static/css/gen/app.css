@@ -25,14 +25,14 @@
 }
 
 /* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.background-image, .background, .pages .page {
+.background-image, .pages .page, .background {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.upper, h3, .header .title {
+.upper, .header .title {
   text-transform: uppercase;
 }
 
@@ -44,16 +44,22 @@
   animation-fill-mode: both;
 }
 
-/* line 13, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
 body, html {
   margin: 0;
   padding: 0;
   font-size: 10px;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   color: #111;
+  height: 100%;
 }
 
-/* line 21, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
 p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
@@ -62,56 +68,71 @@ p, label {
   line-height: 2rem;
 }
 
-/* line 29, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
 pre {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #eee;
+  background-color: white;
   font-family: monospace;
 }
 
-/* line 36, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
 ul li {
   font-size: 1.2rem;
   line-height: 1.9rem;
 }
 
-/* line 41, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
 em {
   font-style: italic;
 }
 
-/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
   font-weight: 700;
 }
 
-/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 49, /Users/dan/working/devfe-st/static/scss/base.scss */
-a, a:hover {
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
   color: inherit;
   text-decoration: none;
 }
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
 
-/* line 54, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
 input, textarea {
   font-family: "Roboto Slab", Georgia, serif;
   font-weight: 400;
   font-size: 1rem;
   padding: 0.3125rem;
 }
-/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
 input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
   font-family: "Roboto Slab", Georgia, serif;
   font-weight: 400;
   font-size: 1rem;
+  color: #bbb;
 }
 
-/* line 69, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
 h1, .h1, .header .title {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -119,7 +140,7 @@ h1, .h1, .header .title {
   line-height: 6.5rem;
 }
 
-/* line 75, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
 h2, .h2, .adjectives .adjective {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -127,25 +148,24 @@ h2, .h2, .adjectives .adjective {
   line-height: 4rem;
 }
 
-/* line 81, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, input {
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3.5rem;
 }
 
-/* line 87, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4 {
-  font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  margin-bottom: .625rem;
-  text-transform: uppercase;
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-/* line 95, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
 h5, .h5 {
   font-family: "Roboto Slab", Georgia, serif;
   font-weight: 400;
@@ -154,7 +174,7 @@ h5, .h5 {
   margin-bottom: 0.625rem;
 }
 
-/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
 h6, .h6 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
@@ -163,61 +183,1328 @@ h6, .h6 {
 }
 
 @media screen and (max-width: 1920px) {
-  /* line 110, /Users/dan/working/devfe-st/static/scss/base.scss */
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
   html, body {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1440px) {
-  /* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
   html, body {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 122, /Users/dan/working/devfe-st/static/scss/base.scss */
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
   html, body {
     font-size: 11px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 128, /Users/dan/working/devfe-st/static/scss/base.scss */
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
   html, body {
     font-size: 10px;
   }
 }
-/* line 3 */
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
+}
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
 a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
   color: #bbb;
 }
 
-/* line 7 */
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 3, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header {
+  margin: 0 0 0 -2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 12, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.fixed {
+  position: fixed;
+  z-index: 100;
+}
+/* line 16, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.fixed.bottom {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+/* line 23, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.no-spacer + .header-spacer {
+  display: none;
+}
+/* line 28, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.blue .title, .header.blue .title {
+  text-shadow: 0 0 #111;
+  -webkit-text-shadow: 0 0 #111;
+  -moz-text-shadow: 0 0 #111;
+  color: #32437A;
+}
+/* line 31, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.blue .title a:hover, .header.blue .title a:hover {
+  color: inherit;
+}
+/* line 35, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header.blue .subtitle, .header.blue .adjectives .adjective, .adjectives .header.blue .adjective {
+  text-shadow: 0 0 #111;
+  -webkit-text-shadow: 0 0 #111;
+  -moz-text-shadow: 0 0 #111;
+  color: #333;
+}
+/* line 41, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header .subtitle, .header .adjectives .adjective, .adjectives .header .adjective {
+  text-shadow: 1px 1px #111;
+  -webkit-text-shadow: 1px 1px #111;
+  -moz-text-shadow: 1px 1px #111;
+  margin-top: -0.5rem;
+  color: #bbb;
+  font-weight: 400;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+}
+/* line 48, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header .title {
+  text-shadow: 1px 1px #111;
+  -webkit-text-shadow: 1px 1px #111;
+  -moz-text-shadow: 1px 1px #111;
+  color: white;
+  margin-left: -0.25rem;
+}
+/* line 55, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header .title .bold {
+  padding-right: 0.5rem;
+}
+/* line 59, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header .title a:hover {
+  color: white;
+}
+
+/* line 64, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header-spacer {
+  height: 8.5rem;
+}
+/* line 66, /Users/dan/working/devfe-st/static/scss/header.scss */
+.header-spacer.with-subtitle {
+  height: 12.5rem;
+}
+
+/* line 71, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives {
   display: inline !important;
 }
-/* line 10 */
+/* line 74, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives .adjective {
   display: none;
 }
-/* line 14 */
+/* line 78, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives .adjective.active {
   display: inline;
 }
 
-/* line 20 */
-p.focus {
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", Georgia, serif;
+/* line 84, /Users/dan/working/devfe-st/static/scss/header.scss */
+.fixed-spacer {
+  height: 15rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 90, /Users/dan/working/devfe-st/static/scss/header.scss */
+  .title {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+
+  /* line 94, /Users/dan/working/devfe-st/static/scss/header.scss */
+  .subtitle, .adjectives .adjective {
+    font-size: 2rem !important;
+  }
+}
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
+}
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
 }
-/* line 26 */
+
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 5, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 18rem;
+  background-color: #333;
+  color: white;
+  z-index: 1000;
+}
+/* line 15, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav.fixed {
+  position: fixed;
+}
+/* line 18, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav small h1 {
+  padding: 2rem 2rem 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+/* line 23, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul {
+  width: 18rem;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+/* line 29, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 1000;
+}
+/* line 33, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul li a p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 38, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul li a p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 43, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.bottom {
+  position: absolute;
+  bottom: 0;
+}
+/* line 42, /Users/dan/working/devfe-st/static/scss/utils.scss */
+nav ul.triple:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 49, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.triple li {
+  width: 33.333333%;
+  display: inline-block;
+  float: left;
+}
+/* line 53, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.triple li:first-child {
+  text-align: left;
+}
+/* line 56, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.triple li:nth-child(2) {
+  text-align: center;
+}
+/* line 58, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.triple li:nth-child(2) a p {
+  padding: 1rem 0;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav ul.triple li:nth-child(3) {
+  text-align: right;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
+}
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 3, /Users/dan/working/devfe-st/static/scss/footer.scss */
+footer {
+  padding: 2rem 18rem 2rem 0;
+  background-color: #32437A;
+  color: white;
+  text-align: center;
+}
+/* line 8, /Users/dan/working/devfe-st/static/scss/footer.scss */
+footer > .inner {
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 100%;
+}
+/* line 14, /Users/dan/working/devfe-st/static/scss/footer.scss */
+footer a, footer a:hover {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
+}
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 3, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button {
+  position: relative;
+  padding: 1rem 3rem;
+  display: inline-block;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+}
+/* line 9, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button.white {
+  background-color: white;
+  color: #111;
+}
+/* line 13, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button.white-inverse {
+  border: 1px solid white;
+  color: white;
+}
+/* line 16, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button.white-inverse:hover {
+  background-color: white;
+  color: #111;
+}
+/* line 22, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 26, /Users/dan/working/devfe-st/static/scss/buttons.scss */
+.button a:hover {
+  color: inherit;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
+}
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 3, /Users/dan/working/devfe-st/static/scss/registration.scss */
+p.focus {
+  margin-bottom: 1rem;
+}
+/* line 6, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus.focus-centered {
   text-align: center;
 }
 
-/* line 31 */
+/* line 11, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .scroll-down {
   position: absolute;
   bottom: 3rem;
@@ -227,153 +1514,40 @@ p.focus.focus-centered {
   text-align: center;
   opacity: 0;
 }
-/* line 40 */
+/* line 20, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .scroll-down p {
   margin: 0;
   line-height: 1.2rem;
 }
 
-/* line 46 */
-.body {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 51 */
-h3 {
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-}
-
-/* line 57 */
-.background {
-  height: 100vh;
-  position: fixed;
-  z-index: 0;
-  width: 100%;
-}
-
-/* line 64 */
-.body {
-  position: absolute;
-}
-
-/* line 68 */
+/* line 26, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .centered {
   max-width: 70rem;
-  margin: 35vh auto 25vh;
+  padding: 35vh 0 25vh;
+  margin: 0 auto;
 }
 
-/* line 73 */
-.pages {
-  z-index: 1;
-  width: 100%;
-}
-/* line 76 */
-.pages .page {
+/* line 32, /Users/dan/working/devfe-st/static/scss/registration.scss */
+#register {
+  height: 200%;
+  min-height: 100rem;
   position: relative;
+}
+/* line 36, /Users/dan/working/devfe-st/static/scss/registration.scss */
+#register > .inner {
+  height: 100%;
   background-color: rgba(50, 67, 122, 0.5);
-  color: white;
-  min-height: 100vh;
-}
-/* line 83 */
-.pages .page .full-height {
-  position: relative;
-  height: 100vh;
-}
-/* line 88 */
-.pages .page > .inner {
-  padding: 1rem 1.5rem;
-}
-/* line 92 */
-.pages .page.white {
-  background-color: #eee;
-  color: #111;
-}
-
-/* line 100 */
-.page.with-nav .header {
-  width: 100%;
-  max-width: 70rem;
-  background-color: rgba(238, 238, 238, 0.9);
-}
-/* line 105 */
-.page.with-nav > .inner {
-  max-width: 70rem;
-}
-
-/* line 111 */
-nav {
   position: absolute;
-  left: 73rem;
-  background-color: #333;
-  color: #eee;
-  padding: 2rem 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-}
-/* line 121 */
-nav ul {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10rem;
   left: 0;
-}
-/* line 128 */
-nav ul li a p {
-  padding: 1rem 2rem;
-}
-/* line 131 */
-nav ul.fixed {
-  position: fixed;
-  bottom: auto;
-  left: auto;
+  right: 0;
 }
 
-/* line 141 */
-input {
-  background-color: transparent;
-  border: 0;
-  text-align: center;
-  text-shadow: 1px 1px #111;
-  -webkit-text-shadow: 1px 1px #111;
-  -moz-text-shadow: 1px 1px #111;
-  border-bottom: 1px solid #eee;
-  color: #eee;
-  outline: 0;
-  font-family: "Lato", Helvetica, Ariel sans-serif;
-}
-/* line 152 */
-input::-webkit-input-placeholder {
-  color: #bbb;
-  opacity: 0.7;
-}
-/* line 157 */
-input:-moz-placeholder {
-  /* Firefox 18- */
-  color: #bbb;
-  opacity: 0.7;
-}
-/* line 162 */
-input::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #bbb;
-  opacity: 0.7;
-}
-/* line 167 */
-input:-ms-input-placeholder {
-  color: #bbb;
-  opacity: 0.7;
-}
-
-/* line 172 */
-form {
+/* line 45, /Users/dan/working/devfe-st/static/scss/registration.scss */
+#registration-form {
   position: relative;
 }
-/* line 174 */
-form .submit-success {
+/* line 47, /Users/dan/working/devfe-st/static/scss/registration.scss */
+#registration-form .submit-success {
   position: absolute;
   right: -1rem;
   top: 1rem;
@@ -382,26 +1556,21 @@ form .submit-success {
   vertical-align: middle;
   padding: 0.3125rem;
 }
-
-/* line 185 */
-footer {
-  padding: 2rem 1rem;
-  background-color: #333;
-  color: #eee;
+/* line 57, /Users/dan/working/devfe-st/static/scss/registration.scss */
+#registration-form input {
+  background-color: transparent;
+  border: 0;
   text-align: center;
-}
-/* line 190 */
-footer > .inner {
-  margin: 0 auto;
-  max-width: 70rem;
-  width: 100%;
-}
-/* line 196 */
-footer a, footer a:hover {
-  text-decoration: underline;
+  text-shadow: 1px 1px #111;
+  -webkit-text-shadow: 1px 1px #111;
+  -moz-text-shadow: 1px 1px #111;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: 0;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
 }
 
-/* line 201 */
+/* line 70, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration {
   position: absolute;
   height: 2rem;
@@ -413,7 +1582,7 @@ footer a, footer a:hover {
   opacity: 0;
   text-align: center;
 }
-/* line 212 */
+/* line 80, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration label {
   display: block;
   margin-top: 1rem;
@@ -421,137 +1590,412 @@ footer a, footer a:hover {
   -webkit-text-shadow: 1px 1px #111;
   -moz-text-shadow: 1px 1px #111;
 }
-/* line 217 */
+/* line 85, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration input {
   width: 30rem;
 }
 
-/* line 222 */
-.button {
-  position: relative;
-  padding: 1rem 3rem;
-  display: inline-block;
-  font-family: "Lato", Helvetica, Ariel sans-serif;
+/* line 1, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.sponsors {
+  text-align: center;
 }
-/* line 229 */
-.button.white {
-  background-color: #eee;
-  color: #111;
-}
-/* line 233 */
-.button.white-inverse {
-  border: 1px solid #eee;
-  color: #eee;
-}
-/* line 236 */
-.button.white-inverse:hover {
-  background-color: #eee;
-  color: #111;
-}
-/* line 242 */
-.button a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-/* line 246 */
-.button a:hover {
-  color: inherit;
+/* line 4, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.sponsors hr {
+  margin: 3em 0;
 }
 
-/* line 253 */
-.header {
-  margin: -1rem 0 0 -1.5rem;
-  padding: 1rem 1.5rem;
-  position: absolute;
+/* line 9, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold, .silver, .bronze {
+  display: inline-block;
+  margin: 0 10px 10px 10px;
 }
-/* line 258 */
-.header.fixed {
-  position: fixed;
-  top: 1rem;
-  z-index: 100;
+/* line 13, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold .inner, .silver .inner, .bronze .inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
-/* line 264 */
-.header.bottom {
-  position: absolute;
-  bottom: 0;
+
+/* line 22, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold {
+  width: 600px;
+  height: 90px;
+  max-width: 100%;
+  display: block;
+  margin: 20px auto 10px;
 }
-/* line 269 */
-.header.no-spacer + .header-spacer {
+/* line 29, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner {
+  width: 600px;
+  height: 90px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 35, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner > a {
+  height: 90px;
+}
+/* line 38, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner > a > img {
+  max-width: 100%;
+  max-height: 90px;
+  margin: 0 auto;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.silver {
+  width: 247px;
+  height: 100px;
+}
+/* line 53, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.silver > .inner {
+  width: 247px;
+  height: 100px;
+}
+/* line 57, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.silver > .inner > a {
+  width: 247px;
+  height: 100px;
+}
+/* line 61, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.silver > .inner > a > img {
+  max-width: 247px;
+  max-height: 100px;
+  margin: 0 auto;
+}
+
+/* line 73, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.bronze {
+  width: 200px;
+  height: 80px;
+}
+/* line 77, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.bronze > .inner {
+  width: 200px;
+  height: 80px;
+}
+/* line 81, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.bronze > .inner > a {
+  width: 200px;
+  height: 80px;
+}
+/* line 85, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.bronze > .inner > a > img {
+  max-width: 200px;
+  max-height: 80px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/animations.scss */
+.fade-in-up {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+}
+
+/* line 3, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.background-image, .pages .page, .background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 9, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.upper, .header .title {
+  text-transform: uppercase;
+}
+
+/* line 30, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 49, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.hidden {
   display: none;
 }
-/* line 274 */
-.header.blue .title {
-  text-shadow: 0 0 #111;
-  -webkit-text-shadow: 0 0 #111;
-  -moz-text-shadow: 0 0 #111;
-  color: #32437A;
-}
-/* line 278 */
-.header.blue .subtitle, .header.blue .adjectives .adjective, .adjectives .header.blue .adjective {
-  text-shadow: 0 0 #111;
-  -webkit-text-shadow: 0 0 #111;
-  -moz-text-shadow: 0 0 #111;
-  color: #333;
-}
-/* line 284 */
-.header .subtitle, .header .adjectives .adjective, .adjectives .header .adjective {
-  text-shadow: 1px 1px #111;
-  -webkit-text-shadow: 1px 1px #111;
-  -moz-text-shadow: 1px 1px #111;
-  margin-top: -1.5rem;
-  color: #bbb;
-  font-weight: 400;
+
+/* line 14, /Users/dan/working/devfe-st/static/scss/base.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
   font-family: "Lato", Helvetica, Ariel sans-serif;
+  color: #111;
+  height: 100%;
 }
-/* line 291 */
-.header .title {
-  text-shadow: 1px 1px #111;
-  -webkit-text-shadow: 1px 1px #111;
-  -moz-text-shadow: 1px 1px #111;
+
+/* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
+p, label {
+  margin-bottom: 0.3125rem;
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* line 31, /Users/dan/working/devfe-st/static/scss/base.scss */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  font-family: monospace;
+}
+
+/* line 38, /Users/dan/working/devfe-st/static/scss/base.scss */
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+/* line 43, /Users/dan/working/devfe-st/static/scss/base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
+strong, .bold {
+  font-weight: 700;
+}
+
+/* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
+hr {
+  background-color: #111;
+  margin: 4rem 0;
+  border: 0;
+  height: 1px;
+  outline: 0;
+}
+
+/* line 59, /Users/dan/working/devfe-st/static/scss/base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 62, /Users/dan/working/devfe-st/static/scss/base.scss */
+a:hover {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* line 68, /Users/dan/working/devfe-st/static/scss/base.scss */
+input, textarea {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+/* line 73, /Users/dan/working/devfe-st/static/scss/base.scss */
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, textarea::-webkit-input-placeholder, textarea:-moz-placeholder, textarea::-moz-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* line 84, /Users/dan/working/devfe-st/static/scss/base.scss */
+h1, .h1, .header .title {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+}
+
+/* line 90, /Users/dan/working/devfe-st/static/scss/base.scss */
+h2, .h2, .adjectives .adjective {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+/* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
+h3, .h3, #registration-form input {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+/* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
+h4, .h4, p.focus {
   margin-bottom: 1rem;
-  color: #eee;
-  margin-left: -0.25rem;
-}
-/* line 299 */
-.header .title .bold {
-  padding-right: 0.5rem;
-}
-/* line 302 */
-.header .title a:hover {
-  color: #eee;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-/* line 307 */
-.header-spacer {
-  height: 6.5rem;
-}
-/* line 309 */
-.header-spacer.with-subtitle {
-  height: 10.5rem;
+/* line 109, /Users/dan/working/devfe-st/static/scss/base.scss */
+h5, .h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 0.625rem;
 }
 
-/* line 314 */
-.fixed-spacer {
-  height: 15rem;
+/* line 116, /Users/dan/working/devfe-st/static/scss/base.scss */
+h6, .h6 {
+  font-family: "Lato", Helvetica, Ariel sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1920px) {
+  /* line 124, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* line 130, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 136, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 142, /Users/dan/working/devfe-st/static/scss/base.scss */
+  html, body {
+    font-size: 10px;
+  }
+}
+/* line 42, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.faqs .two-faqs:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 7, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.faqs .two-faqs:not(:first-child) {
+  margin-top: 2rem;
+}
+/* line 11, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.faqs .two-faqs .faq {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 17, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.faqs .two-faqs .faq:first-child {
+  padding-right: 1rem;
+}
+/* line 20, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.faqs .two-faqs .faq:nth-child(2) {
+  padding-left: 1rem;
+}
+
+/* line 10 */
+.pages {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+/* line 15 */
+.pages .page {
+  position: relative;
+  background-color: rgba(50, 67, 122, 0.5);
+  color: white;
+}
+/* line 21 */
+.pages .page .sub-page {
+  position: relative;
+  height: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 27 */
+.pages .page > .inner {
+  position: relative;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 33 */
+.pages .page.white {
+  background-color: white;
+  color: #111;
+}
+/* line 36 */
+.pages .page.white .header {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 41 */
+.pages .page.blue {
+  background-color: #32437A;
+  color: white;
+}
+/* line 44 */
+.pages .page.blue .header {
+  background-color: rgba(50, 67, 122, 0.9);
+}
+/* line 48 */
+.pages .page.with-nav > .inner {
+  padding-right: 20rem;
+}
+/* line 53 */
+.pages .page.with-image:not(:first-child) {
+  height: 120%;
+  background-color: transparent;
+}
+/* line 56 */
+.pages .page.with-image:not(:first-child) .inner {
+  height: 100%;
+  max-height: 100rem;
+}
+
+/* line 76 */
+.background {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  top: 0;
   width: 100%;
 }
-
-/* line 319 */
-.details {
-  margin-top: 3rem;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 324 */
-  .title {
-    font-size: 4rem !important;
-    line-height: 5rem !important;
-  }
-
-  /* line 328 */
-  .subtitle, .adjectives .adjective {
-    font-size: 2rem !important;
-  }
+/* line 89 */
+.background.with-nav > .inner {
+  right: 18rem;
 }

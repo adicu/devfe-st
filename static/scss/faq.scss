@@ -1,0 +1,26 @@
+@import 'base';
+
+.faqs {
+	.two-faqs {
+		@include clearfix;
+
+		&:not(:first-child) {
+			margin-top: 2rem;
+		}
+
+		.faq {
+			width: 50%;
+			float: left;
+			display: inline-block;
+			@include border-box;
+
+			&:first-child {
+				padding-right: 1rem;
+			}
+			&:nth-child(2) {
+				padding-left: 1rem;
+			}
+		}
+
+	}
+}

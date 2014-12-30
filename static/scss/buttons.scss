@@ -1,0 +1,30 @@
+@import 'base';
+
+.button {
+    position: relative;
+    padding: 1rem 3rem;
+    display: inline-block;
+    font-family: $sans;
+
+    &.white {
+        background-color: $white;
+        color: $black;
+    }
+    &.white-inverse {
+        border: 1px solid $white;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            color: inherit;
+        }
+    }
+}

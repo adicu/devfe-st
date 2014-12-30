@@ -1,97 +1,266 @@
-{% extends "base.html" %}
+{%- extends "base.html" -%}
 
 {%- block css -%}
 {{ super() }}
-{% assets "scss_app" %}
+{%- assets "scss_app" -%}
 <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
-{% endassets %}
+{%- endassets -%}
 {%- endblock -%}
 {%- block bodyJs -%}
 {{ super() }}
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {%- endblock -%}
 
+{%- macro navbar() -%}
+<nav>
+    <div class="logo">
+        <small>
+            <a href="#register">
+                <h1 class="title">
+                    <span class="bold">DEVFEST</span> 2015
+                </h1>
+            </a>
+        </small>
+    </div>
+    <ul class="menu">
+        <li><a href="#register"><p>Register</p></a></li>
+        <li><a class="scroll" href="#schedule"><p>Schedule</p></a></li>
+        <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
+        <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
+        <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li>
+        <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li>
+    </ul>
+    <ul class="menu bottom triple">
+        <li><a href="https://adicu.com"><p>ADI</p></a></li>
+        <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
+        <li><a href="http://old.adicu.com/devfest"><p>Old</p></a></li>
+    </ul>
+</nav>
+{%- endmacro -%}
 
-{% macro header(class, bold, thin, subtitle, url) %}
+{%- macro header(class, bold, thin, subtitle, url) -%}
 <div class="header {{class}}">
     <h1 class="title">
         <a href="{{ url }}">
-            <span class="bold">{{bold}}</span>{{thin}}
+            <span class="bold">{{bold | safe }}</span>{{thin | safe}}
         </a>
     </h1>
-    {%- if subtitle or caller -%}
+    {%- if caller -%}
     <h2 class="subtitle">{{ caller() }}</h2>
+    {%- elif subtitle -%}
+    <h2 class="subtitle">{{ subtitle }}</h2>
     {%- endif -%}
 </div>
-<div class="header-spacer {%if subtitle %}with-subtitle{% endif %}">
+<div class="header-spacer {%if subtitle -%}with-subtitle{%- endif -%}">
 </div>
-{% endmacro %}
+{%- endmacro -%}
 
 
 {%- block body -%}
-<div class="background"
-     style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
+<div class="backgrounds">
+    <div class="background"
+         data-page="1"
+         style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
+    </div>
+    <div class="background hidden"
+         data-page="7"
+         style="background-image:url({{ url_for('static', filename='img/room.jpg') }})">
+    </div>
 </div>
-<div class="body">
-    <ul class="pages">
-        <li id="register" class="page" data-page="1">
-            <div class="inner">
-                {% call header("white no-spacer fixed", "DevFest", "2015", None, "/") %}
-                    Build something <ul class="adjectives">
-                        <li class="adjective active" data-no="1">amazing</li>
-                        <li class="adjective" data-no="2">unexpected</li>
-                        <li class="adjective" data-no="3">musical</li>
-                        <li class="adjective" data-no="4">crazy</li>
-                        <li class="adjective" data-no="5">sciencey</li>
-                        <li class="adjective" data-no="6">for Columbia</li>
-                    </u>
-                {% endcall %}
-                <div class="full-height first-page">
-                    <div class="registration animated">
-                        <form method="post" action="">
-                            <input type="email"
-                                   name="email"
-                                   id="email"
-                                   required
-                                   spellcheck="false"
-                                   autocomplete="off"
-                                   placeholder="you@columbia.edu">
-                            <label for="email">
-                            {% if submit %}
-                                Thanks!  We'll be in touch.
-                            {% else %}
-                                Enter your email to receive updates
-                            {% endif %}
-                            </label>
-                        </form>
-                    </div>
-                    <div class="scroll-down animated">
-                        <a href="#down">
-                            <p>Learn More</p>
-                            <p><i class="fa fa-chevron-down"></i></p>
-                        </a>
-                    </div>
+<div class="pages">
+    <div id="register" class="page hero with-image" data-page="1">
+        <div class="inner">
+            {%- call header("white no-spacer fixed", "DevFest", "2015", None, "/") -%}
+                Build something <ul class="adjectives">
+                    <li class="adjective active" data-no="1">amazing</li>
+                    <li class="adjective" data-no="2">unexpected</li>
+                    <li class="adjective" data-no="3">musical</li>
+                    <li class="adjective" data-no="4">crazy</li>
+                    <li class="adjective" data-no="5">sciencey</li>
+                    <li class="adjective" data-no="6">for Columbia</li>
+                </u>
+            {%- endcall -%}
+            <div class="sub-page">
+                <div class="registration fade-out animated">
+                    <form id="registration-form" method="post" action="">
+                        <input type="email"
+                               name="email"
+                               id="email"
+                               required
+                               spellcheck="false"
+                               autocomplete="off"
+                               placeholder="you@columbia.edu">
+                        <label for="email">
+                        {%- if submit -%}
+                            Thanks!  We'll be in touch.
+                        {%- else -%}
+                            Enter your email to receive updates
+                        {%- endif -%}
+                        </label>
+                    </form>
                 </div>
-                <div class="centered" id="down">
-                    <p class="focus focus-centered">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about learning, community, and building amazing things with technology.</p>
-                    <p class="focus focus-centered">Join us January 31st – February 7th.  Registration opens soon.</p>
-                    <p class="focus focus-centered">
-                        <a class="white-inverse button" href="#register">
-                            {% if submit %}
-                                We'll be in touch.
-                            {% else %}
-                                Stay Informed
-                            {% endif %}
-                        </a>
-                    </p>
+                <div class="scroll-down fade-out animated">
+                    <a class="scroll" href="#more">
+                        <p>Learn More</p>
+                        <p><i class="fa fa-chevron-down"></i></p>
+                    </a>
                 </div>
             </div>
-        </li>
-        <footer>
-            <div class="inner credits">
-                <p>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. Questions?  <a href="mailto:devfest@adicu.com">Shoot us an email</a>.</p>
+            <div class="sub-page centered" id="more">
+                <p class="focus focus-centered fade-out">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about learning, community, and building amazing things with technology.</p>
+                <p class="focus focus-centered fade-out">Join us January 31st – February 7th.  Registration opens soon.</p>
+                <p class="focus focus-centered fade-out">
+                    <a class="white-inverse button" href="#register">
+                        {%- if submit -%}
+                            We'll be in touch.
+                        {%- else -%}
+                            Stay Informed
+                        {%- endif -%}
+                    </a>
+                </p>
+                <div class="scroll-down fade-out">
+                    <a class="scroll" href="#schedule">
+                        <p>Get the Details</p>
+                        <p><i class="fa fa-chevron-down"></i></p>
+                    </a>
+                </div>
             </div>
-        </footer>
-    </ul>
+        </div>
+    </div>
+    <div id="schedule" class="page white with-nav" data-page="2">
+        {{ navbar() }}
+        <div class="inner">
+            {{ header("blue", "The", "Schedule", None, "/") }}
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+        </div>
+    </div>
+    <div id="faq" class="page blue with-nav" data-page="3">
+        <div class="inner">
+            {{ header("white", "The", "FAQ", None, "/") }}
+            <div class="faqs">
+                {% for faq in faqs.faqs %}
+                    {% if loop.index % 2 == 1 %}
+                    <div class="two-faqs">
+                        <div class="faq">
+                            <h5>{{faq.question | safe}}</h5>
+                            <p>{{faq.answer | safe}}</p>
+                        </div>
+                    {% else %}
+                        <div class="faq">
+                            <h5>{{faq.question | safe}}</h5>
+                            <p>{{faq.answer | safe}}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                {% if faqs.faqs | length % 2 == 1 %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div id="judges" class="page white with-nav" data-page="4">
+        <div class="inner">
+            {{ header("blue", "The", "Judges", None, "/") }}
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+        </div>
+    </div>
+    <div id="prizes" class="page blue with-nav" data-page="5">
+        <div class="inner">
+            {{ header("white", "The", "Prizes", None, "/") }}
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+        </div>
+    </div>
+    <div id="sponsors" class="page white with-nav" data-page="6">
+        <div class="inner">
+            {{ header("blue", "The", "Sponsors", None, "/") }}
+            {%- for level in ['gold', 'silver', 'bronze'] -%}
+                {%- with lst = sponsors[level] -%}
+                    {%- if loop.index != 1 %}
+                    <hr>
+                    {%- endif -%}
+                    <ul class="sponsors">
+                        {%- for sponsor in lst -%}
+                            <li class="sponsor {{ level }}" id="{{ sponsor.id }}">
+                                <div class="inner">
+                                    <a href="{{ sponsor.url }}">
+                                        <img src="{{ url_for('static', filename=('img/logos/' + sponsor.img)) }}">
+                                    </a>
+                                </div>
+                            </li>
+                        {%- endfor -%}
+                    </ul>
+                {%- endwith -%}
+            {%- endfor -%}
+        </div>
+    </div>
+    <div id="sponsors" class="page blue with-image with-nav" data-page="7">
+        <div class="inner">
+            {{ header("white", "Until", "February...", None, "/") }}
+        </div>
+    </div>
+    <div id="judges" class="page white with-nav" data-page="8">
+        <div class="inner">
+            {{ header("blue", "The", "Judges", None, "/") }}
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+            <h1>asdf</h1>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="inner credits">
+            <p>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. Questions?  <a href="mailto:devfest@adicu.com">Shoot us an email</a>.</p>
+        </div>
+    </footer>
 </div>
 {%- endblock -%}
