@@ -15,7 +15,6 @@
     .page {
         @extend .background-image;
         position: relative;
-        background-color: rgba(50,67,122,0.5);
         color: white;
 
         .sub-page {
@@ -25,6 +24,7 @@
         }
 
         & > .inner {
+            background-color: rgba(50,67,122,0.5);
             position: relative;
             padding: 2rem;
             @include border-box;

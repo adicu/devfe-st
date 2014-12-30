@@ -1937,10 +1937,9 @@ h6, .h6 {
 /* line 15 */
 .pages .page {
   position: relative;
-  background-color: rgba(50, 67, 122, 0.5);
   color: white;
 }
-/* line 21 */
+/* line 20 */
 .pages .page .sub-page {
   position: relative;
   height: 50%;
@@ -1949,8 +1948,9 @@ h6, .h6 {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 27 */
+/* line 26 */
 .pages .page > .inner {
+  background-color: rgba(50, 67, 122, 0.5);
   position: relative;
   padding: 2rem;
   -webkit-box-sizing: border-box;
