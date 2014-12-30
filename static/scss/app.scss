@@ -22,9 +22,10 @@
             height: 50%;
             @include border-box;
         }
-
-        & > .inner {
+        &:first-child > .inner {
             background-color: rgba(50,67,122,0.5);
+        }
+        & > .inner {
             position: relative;
             padding: 2rem;
             @include border-box;
