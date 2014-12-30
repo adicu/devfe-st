@@ -28,6 +28,10 @@
             position: relative;
             padding: 2rem;
             @include border-box;
+
+            a {
+                text-decoration: underline;
+            }
         }
 
         &.white {
@@ -58,17 +62,6 @@
                     max-height: 100rem;
                 }
             }
-            // .background {
-            //     position: absolute;
-            //     &.fixed {
-            //         position: fixed;
-            //         right: $navbar-width;
-            //         top: 0;
-            //         bottom: 0;
-            //         z-index: -1px;
-            //     }
-            // }
-
         }
     }
 }
