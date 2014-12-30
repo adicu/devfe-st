@@ -377,27 +377,31 @@ form .submit-success {
   position: absolute;
   right: -1rem;
   top: 1rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  vertical-align: middle;
+  padding: 0.3125rem;
 }
 
-/* line 181 */
+/* line 185 */
 footer {
   padding: 2rem 1rem;
   background-color: #333;
   color: #eee;
   text-align: center;
 }
-/* line 186 */
+/* line 190 */
 footer > .inner {
   margin: 0 auto;
   max-width: 70rem;
   width: 100%;
 }
-/* line 192 */
+/* line 196 */
 footer a, footer a:hover {
   text-decoration: underline;
 }
 
-/* line 197 */
+/* line 201 */
 .registration {
   position: absolute;
   height: 2rem;
@@ -409,87 +413,89 @@ footer a, footer a:hover {
   opacity: 0;
   text-align: center;
 }
-/* line 208 */
+/* line 212 */
 .registration label {
-  text-shadow: 0 0 #111;
-  -webkit-text-shadow: 0 0 #111;
-  -moz-text-shadow: 0 0 #111;
+  display: block;
+  margin-top: 1rem;
+  text-shadow: 1px 1px #111;
+  -webkit-text-shadow: 1px 1px #111;
+  -moz-text-shadow: 1px 1px #111;
 }
-/* line 211 */
+/* line 217 */
 .registration input {
   width: 30rem;
 }
 
-/* line 216 */
+/* line 222 */
 .button {
   position: relative;
   padding: 1rem 3rem;
   display: inline-block;
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 223 */
+/* line 229 */
 .button.white {
   background-color: #eee;
   color: #111;
 }
-/* line 227 */
+/* line 233 */
 .button.white-inverse {
   border: 1px solid #eee;
   color: #eee;
 }
-/* line 230 */
+/* line 236 */
 .button.white-inverse:hover {
   background-color: #eee;
   color: #111;
 }
-/* line 236 */
+/* line 242 */
 .button a {
   display: inline-block;
   width: 100%;
   height: 100%;
   display: inline-block;
 }
-/* line 240 */
+/* line 246 */
 .button a:hover {
   color: inherit;
 }
 
-/* line 247 */
+/* line 253 */
 .header {
   margin: -1rem 0 0 -1.5rem;
   padding: 1rem 1.5rem;
   position: absolute;
 }
-/* line 252 */
+/* line 258 */
 .header.fixed {
   position: fixed;
   top: 1rem;
   z-index: 100;
 }
-/* line 258 */
+/* line 264 */
 .header.bottom {
   position: absolute;
   bottom: 0;
 }
-/* line 263 */
+/* line 269 */
 .header.no-spacer + .header-spacer {
   display: none;
 }
-/* line 268 */
+/* line 274 */
 .header.blue .title {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #32437A;
 }
-/* line 272 */
+/* line 278 */
 .header.blue .subtitle, .header.blue .adjectives .adjective, .adjectives .header.blue .adjective {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #333;
 }
-/* line 278 */
+/* line 284 */
 .header .subtitle, .header .adjectives .adjective, .adjectives .header .adjective {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -499,7 +505,7 @@ footer a, footer a:hover {
   font-weight: 400;
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 285 */
+/* line 291 */
 .header .title {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -508,39 +514,43 @@ footer a, footer a:hover {
   color: #eee;
   margin-left: -0.25rem;
 }
-/* line 293 */
+/* line 299 */
 .header .title .bold {
   padding-right: 0.5rem;
 }
+/* line 302 */
+.header .title a:hover {
+  color: #eee;
+}
 
-/* line 298 */
+/* line 307 */
 .header-spacer {
   height: 6.5rem;
 }
-/* line 300 */
+/* line 309 */
 .header-spacer.with-subtitle {
   height: 10.5rem;
 }
 
-/* line 305 */
+/* line 314 */
 .fixed-spacer {
   height: 15rem;
   width: 100%;
 }
 
-/* line 310 */
+/* line 319 */
 .details {
   margin-top: 3rem;
 }
 
 @media screen and (max-width: 640px) {
-  /* line 315 */
+  /* line 324 */
   .title {
     font-size: 4rem !important;
     line-height: 5rem !important;
   }
 
-  /* line 319 */
+  /* line 328 */
   .subtitle, .adjectives .adjective {
     font-size: 2rem !important;
   }

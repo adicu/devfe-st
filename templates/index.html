@@ -12,10 +12,12 @@
 {%- endblock -%}
 
 
-{% macro header(class, bold, thin, subtitle) %}
+{% macro header(class, bold, thin, subtitle, url) %}
 <div class="header {{class}}">
     <h1 class="title">
-        <span class="bold">{{bold}}</span>{{thin}}
+        <a href="{{ url }}">
+            <span class="bold">{{bold}}</span>{{thin}}
+        </a>
     </h1>
     {%- if subtitle or caller -%}
     <h2 class="subtitle">{{ caller() }}</h2>
@@ -34,7 +36,7 @@
     <ul class="pages">
         <li id="register" class="page" data-page="1">
             <div class="inner">
-                {% call header("white no-spacer fixed", "DevFest", "2015") %}
+                {% call header("white no-spacer fixed", "DevFest", "2015", None, "/") %}
                     Build something <ul class="adjectives">
                         <li class="adjective active" data-no="1">amazing</li>
                         <li class="adjective" data-no="2">unexpected</li>
@@ -56,7 +58,7 @@
                                    placeholder="you@columbia.edu">
                             <label for="email">
                             {% if submit %}
-                                <i class="submit-success fa fa-check-circle-o"></i> Thanks!  We'll be in touch.
+                                Thanks!  We'll be in touch.
                             {% else %}
                                 Enter your email to receive updates
                             {% endif %}
@@ -75,7 +77,11 @@
                     <p class="focus focus-centered">Join us January 31st – February 7th.  Registration opens soon.</p>
                     <p class="focus focus-centered">
                         <a class="white-inverse button" href="#register">
-                            Stay Informed
+                            {% if submit %}
+                                We'll be in touch.
+                            {% else %}
+                                Stay Informed
+                            {% endif %}
                         </a>
                     </p>
                 </div>

@@ -175,6 +175,10 @@ form {
         position: absolute;
         right: -1rem;
         top: 1rem;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        vertical-align: middle;
+        padding: 0.3125rem
     }
 }
 
@@ -206,7 +210,9 @@ footer {
     opacity: 0;
     text-align: center;
     label {
-        @include text-shadow(0,0, $black);
+        display: block;
+        margin-top: 1rem;
+        @include text-shadow(1px,1px, $black);
     }
     input {
         width: 30rem;
@@ -292,6 +298,9 @@ footer {
 
         .bold {
             padding-right: 0.5rem;
+        }
+        a:hover {
+            color: $white;
         }
     }
 }
