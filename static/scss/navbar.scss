@@ -1,8 +1,8 @@
 @import 'base';
 
 $ham-height: 50px;
-$ham-padding: 1.5rem;
-$ham-bar-height: 2px;
+$ham-padding: 16px;
+$ham-bar-height: 4px;
 
 nav {
 	position: absolute;
@@ -25,13 +25,18 @@ nav {
         background-color: $offgray;
 
         .bar {
+            @include transition(0.3s);
+            transform-origin: ($ham-bar-height / 2) ($ham-bar-height / 2);
             position: absolute;
             background-color: $white;
             height: $ham-bar-height;
-            left: $ham-padding * 3/4;
-            right: $ham-padding * 3/4;
+            left: $ham-padding;
+            right: $ham-padding;
+            border-radius: ($ham-bar-height / 2);
+            margin: 0 (-1 * $ham-bar-height/2);
 
             &.one {
+                margin-top: ($ham-bar-height/-2);
                 top: $ham-padding;
             }
             &.two {
@@ -39,6 +44,7 @@ nav {
             }
             &.three {
                 bottom: $ham-padding;
+                margin-bottom: ($ham-bar-height/-2);
             }
         }
     }
@@ -109,6 +115,21 @@ nav {
         height: auto;
         &.open {
             right: 0 !important;
+
+            .ham {
+                .bar {
+                    width: 30px; //(($ham-height - 2*$ham-padding) * 1.41421356237 + $ham-bar-height);
+                    &.one {
+                        transform: rotate(45deg);
+                    }
+                    &.two {
+                        opacity: 0;
+                    }
+                    &.three {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 }

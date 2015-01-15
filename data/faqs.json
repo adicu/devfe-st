@@ -2,7 +2,7 @@
 	"faqs": [
 		{
 			"question": "What is Devfest?",
-			"answer": "DevFest is a week-long series of technical workshops held by ADI culminating in a 24-hour hackathon. DevFest focuses on fostering community, and helping new developers end the week with a completed project."
+			"answer": "DevFest is a <strong>week-long series of technical workshops</strong> held by <a href='https://adicu.com'>ADI</a> culminating in a <strong>24-hour hackathon</strong>. DevFest focuses on fostering community, and helping new developers end the week with a completed project."
 		},
 		{
 			"question": "Who can participate?",
@@ -10,23 +10,11 @@
 		},
 		{
 			"question": "Where does the hackathon/workshops take place?",
-			"answer": "Kickoff and Project Demos will be held in Davis Auditorium inside CEPSR. The technical workshops will be held in the Computer Science Lounge inside Mudd. The main hackathon will be held inside Uris. See the <a class='scroll' href='#schedule'>schedule</a> for up-to-date locations."
+			"answer": "Kickoff and Project Demos will be held in Davis Auditorium inside CEPSR. Technical workshops will be held in IAB. The main hackathon will be held inside Uris. Check the <a class='scroll' href='#schedule'>schedule</a> for up-to-date locations."
 		},
 		{
-			"question": "Do you need experience?",
-			"answer": "Because everyone might be starting from different experience backgrounds, throughout the week ADI will host a series of workshops from Introduction to HTML to Introduction to Flask so that you can have the tools necessary to complete your project. Plus, there will be plenty of people there to help during the week."
-		},
-		{
-			"question": "Do I need a team or idea to sign up?",
-			"answer": "Nope. Just come with a willingness to learn something new!"
-		},
-		{
-			"question": "Is there any limit on team size?",
-			"answer": "Nope!"
-		},
-		{
-			"question": "When can I start working on my app?",
-			"answer": "You can start working on your app as soon as the kickoff begins!"
+			"question": "Do I need experience?",
+			"answer": "No! Because everyone might be starting from different experience backgrounds, DevFest contains two separate curriculums, depending on whether or not you are learning to program for the first time, or looking to build your first app.  Plus, there will be plenty of people there to help during the week.  Take a look at the <a class='scroll' href='#curriculum'>curriculum</a> to get started."
 		},
 		{
 			"question": "Do I have to come to the entire week?",
@@ -34,15 +22,27 @@
 		},
 		{
 			"question": "Will there be food?",
-			"answer": "YES! There will be dinner served every night during the workshops and food throughout the week! If you have any food allergies make sure to state them when you <a class='scroll' href='#register'>register</a> or <a href='mailto:devfest@adicu.com'>email us</a>."
+			"answer": "YES! There will be dinner served every night during the workshops and food throughout the week! If you have any food allergies make sure to state them when you <a class='scroll' href='#register'>register</a>, or just <a href='mailto:devfest@adicu.com'>email us</a>."
+		},
+		{
+			"question": "Do I need a team or idea to sign up?",
+			"answer": "Nope. Just come with a willingness to learn something new!"
+		},
+		{
+			"question": "When can I start working on my app?",
+			"answer": "You can start working on your app as soon as the kickoff begins!"
 		},
 		{
 			"question": "What if I just want time to develop or get help?",
-			"answer": "During “Open Hacking” times, we encourage you to practice what you learned during one of the technical workshops or work on your DevFest project!"
+			"answer": "During our “Open Hack Spaces”, we encourage you to practice what you learned during one of the technical workshops or work on your DevFest project!"
 		},
 		{
-			"question": "I am a vegetarian, vegan, or lactose intolerant.  Will there be food for me?",
-			"answer": "We will make sure that there are vegan options available at every event with food. If you have any other dietary restrictions, please <a href='mailto:devfest@adicu.com'>email us</a> and we'll take care of you!"
+			"question": "Where do I sign up?",
+			"answer": "Register <a href='#register' class='scroll'>here</a>!"
+		},
+		{
+			"question": "I have another question.  Who should I ask?",
+			"answer": "You can get in touch with us via <a href='mailto:devfest@adicu.com'>email</a>, <a href='https://www.facebook.com/ADICU'>Facebook</a>, or <a href='https://twitter.com/adicu'>Twitter</a>."
 		}
 	]
 }

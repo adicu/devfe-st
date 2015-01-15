@@ -879,42 +879,51 @@ nav .ham {
 }
 /* line 27, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav .ham .bar {
+  -webkit-transition: 0.3s 0 ease all;
+  -moz-transition: 0.3s 0 ease all;
+  -o-transition: 0.3s 0 ease all;
+  transition: 0.3s 0 ease all;
+  transform-origin: 2px 2px;
   position: absolute;
   background-color: white;
-  height: 2px;
-  left: 1.125rem;
-  right: 1.125rem;
+  height: 4px;
+  left: 16px;
+  right: 16px;
+  border-radius: 2px;
+  margin: 0 -2px;
 }
-/* line 34, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 38, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav .ham .bar.one {
-  top: 1.5rem;
+  margin-top: -2px;
+  top: 16px;
 }
-/* line 37, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 42, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav .ham .bar.two {
-  top: 24px;
+  top: 23px;
 }
-/* line 40, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 45, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav .ham .bar.three {
-  bottom: 1.5rem;
+  bottom: 16px;
+  margin-bottom: -2px;
 }
-/* line 46, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 52, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav.fixed {
   position: fixed;
 }
-/* line 49, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 55, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav small h1 {
   padding: 2rem 2rem 1rem;
   font-size: 2rem;
   line-height: 2rem;
 }
-/* line 54, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 60, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul {
   width: 18rem;
   width: 100%;
   position: relative;
   z-index: 1000;
 }
-/* line 60, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 66, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -923,7 +932,7 @@ nav ul li {
   width: 100%;
   z-index: 1000;
 }
-/* line 64, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 70, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -933,11 +942,11 @@ nav ul li a p {
   width: 100%;
   margin-bottom: 0;
 }
-/* line 69, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 75, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 74, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 80, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.bottom {
   position: absolute;
   bottom: 0;
@@ -948,31 +957,31 @@ nav ul.triple:after {
   content: " ";
   display: block;
 }
-/* line 80, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 86, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li {
   width: 33.333333%;
   display: inline-block;
   float: left;
 }
-/* line 84, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 90, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:first-child {
   text-align: left;
 }
-/* line 87, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 93, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) {
   text-align: center;
 }
-/* line 89, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 95, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) a p {
   padding: 1rem 0;
 }
-/* line 93, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 99, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(3) {
   text-align: right;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 102, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 108, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav {
     -webkit-transition: 0.3s 0 ease all;
     -moz-transition: 0.3s 0 ease all;
@@ -985,9 +994,25 @@ nav ul.triple li:nth-child(3) {
     bottom: 0;
     height: auto;
   }
-  /* line 110, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 116, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open {
     right: 0 !important;
+  }
+  /* line 120, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav.open .ham .bar {
+    width: 30px;
+  }
+  /* line 122, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav.open .ham .bar.one {
+    transform: rotate(45deg);
+  }
+  /* line 125, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav.open .ham .bar.two {
+    opacity: 0;
+  }
+  /* line 128, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav.open .ham .bar.three {
+    transform: rotate(-45deg);
   }
 }
 @-webkit-keyframes fade-in-up {
@@ -1832,7 +1857,7 @@ p.focus a {
 /* line 31, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .centered {
   max-width: 70rem;
-  padding: 30rem 0 0;
+  padding: 20rem 0 0;
   margin: 0 auto;
 }
 
