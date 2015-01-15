@@ -500,50 +500,51 @@ h6, .h6 {
   box-sizing: border-box;
 }
 /* line 12, /Users/dan/working/devfe-st/static/scss/header.scss */
-.header a {
+.header a, .header a:hover {
   text-decoration: none !important;
+  color: inherit !important;
 }
-/* line 16, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 17, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.fixed {
   position: fixed;
   z-index: 100;
 }
-/* line 20, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 21, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.fixed.bottom {
   position: absolute;
   bottom: 0;
   top: auto;
 }
-/* line 27, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 28, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.no-spacer + .header-spacer {
   display: none;
 }
-/* line 32, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 33, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.blue .title, .header.blue .title {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #32437A;
 }
-/* line 35, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 36, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.blue .title a:hover, .header.blue .title a:hover {
   color: inherit;
 }
-/* line 39, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 40, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header.blue .subtitle, .header.blue .adjectives .adjective, .adjectives .header.blue .adjective {
   text-shadow: 0 0 #111;
   -webkit-text-shadow: 0 0 #111;
   -moz-text-shadow: 0 0 #111;
   color: #333;
 }
-/* line 45, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 46, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header .date {
   color: #bbb;
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
   -moz-text-shadow: 1px 1px #111;
 }
-/* line 49, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 50, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header .subtitle, .header .adjectives .adjective, .adjectives .header .adjective {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -553,7 +554,7 @@ h6, .h6 {
   font-weight: 400;
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
-/* line 56, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 57, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header .title {
   text-shadow: 1px 1px #111;
   -webkit-text-shadow: 1px 1px #111;
@@ -562,51 +563,51 @@ h6, .h6 {
   margin-left: -0.25rem;
   width: 100%;
 }
-/* line 64, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 65, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header .title .bold {
   padding-right: 0.5rem;
 }
-/* line 68, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 69, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header .title a:hover {
   color: white;
 }
 
-/* line 73, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 74, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header-spacer {
   height: 8.5rem;
 }
-/* line 75, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 76, /Users/dan/working/devfe-st/static/scss/header.scss */
 .header-spacer.with-subtitle {
   height: 12.5rem;
 }
 
-/* line 80, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 81, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives {
   display: inline !important;
 }
-/* line 83, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 84, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives .adjective {
   display: none;
 }
-/* line 87, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 88, /Users/dan/working/devfe-st/static/scss/header.scss */
 .adjectives .adjective.active {
   display: inline;
 }
 
-/* line 93, /Users/dan/working/devfe-st/static/scss/header.scss */
+/* line 94, /Users/dan/working/devfe-st/static/scss/header.scss */
 .fixed-spacer {
   height: 15rem;
   width: 100%;
 }
 
 @media screen and (max-width: 640px) {
-  /* line 99, /Users/dan/working/devfe-st/static/scss/header.scss */
+  /* line 100, /Users/dan/working/devfe-st/static/scss/header.scss */
   .title {
     font-size: 3rem !important;
     line-height: 4rem !important;
   }
 
-  /* line 103, /Users/dan/working/devfe-st/static/scss/header.scss */
+  /* line 104, /Users/dan/working/devfe-st/static/scss/header.scss */
   .subtitle, .adjectives .adjective {
     font-size: 2rem !important;
   }
@@ -3019,31 +3020,35 @@ h6, .h6 {
 .pages .page.white .header {
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 48 */
+/* line 46 */
+.pages .page.white .inner a:hover {
+  color: #bbb;
+}
+/* line 51 */
 .pages .page.blue {
   background-color: #32437A;
   color: white;
 }
-/* line 51 */
+/* line 54 */
 .pages .page.blue .header {
   background-color: rgba(50, 67, 122, 0.9);
 }
-/* line 55 */
+/* line 58 */
 .pages .page.with-nav > .inner {
   padding-right: 20rem;
 }
-/* line 60 */
+/* line 63 */
 .pages .page.with-image:not(:first-child) {
   height: 120%;
   background-color: transparent;
 }
-/* line 63 */
+/* line 66 */
 .pages .page.with-image:not(:first-child) .inner {
   height: 100%;
   max-height: 100rem;
 }
 
-/* line 72 */
+/* line 75 */
 .background {
   position: fixed;
   z-index: -1;
@@ -3051,7 +3056,7 @@ h6, .h6 {
   top: 0;
   width: 100%;
 }
-/* line 80 */
+/* line 83 */
 .background.with-nav {
   right: 18rem;
   left: 0;
@@ -3059,11 +3064,11 @@ h6, .h6 {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 89 */
+  /* line 92 */
   .pages .page.with-nav > .inner {
     padding-right: 1rem;
   }
-  /* line 92 */
+  /* line 95 */
   .pages .page:first-child > .inner {
     background: -moz-linear-gradient(top, rgba(50, 67, 122, 0) 0%, rgba(50, 67, 122, 0.4) 45%, #32437a 55%, #32437a 65%, #32437a 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(50, 67, 122, 0)), color-stop(45%, rgba(50, 67, 122, 0.4)), color-stop(55%, #32437a), color-stop(65% #32437a), color-stop(100% #32437a));
@@ -3073,11 +3078,11 @@ h6, .h6 {
     background: linear-gradient(to bottom, rgba(50, 67, 122, 0) 0%, rgba(50, 67, 122, 0.4) 45%, #32437a 55%, #32437a 65%, #32437a 100%);
   }
 
-  /* line 98 */
+  /* line 101 */
   .background.with-nav {
     display: none;
   }
-  /* line 102 */
+  /* line 105 */
   .background.hidden-desktop {
     position: absolute;
     top: 0;
@@ -3090,15 +3095,15 @@ h6, .h6 {
     background-position: top center;
   }
 
-  /* line 115 */
+  /* line 118 */
   #kickoff {
     height: auto;
   }
-  /* line 117 */
+  /* line 120 */
   #kickoff .background {
     background-size: cover;
   }
-  /* line 120 */
+  /* line 123 */
   #kickoff img {
     margin-top: -12.5rem;
   }

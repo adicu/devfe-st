@@ -9,8 +9,9 @@
     z-index: 50;
     @include border-box;
 
-    a {
+    a, a:hover {
         text-decoration: none !important;
+        color: inherit !important;
     }
 
     &.fixed {

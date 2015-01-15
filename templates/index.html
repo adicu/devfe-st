@@ -38,12 +38,17 @@
                 <!-- <li><a class="scroll" href="#judges"><p>Judges</p></a></li> -->
                 <!-- <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li> -->
                 <!-- <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li> -->
+                <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
             </ul>
             <div class="bottom-spacer"></div>
-            <ul class="menu bottom triple">
-                <li><a href="https://adicu.com"><p>ADI</p></a></li>
-                <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
-                <li><a href="http://old.adicu.com/devfest"><p>Old</p></a></li>
+            <ul class="menu bottom">
+                <li>
+                    <ul class="menu triple">
+                        <li><a href="https://adicu.com"><p>ADI</p></a></li>
+                        <li><a href="https://adicu.com/labs"><p>ADI Labs</p></a></li>
+                        <li><a href="http://old.adicu.com/devfest"><p>Old</p></a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -53,7 +58,7 @@
 {%- macro header(class, bold, thin, subtitle, url, id="") -%}
 <div class="header {{class}}" id="{{ id }}">
     <h1 class="title">
-        <a href="{{ url }}">
+        <a {% if url %}href="{{ url }}"{% endif %}>
             <span class="bold">{{bold | safe }}</span>{{thin | safe}}
         </a>
     </h1>
@@ -276,8 +281,9 @@
     </div>
     <div id="contact" class="page white with-nav" data-page="6">
         <div class="inner">
-            {{ header("blue", "Contact", "Us", None, "/") }}
-            <p>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. Questions?  <a href="mailto:devfest@adicu.com">Shoot us an email</a>.</p>
+            {{ header("blue", "Contact", "Us", None, "") }}
+            <h5>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. <a href="mailto:devfest@adicu.com">Shoot us an email</a> if you have any questions. You can connect with ADI on <a href='https://www.facebook.com/ADICU'>Facebook</a> and <a href='https://twitter.com/adicu'>Twitter</a>.  You should read our <a>Blog</a>.</h5>
+            <h5>This site was built by <a href="http://danrschlosser.com">Dan</a> and is maintained by <a href="https://adicu.com/labs">ADI Labs</a>.</h5>
         </div>
     </div>
 </div>
