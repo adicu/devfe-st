@@ -912,18 +912,22 @@ nav.fixed {
 }
 /* line 55, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav small h1 {
-  padding: 2rem 2rem 1rem;
+  padding: 1.25rem 2rem;
   font-size: 2rem;
   line-height: 2rem;
 }
 /* line 60, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav .bottom-spacer {
+  height: 5rem;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul {
   width: 18rem;
   width: 100%;
   position: relative;
   z-index: 1000;
 }
-/* line 66, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 69, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -932,7 +936,7 @@ nav ul li {
   width: 100%;
   z-index: 1000;
 }
-/* line 70, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 73, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -942,11 +946,11 @@ nav ul li a p {
   width: 100%;
   margin-bottom: 0;
 }
-/* line 75, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 78, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 80, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 83, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.bottom {
   position: absolute;
   bottom: 0;
@@ -957,31 +961,31 @@ nav ul.triple:after {
   content: " ";
   display: block;
 }
-/* line 86, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 89, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li {
   width: 33.333333%;
   display: inline-block;
   float: left;
 }
-/* line 90, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 93, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:first-child {
   text-align: left;
 }
-/* line 93, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 96, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) {
   text-align: center;
 }
-/* line 95, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 98, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) a p {
   padding: 1rem 0;
 }
-/* line 99, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 102, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(3) {
   text-align: right;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 108, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 111, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav {
     -webkit-transition: 0.3s 0 ease all;
     -moz-transition: 0.3s 0 ease all;
@@ -994,23 +998,39 @@ nav ul.triple li:nth-child(3) {
     bottom: 0;
     height: auto;
   }
-  /* line 116, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 120, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav > .outer {
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+  }
+  /* line 125, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav > .outer > .inner {
+    height: auto;
+    min-height: 100%;
+    position: relative;
+  }
+  /* line 132, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  nav > .outer::-webkit-scrollbar {
+    display: none;
+  }
+  /* line 137, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open {
     right: 0 !important;
   }
-  /* line 120, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 141, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar {
     width: 30px;
   }
-  /* line 122, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 143, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.one {
     transform: rotate(45deg);
   }
-  /* line 125, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 146, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.two {
     opacity: 0;
   }
-  /* line 128, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 149, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.three {
     transform: rotate(-45deg);
   }
