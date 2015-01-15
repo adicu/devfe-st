@@ -1,6 +1,8 @@
 @import 'base';
 
-
+$ham-height: 50px;
+$ham-padding: 1.5rem;
+$ham-bar-height: 2px;
 
 nav {
 	position: absolute;
@@ -11,6 +13,35 @@ nav {
     background-color: $offgray;
     color: $white;
     z-index: 1000;
+    height: 100%;
+    height: 100vh;
+
+    .ham {
+        position: absolute;
+        top: 0;
+        left: -$ham-height;
+        height: $ham-height;
+        width: $ham-height;
+        background-color: $offgray;
+
+        .bar {
+            position: absolute;
+            background-color: $white;
+            height: $ham-bar-height;
+            left: $ham-padding * 3/4;
+            right: $ham-padding * 3/4;
+
+            &.one {
+                top: $ham-padding;
+            }
+            &.two {
+                top: ($ham-height/2 - $ham-bar-height / 2);
+            }
+            &.three {
+                bottom: $ham-padding;
+            }
+        }
+    }
 
 	&.fixed {
 		position: fixed;
@@ -67,3 +98,17 @@ nav {
     }
 }
 
+@media screen and (max-width: $tablet-landscape-max) {
+    nav {
+        @include transition(0.3s);
+        position: fixed;
+        right: (-1 * $navbar-width) !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        &.open {
+            right: 0 !important;
+        }
+    }
+}

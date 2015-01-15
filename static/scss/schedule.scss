@@ -1,0 +1,89 @@
+@import 'base';
+
+$event-height: 8rem;
+$shortform-width: 20rem;
+$header-height: 8.5rem;
+$sidebar-padding: 1rem;
+
+.days-longform {
+	padding-left: $shortform-width;
+	margin-top: -3rem;
+	.day {
+		h2 {
+			padding-top: 1rem;
+			margin-top: 1rem;
+		}
+		.events {
+			@include clearfix;
+			margin: 1rem 0;
+		}
+		.event {
+			@include border-box;
+			padding-top: 1rem;
+			h5 {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.shortform-sidebar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: $shortform-width;
+	@include border-box;
+	background-color: $ultralightgray;
+	overflow: scroll;
+	& > .inner {
+		padding-top: $header-height;
+	}
+
+	.day {
+		h4 {
+			background-color: $verylightgray;
+			padding: 0.5rem $sidebar-padding;
+		}
+		a, a:hover {
+			text-decoration: none !important;
+			color: inherit !important;
+		}
+		.events {
+			padding: 0.5rem 0;
+			.event {
+				padding: 0 $sidebar-padding;
+				p {
+					margin: 0;
+				}
+				&:hover {
+					background-color: $verylightgray;
+				}
+			}
+		}
+	}
+	&.fixed {
+		position: fixed;
+
+		&.bottom {
+			position: absolute;
+			bottom: 0;
+			& > .inner {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+	&::-webkit-scrollbar {
+	    display: none;
+	}
+}
+
+@media screen and (max-width: $phone-max) {
+	.shortform-sidebar {
+		display: none;
+	}
+	.days-longform {
+		padding-left: 0;
+	}
+}

@@ -5,7 +5,9 @@
 @import 'buttons';
 @import 'registration';
 @import 'sponsors';
+@import 'schedule';
 @import 'faq';
+@import 'curriculum';
 
 .pages {
     z-index: 1;
@@ -79,5 +81,44 @@
         right: $navbar-width;
         left: 0;
         width: auto;
+    }
+}
+
+@media screen and (max-width: $tablet-landscape-max) {
+    .pages .page {
+        &.with-nav > .inner{
+            padding-right: 1rem;
+        }
+        &:first-child > .inner {
+            @include scrim(50, 67, 122);
+        }
+    }
+
+    .background {
+        &.with-nav {
+            display: none;
+        }
+
+        &.hidden-desktop {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            background-size: auto 65%;
+            background-position: top center;
+        }
+    }
+
+    #kickoff {
+        height: auto;
+        .background {
+            background-size: cover;
+        }
+        img {
+            margin-top: -12.5rem;
+        }
     }
 }

@@ -1,5 +1,44 @@
 $(function() {
 
+    /***********
+     * Buttons *
+     ***********/
+
+    $('a[href="#register"]').click(function(e) {
+        e.preventDefault();
+        $('nav').removeClass('open');
+        $('html, body').animate({'scrollTop': 0}, 500, function() {
+            $('#email').focus();
+        });
+    });
+
+    var $headerMeasure = $('#measure-header');
+
+    $('.scroll').click(function(e) {
+        e.preventDefault();
+        $('nav').removeClass('open');
+        var $dest = $($(this).attr('href')),
+            scrollTop;
+        if ($dest.data('offset') === "header") {
+            scrollTop = $dest.offset().top - $headerMeasure.outerHeight();
+        } else {
+            scrollTop = $dest.offset().top;
+        }
+        $('html, body').animate({'scrollTop': scrollTop}, 500);
+    });
+
+    $('.ham').click(function() {
+        $('nav').toggleClass('open');
+    });
+
+    $('nav').click(function(e) {
+        e.stopPropagation();
+    });
+
+    $(document).click(function() {
+        $('nav').removeClass('open');
+    })
+
     /**************
      * First Page *
      **************/
@@ -10,18 +49,6 @@ $(function() {
     setTimeout(function() {
         $('.scroll-down').addClass('fade-in-up');
     }, 1000);
-
-    $('a[href="#register"]').click(function(e) {
-        e.preventDefault();
-        $('html, body').animate({'scrollTop': 0}, 500, function() {
-            $('#email').focus();
-        });
-    });
-    $('.scroll').click(function(e) {
-        e.preventDefault();
-        var dest = $($(this).attr('href')).offset().top;
-        $('html, body').animate({'scrollTop': dest}, 500);
-    });
 
     setTimeout(setKey, 3000);
     function setKey() {
@@ -45,9 +72,9 @@ $(function() {
     /*************
      * Scrolling *
      *************/
-
+var md = new MobileDetect(window.navigator.userAgent);
+if (md.mobile() == null) {
     $(window).scroll(function() {
-
 
         /* Fadeout elements as they approach the top of the screen*/
 
@@ -89,6 +116,7 @@ $(function() {
         var $nav = $('nav'),
             $firstPage = $('.page[data-page="1"]'),
             $heroImg = $firstPage.find('.background'),
+            $shortformSidebar = $('.shortform-sidebar'),
             bottomOfViewport = $(window).scrollTop() + $(window).outerHeight(),
             pageToBottom = $firstPage.offset().top + $firstPage.height() - bottomOfViewport;
 
@@ -119,7 +147,6 @@ $(function() {
             }
         });
 
-
         /* Transition headers between pages */
         $.each($('.page'), function(_, page) {
             var $page = $(page),
@@ -142,12 +169,14 @@ $(function() {
                 $header.addClass('fixed');
                 if (pageNo == 2) {
                     $nav.addClass('fixed');
+                    $shortformSidebar.addClass('fixed');
                 }
             } else if (pageToTop > 0) {
                 /* Unfix the header when we start to see the page above it */
                 $header.removeClass('fixed');
                 if (pageNo == 2) {
                     $nav.removeClass('fixed');
+                    $shortformSidebar.removeClass('fixed');
                 }
             }
 
@@ -159,6 +188,26 @@ $(function() {
                 $prevHeader.removeClass('bottom');
             }
         });
+
+        /* Make sure the shortform sidebar looks good as it's leaving */
+        var shortformToTop = $shortformSidebar.offset().top,
+            $shortformInner = $('.shortform-sidebar > .inner'),
+            $shortformWrapper = $shortformSidebar.parent(),
+            shortformInnerToTop = $shortformInner.offset().top,
+            bottomOfShortformInner = shortformInnerToTop + $shortformInner.outerHeight(),
+            bottomOfShortformWrapper = $shortformWrapper.offset().top + $shortformWrapper.outerHeight(),
+            topOfViewport = $(window).scrollTop();
+
+        if ($shortformSidebar.hasClass('bottom') &&  shortformInnerToTop > topOfViewport) {
+            $shortformSidebar.removeClass('bottom');
+        } else if (bottomOfShortformInner > bottomOfShortformWrapper) {
+            $shortformSidebar.addClass('bottom');
+        }
     });
+} else {
+    /* mobile only */
+    $('.page:first-child').css({'height': $(window).height() * 2});
+    $('.header.fixed').removeClass('fixed');
+}
 });
 

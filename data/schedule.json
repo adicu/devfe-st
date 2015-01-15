@@ -1,33 +1,24 @@
 {
-	"workshops": [
+	"days": [
 		{
-			"id": 1,
-			"name": "Saturday, Feb 1st",
+			"day_id": 1,
+			"id": "day-1",
+			"name": "Saturday, January 31st",
+			"short_name": "Saturday, 1/31",
 			"events": [
 				{
-					"name": "Lunch",
-					"timespan": "12pm - 12:30pm",
+					"name": "Kickoff, Lunch, and Keynote",
+					"id": "31-kickoff-lunch-and-keynote",
+					"timespan": "12pm - 2pm",
 					"location": "Davis Auditorium",
-					"description": "Almuerzo, déjeuner, 午餐, hádegismatur, 점심, kwasemini, f00d. Time for some smackerels."
-				},
-				{
-					"name": "Kickoff",
-					"timespan": "12:30pm - 1pm",
-					"location": "Davis Auditorium with Simulcast in 233 Mudd",
-					"description": "LET THE GAMES BEGIN! Drink in the buzzing excitement of DevFest. Prepare yourselves for the start of an awesome week!",
-					"class": "blue"
-				},
-				{
-					"name": "Pitchfest",
-					"timespan": "1pm - 2pm",
-					"location": "Davis Auditorium",
-					"description": "Pitch your ideas to potential teammates and form teams.  Saturday's Pitchfest is geared towards hackers who don't plan on attending the Environment Setup Workshop."
+					"description": "The official kickoff for DevFest! Enjoy a delicious lunch, meet and bond with other learners and hackers, and get pumped for the week ahead with a talk from our awesome keynote speaker."
 				},
 				{
 					"name": "Environment Setup",
-					"timespan": "1pm - 4pm",
+					"id": "31-environment-setup",
+					"timespan": "2pm - 5pm",
 					"location": "233 Mudd",
-					"description": "Come learn how to properly set up your computer for DevFest. All machines welcome (yes, even you, Windows).",
+					"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
 					"buttons": [
 						{
 							"title": "Instructions",
@@ -36,28 +27,18 @@
 					]
 				},
 				{
-					"name": "Open Hacking",
+					"name": "Open Hack Space",
+					"id": "31-open-hack-space",
 					"timespan": "2pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
+					"description": "If you know Python and your computer is already to go, come by our Open Hack Space. We’ll have snacks, friends, and programming, the only things a true hacker could want!"
 				},
 				{
 					"name": "Introduction to Python",
-					"timespan": "2:45pm - 4:45pm",
+					"id": "31-introduction-to-python",
+					"timespan": "3pm - 7pm",
 					"location": "627 & 233 Mudd",
-					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language.",
-					"buttons": [
-						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/python/"
-						}
-					]
-				},
-				{
-					"name": "Introduction to Python",
-					"timespan": "5:00pm - 6:00pm",
-					"location": "627 Mudd",
-					"description": "Learn about Python, a great programming language for beginners to advanced hackers. No previous experience required. No snakes were killed in the making of this language.",
+					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
 					"buttons": [
 						{
 							"title": "Tutorial",
@@ -68,32 +49,32 @@
 			]
 		},
 		{
-			"id": 2,
-			"name": "Sunday, Feb 2nd",
+			"day_id": 2,
+			"id": "day-2",
+			"name": "Sunday, February 1st",
+			"short_name": "Sunday, 2/1",
 			"events": [
 				{
-					"name": "Open Hacking",
-					"timespan": "3pm - 5pm",
+					"name": "Open Hack Space",
+					"id": "1-open-hack-space",
+					"timespan": "1pm - 5pm",
 					"location": "CS Lounge",
-					"description": "Some light hacking in the midst of the big sportsball game. Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT"
+					"description": "Not a football fan, or you just can’t get enough ADI? Perfect! Skip the Super Bowl and join us for more open hacking! Form a team, brainstorm project ideas, or start your project early!"
 				}
 			]
 		},
 		{
-			"id": 3,
-			"name": "Monday, Feb 3rd",
+			"day_id": 3,
+			"id": "day-3",
+			"name": "Monday, February 2nd",
+			"short_name": "Monday, 2/2",
 			"events": [
 				{
-					"name": "Dinner",
-					"timespan": "8pm - 8:30pm",
-					"location": "CS Lounge",
-					"description": "Come grab a delicious dinner before you head over to the Introduction to Flask workshop.  Or stick around for open hacking!"
-				},
-				{
-					"name": "Introduction to Flask",
-					"timespan": "9:00pm - 10:30pm",
+					"name": "Build Apps with Flask",
+					"id": "2-build-apps-with-flask",
+					"timespan": "8pm - 10pm",
 					"location": "IAB 417",
-					"description": "Come learn about Flask and start creating your web app using Python. Flask is a microframework that's very easy to setup and has excellent documentation on its website.",
+					"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
 					"buttons" : [
 						{
 							"title": "Tutorial",
@@ -102,10 +83,11 @@
 					]
 				},
 				{
-					"name": "Open Hacking",
+					"name": "Open Hack Space",
+					"id": "2-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge while the space is still fresh and clean. SNACKS PRESENT",
+					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks.",
 					"sponsor": {
 						"id": "venmo",
 						"img": "venmo.png",
@@ -115,20 +97,17 @@
 			]
 		},
 		{
-			"id": 4,
-			"name": "Tuesday, Feb 4th",
+			"day_id": 4,
+			"id": "day-4",
+			"name": "Tuesday, February 3rd",
+			"short_name": "Tuesday, 2/3",
 			"events": [
 				{
-					"name": "Dinner",
-					"timespan": "8pm - 8:30pm",
-					"location": "CS Lounge",
-					"description": "Come grab a delicious dinner before you head over to the Introduction to APIs workshop.  Or stick around for open hacking!"
-				},
-				{
-					"name": "Introduction to APIs",
+					"name": "Leverage the Web with APIs",
+					"id": "3-leverage-the-web-with-apis",
 					"timespan": "8:30pm - 10pm",
 					"location": "IAB 417",
-					"description": "An API, or Application Programming Interface, is a way to get resources from another website. And boy, are there tons of APIs! Come prepare your brain so you know what's to come at API demos on Friday! This workshop will take a step aside from our Flask project to build a foundation of knowledge around APIs and how they are used. This workshop will be anything but RESTful -- pun intended, you shall understand in time, young grasshopper.",
+					"description": "The internet has a lot of data; learn how to use it to power your applications! With APIs, you can do things like login to Facebook, get Yelp review information, or present a Google Map. In this workshop, we’ll make requests and take responses, uses the data we retrieve to make our app awesome.",
 					"buttons" : [
 						{
 							"title": "Tutorial",
@@ -137,10 +116,11 @@
 					]
 				},
 				{
-					"name": "Open Hacking",
+					"name": "Open Hack Space",
+					"id": "3-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT",
+					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks.",
 					"sponsor": {
 						"id": "bloomberg",
 						"img": "bloom.png",
@@ -150,20 +130,17 @@
 			]
 		},
 		{
-			"id": 5,
-			"name": "Wednesday, Feb 5th",
+			"day_id": 5,
+			"id": "day-5",
+			"name": "Wednesday, February 4th",
+			"short_name": "Wednesday, 2/4",
 			"events": [
 				{
-					"name": "Dinner",
-					"timespan": "8pm - 8:30pm",
-					"location": "CS Lounge",
-					"description": "Come grab a delicious dinner before you head over to the Introduction to HTML and Templating workshop.  Or stick around for open hacking!"
-				},
-				{
-					"name": "Introduction to HTML and Templating",
-					"timespan": "8:45pm - 10:15pm",
+					"name": "Build Websites with HTML",
+					"id": "4-build-websites-with-html",
+					"timespan": "8pm - 10pm",
 					"location": "IAB 417",
-					"description": "Conjure up websites in our workshop about HTML and templating. Share your important messages through the interwebs, like \"Hello World\" or pictures of your cat.",
+					"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
 					"buttons" : [
 						{
 							"title": "Tutorial",
@@ -172,22 +149,26 @@
 					]
 				},
 				{
-					"name": "Open Hacking",
+					"name": "Open Hack Space",
+					"id": "4-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
-					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. SNACKS PRESENT"
+					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks."
 				}
 			]
 		},
 		{
-			"id": 6,
-			"name": "Thursday, Feb 6th",
+			"day_id": 6,
+			"id": "day-6",
+			"name": "Thursday, February 5th",
+			"short_name": "Thursday, 2/5",
 			"events": [
 				{
-					"name": "Introduction to CSS",
+					"name": "Style and Layout with CSS",
+					"id": "5-style-and-layout-with-css",
 					"timespan": "8:30pm - 10pm",
 					"location": "Pupin 301",
-					"description": "Our last workshop of the week before send you off into the world as a new hacker! CSS, or Cascading Style Sheets, is a styling language that is used to arrange and stylize HTML elements. Your websites will look better than your CS professors', guaranteed or your money back!",
+					"description": "No one likes a plain website! Come and find out how to make your websites pop. We’ll learn Foundation, one of the most ubiquitous CSS frameworks that is used by many startups and applications. You’ll see how easy it is to have a professional-looking site up in no time.",
 					"buttons" : [
 						{
 							"title": "Tutorial",
@@ -196,68 +177,64 @@
 					]
 				},
 				{
-					"name": "Open Hacking",
+					"name": "Open Hack Space",
+					"id": "5-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
 					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. Crunch time approaches! SNACKS PRESENT"
 				}
 			]
-		}
-	],
-	"hackathon": [
+		},
 		{
-			"id": 7,
-			"name": "Friday, Feb 7th",
+			"day_id": 7,
+			"id": "day-7",
+			"name": "Friday, February 6th",
+			"short_name": "Friday, 2/6",
 			"events": [
 				{
 					"name": "API Demos",
-					"timespan": "6pm - 7pm",
+					"id": "6-api-demos",
+					"timespan": "4pm - 5pm",
 					"location": "Havemeyer 309",
-					"description": "We have some amazing tech companies presenting their APIs. This is a great opportunity to figure out which APIs to incorporate into your app. Application programming interface? More like AMAZING programming interface!"
+					"description": "Hear from our sponsor companies to learn about cool APIs available for use. This is a great way to brainstorm potential project ideas, as the API generally guides the project. It also allows you a to increase your knowledge and become better acquainted with industry practices. You can also connect with some awesome engineers from in and around New York City."
 				},
 				{
-					"name": "Pitchfest",
-					"timespan": "7pm",
-					"location": "Havemeyer 309",
-					"description": "Pitch your ideas to potential teammates and form teams."
-				},
-				{
-					"name": "Dinner",
-					"timespan": "7:30pm - 8:30pm",
+					"name": "The DevFest Hackathon",
+					"id": "6-hackathon",
+					"timespan": "5pm Friday - 12pm Saturday",
 					"location": "Watson Library, Uris",
-					"description": "DINNER NOMZ. The last meal until breakfast, second breakfast, elevenses..."
-				},
-				{
-					"name": "Hacking Starts!",
-					"timespan": "8pm",
-					"location": "Watson Library, Uris",
-					"description": "Hack till you drop (you can sleep later). Suggested song for the last hour: The Final Countdown. There will be food and caffeine to keep you up throughout the night. Good luck!",
+					"description": "19 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. ",
 					"class": "blue"
 				},
 				{
 					"name": "Late-night Surprise!",
+					"id": "6-late-night-surprise",
 					"timespan": "??? - ???",
 					"location": "???",
-					"description": ""
+					"description": "You'll have to be there to find out what this is..."
 				}
 			]
 		},
 		{
-			"id": 8,
-			"name": "Saturday, Feb 8th",
+			"day_id": 8,
+			"id": "day-8",
+			"name": "Saturday, February 7th",
+			"short_name": "Saturday, 2/7",
 			"events": [
 				{
-					"name": "Judging",
+					"name": "Demos",
+					"id": "7-demos",
 					"timespan": "12pm - 3pm",
 					"location": "Havermeyer 309",
-					"description": "JUDGEMENT DAY. Don't worry, you won't be smote; the judges will understand that you're probably sleep deprived. The most important thing is to have fun and be proud of your creation!",
+					"description": "Show off your stuff! After a long night of building, you will be able to present your hacks in front of our judges and engineer sponsors. Unlike other hackathons, every project, no matter how small, can be demoed! DevFest demos are a great place to pitch your first application. Get great feedback from our judges, and even have a chance to win a prize!",
 					"class": "blue"
 				},
                 {
                     "name": "Post-Demos Celebration: DevFest Afterparty",
-                    "timespan": "3:30pm - 4:30pm",
+                    "id": "7-post-demos-celebration-devfest-afterparty",
+                    "timespan": "3pm - 4pm",
                     "location": "Lerner Party Space",
-                    "description": "Anyone & everyone who demoed is invited to come eat delicious food while mingling with the other talented participants, sponsoring companies, and our esteemed judges."
+                    "description": "You’re tired, but proud of the work you have done and the product you created. Before you crash, come and meet our judges and sponsors at our DevFest conclusion mixer. Learn about job opportunities or just talk tech. We’ll have yummy snacks too!"
                }
 			]
 		}

@@ -42,6 +42,10 @@
         }
 
     }
+    .date {
+        color: #bbb;
+        @include text-shadow(1px, 1px, $black);
+    }
     .subtitle {
         @include text-shadow(1px, 1px, $black);
         margin-top: -0.5rem;
@@ -55,6 +59,7 @@
         @extend .upper;
         color: $white;
         margin-left: -0.25rem;
+        width: 100%;
 
         .bold {
             padding-right: 0.5rem;
@@ -92,8 +97,8 @@
 
 @media screen and (max-width: $phone-max) {
     .title {
-        font-size: 4rem !important;
-        line-height: 5rem !important;
+        font-size: 3rem !important;
+        line-height: 4rem !important;
     }
     .subtitle {
         font-size: 2rem !important;

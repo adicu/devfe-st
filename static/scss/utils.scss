@@ -10,6 +10,10 @@
     text-transform: uppercase;
 }
 
+.center {
+    text-align: center;
+}
+
 @mixin text-shadow($height, $width, $color) {
     text-shadow: $height $width $color;
     -webkit-text-shadow: $height $width $color;
@@ -38,6 +42,23 @@
     box-sizing: border-box;
 }
 
+@mixin scrim($r, $g, $b) {
+    @include _scrim(rgba($r, $g, $b, 0), 0%,
+                    rgba($r, $g, $b, 0.4), 45%,
+                    rgba($r, $g, $b, 1), 55%,
+                    rgba($r, $g, $b, 1), 65%,
+                    rgba($r, $g, $b, 1), 100%);
+}
+
+@mixin _scrim ($v1_c, $v1_p, $v2_c, $v2_p, $v3_c, $v3_p, $v4_c, $v4_p, $v5_c, $v5_p) {
+    background: -moz-linear-gradient(top, $v1_c $v1_p, $v2_c $v2_p, $v3_c $v3_p, $v4_c $v4_p, $v5_c $v5_p);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($v1_p, $v1_c), color-stop($v2_p, $v2_c), color-stop($v3_p, $v3_c), color-stop($v4_p $v4_c), color-stop($v5_p $v5_c));
+    background: -webkit-linear-gradient(top, $v1_c $v1_p, $v2_c $v2_p, $v3_c $v3_p, $v4_c $v4_p, $v5_c $v5_p);
+    background: -o-linear-gradient(top, $v1_c $v1_p, $v2_c $v2_p, $v3_c $v3_p, $v4_c $v4_p, $v5_c $v5_p);
+    background: -ms-linear-gradient(top, $v1_c $v1_p, $v2_c $v2_p, $v3_c $v3_p, $v4_c $v4_p, $v5_c $v5_p);
+    background: linear-gradient(to bottom, $v1_c $v1_p, $v2_c $v2_p, $v3_c $v3_p, $v4_c $v4_p, $v5_c $v5_p);
+}
+
 @mixin clearfix {
     &:after {
         clear: both;
@@ -48,4 +69,28 @@
 
 .hidden {
     display: none;
+}
+
+@media screen and (min-width: $desktop-min) {
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet-portrait-min) {
+    .phone-only {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $tablet-landscape-max) {
+    .hidden-tablet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $phone-max) {
+    .hidden-phone {
+        display: none;
+    }
 }

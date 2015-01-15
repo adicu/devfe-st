@@ -1,0 +1,32 @@
+@import 'base';
+
+.tracks {
+	@include clearfix;
+	margin: 0 -1rem;
+
+	.track {
+		width: 50%;
+		padding: 1rem;
+		@include border-box;
+		display: inline-block;
+		float: left;
+
+		& > .inner {
+			border: 1px solid $blue;
+			padding: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: $phone-max) {
+	.tracks {
+		margin: 0;
+
+		.track {
+			padding: 0;
+			width: 100%;
+			display: block;
+			margin-top: 1rem;
+		}
+	}
+}

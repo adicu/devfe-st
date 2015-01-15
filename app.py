@@ -14,6 +14,9 @@ def index():
         with open(app.config['EMAILS_FILENAME'], 'a') as emails:
             emails.write(email + '\n')
         return render_template('index.html', submit=True)
+
+    if request.args.get('force'):
+        load_data()
     return render_template('index.html', **data)
 
 

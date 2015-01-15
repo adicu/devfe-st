@@ -2,9 +2,14 @@
 
 p.focus {
     @extend .h4;
+    font-family: $slab !important;
+    text-transform: none !important;
     margin-bottom: 1rem;
     &.focus-centered {
         text-align: center;
+    }
+    a {
+        text-decoration: none !important;
     }
 }
 
@@ -25,7 +30,7 @@ p.focus {
 
 .centered {
     max-width: $content-width;
-    padding: 35vh 0 25vh;
+    padding: 30rem 0 0;
     margin: 0 auto;
 }
 
@@ -84,5 +89,17 @@ p.focus {
     }
     input {
         width: 30rem;
+    }
+}
+
+@media screen and (max-width: $tablet-landscape-max) {
+    .centered {
+        padding-top: 20rem;
+    }
+}
+
+@media screen and (max-width: $phone-max) {
+    .centered {
+        padding-top: 10rem;
     }
 }
