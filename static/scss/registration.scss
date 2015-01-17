@@ -1,10 +1,9 @@
 @import 'base';
 
 p.focus {
-    @extend .h4;
-    font-family: $slab !important;
+    @extend .h3;
     text-transform: none !important;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     &.focus-centered {
         text-align: center;
     }
@@ -101,5 +100,11 @@ p.focus {
 @media screen and (max-width: $phone-max) {
     .centered {
         padding-top: 10rem;
+    }
+    p.focus {
+        width: 90%;
+        margin-bottom: 2rem;
+        font-size: 1.2rem !important;
+        line-height: 2rem !important;
     }
 }

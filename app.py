@@ -13,7 +13,7 @@ def index():
         email = request.form['email']
         with open(app.config['EMAILS_FILENAME'], 'a') as emails:
             emails.write(email + '\n')
-        return render_template('index.html', submit=True)
+        return render_template('index.html', submit=True, **data)
 
     if request.args.get('force'):
         load_data()

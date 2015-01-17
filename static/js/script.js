@@ -206,7 +206,7 @@ if (md.mobile() == null) {
     });
 } else {
     /* mobile only */
-    $('.page:first-child').css({'height': $(window).height() * 2});
+    $('.page:first-child').css({'min-height': $(window).height() * 2});
     $('.header.fixed').removeClass('fixed');
 }
 });

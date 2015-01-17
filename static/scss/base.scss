@@ -2,7 +2,7 @@
 @import 'media_queries';
 @import 'utils';
 
-$content-width: 70rem;
+$content-width: 75rem;
 $navbar-width: 18rem;
 $extra-bold: 800;
 $bold: 700;
@@ -20,7 +20,7 @@ body, html {
     height: 100%;
 }
 
-p, label {
+p, .p, label {
     margin-bottom: 0.3125rem;
     font-family: $sans;
     font-weight: $thin;
@@ -42,7 +42,7 @@ ul li {
 
 em { font-style: italic; }
 
-strong, .bold { font-weight: $bold; }
+strong, .bold { font-weight: $extra-bold; }
 
 img {
     max-width: 100%;
@@ -95,9 +95,9 @@ h2, .h2 {
 }
 h3, .h3 {
     font-family: $sans;
-    font-weight: $regular;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-weight: $thin;
+    font-size: 2.2rem;
+    line-height: 3rem;
 }
 h4, .h4 {
     font-family: $sans;

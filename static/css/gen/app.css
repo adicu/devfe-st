@@ -89,7 +89,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -118,7 +118,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -178,15 +178,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -333,7 +333,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -362,7 +362,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -422,15 +422,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -703,7 +703,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -732,7 +732,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -792,15 +792,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1127,7 +1127,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -1156,7 +1156,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -1216,15 +1216,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1290,7 +1290,7 @@ footer {
 /* line 8, /Users/dan/working/devfe-st/static/scss/footer.scss */
 footer > .inner {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 75rem;
   width: 100%;
 }
 /* line 14, /Users/dan/working/devfe-st/static/scss/footer.scss */
@@ -1389,7 +1389,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -1418,7 +1418,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -1478,15 +1478,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1691,7 +1691,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -1720,7 +1720,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -1780,15 +1780,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1846,20 +1846,19 @@ h6, .h6 {
 }
 /* line 3, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus {
-  font-family: "Roboto Slab", Georgia, serif !important;
   text-transform: none !important;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-/* line 8, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 7, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus.focus-centered {
   text-align: center;
 }
-/* line 11, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 10, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus a {
   text-decoration: none !important;
 }
 
-/* line 16, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 15, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .scroll-down {
   position: absolute;
   bottom: 3rem;
@@ -1869,26 +1868,26 @@ p.focus a {
   text-align: center;
   opacity: 0;
 }
-/* line 25, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 24, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .scroll-down p {
   margin: 0;
   line-height: 1.2rem;
 }
 
-/* line 31, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 30, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .centered {
-  max-width: 70rem;
+  max-width: 75rem;
   padding: 20rem 0 0;
   margin: 0 auto;
 }
 
-/* line 37, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 36, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #register {
   height: 200%;
   min-height: 100rem;
   position: relative;
 }
-/* line 41, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 40, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #register > .inner {
   height: 100%;
   background-color: rgba(50, 67, 122, 0.5);
@@ -1897,11 +1896,11 @@ p.focus a {
   right: 0;
 }
 
-/* line 50, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 49, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form {
   position: relative;
 }
-/* line 52, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 51, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form .submit-success {
   position: absolute;
   right: -1rem;
@@ -1911,7 +1910,7 @@ p.focus a {
   vertical-align: middle;
   padding: 0.3125rem;
 }
-/* line 62, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 61, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form input {
   background-color: transparent;
   border: 0;
@@ -1925,7 +1924,7 @@ p.focus a {
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
 
-/* line 75, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 74, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration {
   position: absolute;
   height: 2rem;
@@ -1937,7 +1936,7 @@ p.focus a {
   opacity: 0;
   text-align: center;
 }
-/* line 85, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 84, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration label {
   display: block;
   margin-top: 1rem;
@@ -1945,21 +1944,29 @@ p.focus a {
   -webkit-text-shadow: 1px 1px #111;
   -moz-text-shadow: 1px 1px #111;
 }
-/* line 90, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 89, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration input {
   width: 30rem;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 96, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 95, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 20rem;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 102, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 101, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 10rem;
+  }
+
+  /* line 104, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  p.focus {
+    width: 90%;
+    margin-bottom: 2rem;
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
   }
 }
 /* line 1, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
@@ -2144,7 +2151,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -2173,7 +2180,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -2233,15 +2240,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -2495,7 +2502,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -2524,7 +2531,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -2584,15 +2591,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -2780,7 +2787,7 @@ body, html {
 }
 
 /* line 23, /Users/dan/working/devfe-st/static/scss/base.scss */
-p, label {
+p, .p, label {
   margin-bottom: 0.3125rem;
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
@@ -2809,7 +2816,7 @@ em {
 
 /* line 45, /Users/dan/working/devfe-st/static/scss/base.scss */
 strong, .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* line 47, /Users/dan/working/devfe-st/static/scss/base.scss */
@@ -2869,15 +2876,15 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, #registration-form input {
+h3, .h3, p.focus, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 /* line 102, /Users/dan/working/devfe-st/static/scss/base.scss */
-h4, .h4, p.focus {
+h4, .h4 {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
