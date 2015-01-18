@@ -178,7 +178,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -422,7 +422,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -792,7 +792,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1216,7 +1216,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1478,7 +1478,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1780,7 +1780,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1847,7 +1847,7 @@ h6, .h6 {
 /* line 3, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus {
   text-transform: none !important;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
 }
 /* line 7, /Users/dan/working/devfe-st/static/scss/registration.scss */
 p.focus.focus-centered {
@@ -1896,11 +1896,11 @@ p.focus a {
   right: 0;
 }
 
-/* line 49, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 53, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form {
   position: relative;
 }
-/* line 51, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 55, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form .submit-success {
   position: absolute;
   right: -1rem;
@@ -1910,7 +1910,7 @@ p.focus a {
   vertical-align: middle;
   padding: 0.3125rem;
 }
-/* line 61, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 65, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form input {
   background-color: transparent;
   border: 0;
@@ -1924,7 +1924,7 @@ p.focus a {
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
 
-/* line 74, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 78, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration {
   position: absolute;
   height: 2rem;
@@ -1936,7 +1936,7 @@ p.focus a {
   opacity: 0;
   text-align: center;
 }
-/* line 84, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 88, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration label {
   display: block;
   margin-top: 1rem;
@@ -1944,29 +1944,44 @@ p.focus a {
   -webkit-text-shadow: 1px 1px #111;
   -moz-text-shadow: 1px 1px #111;
 }
-/* line 89, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 93, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration input {
   width: 30rem;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 95, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 20rem;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 101, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 10rem;
   }
 
-  /* line 104, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 108, /Users/dan/working/devfe-st/static/scss/registration.scss */
   p.focus {
     width: 90%;
     margin-bottom: 2rem;
     font-size: 1.2rem !important;
     line-height: 2rem !important;
+  }
+}
+@media screen and (max-height: 479px) {
+  /* line 117, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  .registration {
+    bottom: 12rem;
+  }
+
+  /* line 120, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  .centered {
+    padding-top: 2rem;
+  }
+  /* line 122, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  .centered br {
+    display: none;
   }
 }
 /* line 1, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
@@ -2240,7 +2255,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -2591,7 +2606,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -2876,7 +2891,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -3098,7 +3113,7 @@ h6, .h6 {
     width: 100%;
     height: 100%;
     right: 0;
-    background-size: auto 65%;
+    background-size: auto 75%;
     background-position: top center;
   }
 

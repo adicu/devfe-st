@@ -8,11 +8,17 @@ $(function() {
         e.preventDefault();
         $('nav').removeClass('open');
         $('html, body').animate({'scrollTop': 0}, 500, function() {
-            $('#email').focus();
+            $('#register-button')[0].click();
         });
     });
 
-    var $headerMeasure = $('#measure-header');
+    var $headerMeasure = $('#measure-header'),
+        mobileRespond = function() {
+            /* mobile only */
+            console.log("change")
+            $('.page:first-child').css({'min-height': $(window).height() * 2});
+            $('.header.fixed').removeClass('fixed');
+        };
 
     $('.scroll').click(function(e) {
         e.preventDefault();
@@ -86,15 +92,15 @@ if (md.mobile() == null) {
                 // The total distance the element will travel while fading.
                 totalTravelDistance = $elem.height() + $navbar.outerHeight() + offset,
                 linear = Math.min(Math.max(0, distanceToOffscreen)/totalTravelDistance, 1);
-            return linear
+            return linear*linear
         }
         $.each($('.fade-out'), function(_, elem) {
             var $elem = $(elem),
                 opacity = fadeoutPercent($elem);
-                $elem.css({'opacity': opacity});
-            $elem.find('*').each(function(_, el) {
-                $(el).css({'opacity': opacity});
-            });
+            $elem.css({'opacity': opacity});
+            // $elem.find('*').each(function(_, el) {
+            //     $(el).css({'opacity': opacity});
+            // });
         });
 
 
@@ -205,9 +211,10 @@ if (md.mobile() == null) {
         }
     });
 } else {
-    /* mobile only */
-    $('.page:first-child').css({'min-height': $(window).height() * 2});
-    $('.header.fixed').removeClass('fixed');
+    window.addEventListener("resize", mobileRespond, false);
+    window.addEventListener("orientationchange", mobileRespond, false);
+    mobileRespond();
+    $('.page:first-child').css({'height': $('.page:first-child').height()})
 }
 });
 

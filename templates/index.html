@@ -105,27 +105,12 @@
             {%- endcall -%}
             <div class="sub-page">
                 <div class="registration fade-out animated">
-                    <form id="registration-form" method="post" action="">
-                        <input type="email"
-                               name="email"
-                               id="email"
-                               required
-                               spellcheck="false"
-                               autocomplete="off"
-                               placeholder="you@columbia.edu">
-                        <label for="email">
-                        {%- if submit -%}
-                            Thanks!  We'll be in touch.
-                        {%- else -%}
-                            Enter your email to receive updates
-                        {%- endif -%}
-                        </label>
-                    </form>
+                    <a href="http://bit.ly/devfest2015" id="register-button" class="button white-inverse">Register Today</a>
                 </div>
                 <div class="scroll-down fade-out animated">
                     <a class="scroll" href="#about">
-                        <p>Learn More</p>
-                        <p><i class="fa fa-chevron-down"></i></p>
+                        <p class="fade-out">Learn More</p>
+                        <p><i class="fa fa-chevron-down fade-out"></i></p>
                     </a>
                 </div>
             </div>
@@ -134,17 +119,13 @@
                 <p class="focus focus-centered fade-out">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about <strong>learning, community, and building amazing things with technology</strong>.</p>
                 <p class="focus focus-centered fade-out">
                     <a class="white-inverse button" href="#register">
-                        {%- if submit -%}
-                            We'll be in touch.
-                        {%- else -%}
-                            Stay Informed
-                        {%- endif -%}
+                        Register Today.
                     </a>
                 </p>
-                <div class="scroll-down fade-out animated">
+                <div class="scroll-down animated">
                     <a class="scroll" href="#schedule">
-                        <p>Get the Details</p>
-                        <p><i class="fa fa-chevron-down"></i></p>
+                        <p class="fade-out">Get the Details</p>
+                        <p><i class="fa fade-out fa-chevron-down"></i></p>
                     </a>
                 </div>
             </div>

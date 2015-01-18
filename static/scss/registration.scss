@@ -3,7 +3,7 @@
 p.focus {
     @extend .h3;
     text-transform: none !important;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     &.focus-centered {
         text-align: center;
     }
@@ -44,6 +44,10 @@ p.focus {
         left: 0;
         right: 0;
     }
+}
+
+#register-button {
+    @extend .h3;
 }
 
 #registration-form {
@@ -106,5 +110,17 @@ p.focus {
         margin-bottom: 2rem;
         font-size: 1.2rem !important;
         line-height: 2rem !important;
+    }
+}
+
+@media screen and (max-height: $phone-landscape-height-max) {
+    .registration {
+        bottom: 12rem;
+    }
+    .centered {
+        padding-top: 2rem;
+        br {
+            display: none;
+        }
     }
 }
