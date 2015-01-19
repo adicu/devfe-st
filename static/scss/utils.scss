@@ -67,6 +67,12 @@
     }
 }
 
+@mixin transform($rule) {
+    -webkit-transform: $rule;
+    -ms-transform: $rule;
+    transform: $rule;
+}
+
 .hidden {
     display: none;
 }

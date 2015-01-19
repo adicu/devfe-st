@@ -141,13 +141,13 @@ nav {
                 .bar {
                     width: 30px; //(($ham-height - 2*$ham-padding) * 1.41421356237 + $ham-bar-height);
                     &.one {
-                        transform: rotate(45deg);
+                        @include transform(rotate(45deg));
                     }
                     &.two {
                         opacity: 0;
                     }
                     &.three {
-                        transform: rotate(-45deg);
+                        @include transform(rotate(-45deg));
                     }
                 }
             }
