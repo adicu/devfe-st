@@ -26,7 +26,7 @@ nav {
 
         .bar {
             @include transition(0.3s);
-            transform-origin: ($ham-bar-height / 2) ($ham-bar-height / 2);
+            @include transform-origin(($ham-bar-height / 2) ($ham-bar-height / 2));
             position: absolute;
             background-color: $white;
             height: $ham-bar-height;

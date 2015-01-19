@@ -73,6 +73,12 @@
     transform: $rule;
 }
 
+@include transform-origin($offset) {
+    -webkit-transform-origin: $offset;
+    -ms-transform-origin: $offset;
+    transform-origin: $offset;
+}
+
 .hidden {
     display: none;
 }
