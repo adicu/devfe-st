@@ -49,31 +49,31 @@
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -293,31 +293,31 @@ h6, .h6 {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -663,31 +663,31 @@ h6, .h6 {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -884,6 +884,8 @@ nav .ham .bar {
   -moz-transition: 0.3s 0 ease all;
   -o-transition: 0.3s 0 ease all;
   transition: 0.3s 0 ease all;
+  -webkit-transform-origin: 2px 2px;
+  -ms-transform-origin: 2px 2px;
   transform-origin: 2px 2px;
   position: absolute;
   background-color: white;
@@ -1025,6 +1027,8 @@ nav ul.triple li:nth-child(3) {
   }
   /* line 143, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.one {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   /* line 146, /Users/dan/working/devfe-st/static/scss/navbar.scss */
@@ -1033,6 +1037,8 @@ nav ul.triple li:nth-child(3) {
   }
   /* line 149, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.three {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 }
@@ -1087,31 +1093,31 @@ nav ul.triple li:nth-child(3) {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -1349,31 +1355,31 @@ footer a, footer a:hover {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -1651,31 +1657,31 @@ h6, .h6 {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -1868,26 +1874,30 @@ p.focus a {
   text-align: center;
   opacity: 0;
 }
-/* line 24, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 23, /Users/dan/working/devfe-st/static/scss/registration.scss */
+.scroll-down a {
+  text-decoration: none !important;
+}
+/* line 26, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .scroll-down p {
   margin: 0;
   line-height: 1.2rem;
 }
 
-/* line 30, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 32, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .centered {
   max-width: 75rem;
   padding: 20rem 0 0;
   margin: 0 auto;
 }
 
-/* line 36, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 38, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #register {
   height: 200%;
   min-height: 100rem;
   position: relative;
 }
-/* line 40, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 42, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #register > .inner {
   height: 100%;
   background-color: rgba(50, 67, 122, 0.5);
@@ -1896,11 +1906,11 @@ p.focus a {
   right: 0;
 }
 
-/* line 53, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 55, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form {
   position: relative;
 }
-/* line 55, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 57, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form .submit-success {
   position: absolute;
   right: -1rem;
@@ -1910,7 +1920,7 @@ p.focus a {
   vertical-align: middle;
   padding: 0.3125rem;
 }
-/* line 65, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 67, /Users/dan/working/devfe-st/static/scss/registration.scss */
 #registration-form input {
   background-color: transparent;
   border: 0;
@@ -1924,7 +1934,7 @@ p.focus a {
   font-family: "Lato", Helvetica, Ariel sans-serif;
 }
 
-/* line 78, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 80, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration {
   position: absolute;
   height: 2rem;
@@ -1936,7 +1946,7 @@ p.focus a {
   opacity: 0;
   text-align: center;
 }
-/* line 88, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 90, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration label {
   display: block;
   margin-top: 1rem;
@@ -1944,24 +1954,24 @@ p.focus a {
   -webkit-text-shadow: 1px 1px #111;
   -moz-text-shadow: 1px 1px #111;
 }
-/* line 93, /Users/dan/working/devfe-st/static/scss/registration.scss */
+/* line 95, /Users/dan/working/devfe-st/static/scss/registration.scss */
 .registration input {
   width: 30rem;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 99, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 101, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 20rem;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 105, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 107, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 10rem;
   }
 
-  /* line 108, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 110, /Users/dan/working/devfe-st/static/scss/registration.scss */
   p.focus {
     width: 90%;
     margin-bottom: 2rem;
@@ -1970,16 +1980,16 @@ p.focus a {
   }
 }
 @media screen and (max-height: 479px) {
-  /* line 117, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 119, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .registration {
     bottom: 12rem;
   }
 
-  /* line 120, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 122, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered {
     padding-top: 2rem;
   }
-  /* line 122, /Users/dan/working/devfe-st/static/scss/registration.scss */
+  /* line 124, /Users/dan/working/devfe-st/static/scss/registration.scss */
   .centered br {
     display: none;
   }
@@ -2126,31 +2136,31 @@ p.focus a {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -2477,31 +2487,31 @@ h6, .h6 {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
@@ -2762,31 +2772,31 @@ h6, .h6 {
   animation-fill-mode: both;
 }
 
-/* line 70, /Users/dan/working/devfe-st/static/scss/utils.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/utils.scss */
 .hidden {
   display: none;
 }
 
 @media screen and (min-width: 1025px) {
-  /* line 75, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-desktop {
     display: none;
   }
 }
 @media screen and (min-width: 641px) {
-  /* line 81, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .phone-only {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 99, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-tablet {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 93, /Users/dan/working/devfe-st/static/scss/utils.scss */
+  /* line 105, /Users/dan/working/devfe-st/static/scss/utils.scss */
   .hidden-phone {
     display: none;
   }
