@@ -3,24 +3,24 @@
 		[
 			{
 				"name": "Peter Boyce",
-				"bio": "Peter Boyce II is the co-founder of Rough Draft Ventures and an associate at General Catalyst Partners, a venture capital firm where he focuses on investments in early-stage technology startups. Prior to this, he worked at NYC-based online education marketplaceSkillshare, and was an analyst at Bad Boy Entertainment. Peter is a graduate of Harvard University, earning a B.A. in Applied Mathematics and a Secondary in Computer Science.",
+				"bio": "Peter Boyce II is the co-founder of <a href='http://roughdraft.vc/'>Rough Draft Ventures</a> and an associate at <a href='http://www.generalcatalyst.com/'>General Catalyst Partners</a>, a venture capital firm where he focuses on investments in early-stage technology startups. Prior to this, he worked at NYC-based online education marketplace, <a href='http://www.skillshare.com/'>Skillshare</a>, and was an analyst at <a href='http://en.wikipedia.org/wiki/Bad_Boy_Records'>Bad Boy Entertainment</a>. Peter is a graduate of Harvard University, earning a B.A. in Applied Mathematics and a Secondary in Computer Science.",
 				"image": "peter_boyce.jpg"
 			},
 			{
 				"name": "Sabrina Majeed",
-				"bio": "Sabrina Majeed is an iOS designer at Buzzfeed and contributor to \"An Open Letter on Feminism in Tech\" with other women technologists. She previously worked as a Product Designer at Venmo and on the Weave app from Intuit. Sabrina graduated from Carnegie Mellon University with a degree in communication design and an additional major in human-computer interaction.",
+				"bio": "Sabrina Majeed is an iOS <a href='https://dribbble.com/sabrina'>designer</a> at Buzzfeed and contributor to \"<a href='https://modelviewculture.com/pieces/an-open-letter-on-feminism-in-tech'>An Open Letter on Feminism in Tech</a>\" with other women technologists. She previously worked as a Product Designer at Venmo and on the <a href='https://itunes.apple.com/us/app/weave/id444522442?mt=8'>Weave</a> app from Intuit. Sabrina graduated from Carnegie Mellon University with a degree in communication design and an additional major in human-computer interaction.",
 				"image": "sabrina_majeed.jpg"
 			},
 			{
 				"name": "Ryan Bubinski",
-				"bio": "Ryan Bubinski is the co-founder and Chief Technical Officer of Codecademy, which was featured on Apple Inc.'s 30 years of Mac and is credited as the easiest way to learn how to code. He and his co-founder were a part of Y Combinator’s S11 class. Ryan graduated Columbia in 2011 where he studied Biophysics and Computer Science and helped start Application Development Initiative.",
+				"bio": "Ryan Bubinski is the co-founder and Chief Technical Officer of <a href='http://www.codecademy.com/'>Codecademy</a>, which was featured on Apple Inc.'s 30 years of Mac and is credited as the easiest way to learn how to code. He and his co-founder were a part of Y Combinator’s S11 class. Ryan graduated Columbia in 2011 where he studied Biophysics and Computer Science and helped start Application Development Initiative.",
 				"image": "ryan_bubinski.jpg"
 			}
 		],
 		[
 			{
 				"name": "Chris Wiggins",
-				"bio": "Chris Wiggins is an associate professor of applied mathematics at Columbia University and the Chief Data Scientist at the New York Times. At Columbia he is a founding member of the Department of Systems Biology, the executive committee of the Data Science Institute, and the Institute's education and entrepreneurship committees. He is also an affiliate of Columbia's Department of Statistics and a founding member of Columbia's Center for Computational Biology and Bioinformatics (C2B2). He is a co-founder and co-organizer of hackNY, a nonprofit which since 2010 has organized once a semester student hackathons and the hackNY Fellows Program, a structured summer internship at NYC startups. Prior to joining the faculty at Columbia he was a Courant Instructor at NYU (1998-2001) and earned his PhD at Princeton University (1993-1998) in theoretical physics. In 2014 he was elected Fellow of the American Physical Society and is a recipient of Columbia's Avanessians Diversity Award.",
+				"bio": "Chris Wiggins is an associate professor of applied mathematics at Columbia University and the Chief Data Scientist at the New York Times. At Columbia he is a founding member of the Department of Systems Biology, the executive committee of the <a href='http://datascience.columbia.edu/'>Data Science Institute</a>, and the Institute's education and entrepreneurship committees. He is also an affiliate of Columbia's Department of Statistics and a founding member of Columbia's Center for Computational Biology and Bioinformatics (C2B2). He is a co-founder and co-organizer of <a href='http://hackny.org'>hackNY</a>, a nonprofit which since 2010 has organized once a semester student hackathons and the hackNY Fellows Program, a structured summer internship at NYC startups. Prior to joining the faculty at Columbia he was a Courant Instructor at NYU (1998-2001) and earned his PhD at Princeton University (1993-1998) in theoretical physics. In 2014 he was elected Fellow of the American Physical Society and is a recipient of Columbia's Avanessians Diversity Award.",
 				"image": "chris_wiggins.jpg"
 			}
 		]
