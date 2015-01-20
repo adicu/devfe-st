@@ -2,33 +2,26 @@
 	"judges": [
 		[
 			{
-				"name": "Fred Wilson",
-				"bio": "Fred Wilson has been a venture capitalist since 1987. He currently is a managing partner at <a href='http://www.usv.com/'>Union Square Ventures</a> and also founded <a href=''http://flatironpartnersllc.com/>Flatiron Partners</a>.  Fred has a Bachelors degree in Mechanical Engineering from MIT and an MBA from The Wharton School of Business at the University of Pennsylvania.",
-				"image": "fred_wilson.jpg"
+				"name": "Peter Boyce",
+				"bio": "Peter Boyce II is the co-founder of Rough Draft Ventures and an associate at General Catalyst Partners, a venture capital firm where he focuses on investments in early-stage technology startups. Prior to this, he worked at NYC-based online education marketplaceSkillshare, and was an analyst at Bad Boy Entertainment. Peter is a graduate of Harvard University, earning a B.A. in Applied Mathematics and a Secondary in Computer Science.",
+				"image": "peter_boyce.jpg"
 			},
 			{
-				"name": "Hilary Mason",
-				"bio": "A Data Scientist in Residence at <a href='http://www.accel.com/'>Accel</a>, Scientist Emeritus at <a href='https://bitly.com/‎'>bitly</a>, co-founder of <a href='http://hackny.org/a/'>HackNY</a>, co-host of <a href='http://www.datagotham.com/'>DataGotham</a>, and member of <a href='http://www.nycresistor.com/'>NYCResistor</a>.  She is a advisor to organizations including <a href='http://mortardata.com/'>Mortar</a>, <a href='http://knod.es/'>knod.es</a>, <a href='http://www.collectivei.com/'>collective[i]</a>, and <a href='http://www.datakind.org/'>DataKind</a>. She's also a mentor to Betaspring, the Providence, Rhode Island-based startup accelerator, and TechStars New York.",
-				"image": "hilary_mason.jpg"
+				"name": "Sabrina Majeed",
+				"bio": "Sabrina Majeed is an iOS designer at Buzzfeed and contributor to \"An Open Letter on Feminism in Tech\" with other women technologists. She previously worked as a Product Designer at Venmo and on the Weave app from Intuit. Sabrina graduated from Carnegie Mellon University with a degree in communication design and an additional major in human-computer interaction.",
+				"image": "sabrina_majeed.jpg"
 			},
 			{
-				"name": "Camille Fournier",
-				"bio": "Camille Fournier is the Head of Engineering at <a href='http://www.renttherunway.com/rtr_home'>Rent the Runway</a>. Prior to joining Rent the Runway she was an infrastructure engineer at <a href='http://www.goldmansachs.com/'>Goldman Sachs</a>. In her limited spare time she is a distributed systems hacker, serving as a <a href='http://www.apache.org/dev/pmc.html'>PMC</a> member and committer for the <a href='http://zookeeper.apache.org/'>Apache ZooKeeper project</a>. She has a BS in Computer Science from Carnegie Mellon University, and a MS in CS from the University of Wisconsin-Madison.",
-				"image": "camille_founier.jpg"
+				"name": "Ryan Bubinski",
+				"bio": "Ryan Bubinski is the co-founder and Chief Technical Officer of Codecademy, which was featured on Apple Inc.'s 30 years of Mac and is credited as the easiest way to learn how to code. He and his co-founder were a part of Y Combinator’s S11 class. Ryan graduated Columbia in 2011 where he studied Biophysics and Computer Science and helped start Application Development Initiative.",
+				"image": "ryan_bubinski.jpg"
 			}
 		],
 		[
 			{
-				"name": "Ashish Agarwal",
-				"bio": "Ashish Agarwal is a founder and head of technology at Solvuu LLC, a startup developing software for the life sciences industry. He was a member of the <a href='http://www.nycedc.com/program/bio-health-tech-entrepreneurship-lab-nyc'>NYC Economic Development Corporation’s Entrepreneurship Lab</a> and <a href='http://www.nycedc.com/program/bio-health-tech-sbir-impact-nyc'>SBIR Impact</a> programs. Previously, Ashish worked at NYU, where he was in charge of computational informatics and software development for the Genomics Sequencing Core at the Center for Genomics and Systems Biology. His PhD is in the area of programming languages and type theory from Carnegie Mellon University, which was followed by research positions in Bioinformatics and Computer Science at Yale. He divides his time between theoretical computer science and life sciences applications.",
-				"image": "ashish_agarwal.jpg",
-				"class": "margin-left"
-			},
-			{
 				"name": "Chris Wiggins",
-				"bio": "Chris Wiggins is an associate professor of applied mathematics at the School of Engineering and Applied Science. Professor Wiggins has helped Columbia students and students from around the world engage in New York’s burgeoning startup community through his work with <a href='http://hackny.org/a/'>hackNY</a>, a nonprofit initiative he co-founded in 2010.",
-				"image": "chris_wiggins.jpg",
-				"class": "margin-right"
+				"bio": "Chris Wiggins is an associate professor of applied mathematics at Columbia University and the Chief Data Scientist at the New York Times. At Columbia he is a founding member of the Department of Systems Biology, the executive committee of the Data Science Institute, and the Institute's education and entrepreneurship committees. He is also an affiliate of Columbia's Department of Statistics and a founding member of Columbia's Center for Computational Biology and Bioinformatics (C2B2). He is a co-founder and co-organizer of hackNY, a nonprofit which since 2010 has organized once a semester student hackathons and the hackNY Fellows Program, a structured summer internship at NYC startups. Prior to joining the faculty at Columbia he was a Courant Instructor at NYU (1998-2001) and earned his PhD at Princeton University (1993-1998) in theoretical physics. In 2014 he was elected Fellow of the American Physical Society and is a recipient of Columbia's Avanessians Diversity Award.",
+				"image": "chris_wiggins.jpg"
 			}
 		]
 	]
