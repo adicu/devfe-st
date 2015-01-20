@@ -192,18 +192,11 @@
 			"short_name": "Friday, 2/6",
 			"events": [
 				{
-					"name": "API Demos",
-					"id": "6-api-demos",
-					"timespan": "4pm - 5pm",
-					"location": "Havemeyer 309",
-					"description": "Hear from our sponsor companies to learn about cool APIs available for use. This is a great way to brainstorm potential project ideas, as the API generally guides the project. It also allows you a to increase your knowledge and become better acquainted with industry practices. You can also connect with some awesome engineers from in and around New York City."
-				},
-				{
-					"name": "The DevFest Hackathon",
+					"name": "API Demos & The DevFest Hackathon",
 					"id": "6-hackathon",
-					"timespan": "5pm Friday - 12pm Saturday",
+					"timespan": "4pm Friday - 12pm Saturday",
 					"location": "Watson Library, Uris",
-					"description": "19 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. ",
+					"description": "20 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. ",
 					"class": "blue"
 				},
 				{
