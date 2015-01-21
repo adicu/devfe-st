@@ -11,6 +11,14 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {%- endblock -%}
 
+{%- macro judge(judge) -%}
+<div class="judge">
+    <img src="{{ url_for('static', filename=('img/judges/' + judge.image)) }}">
+    <h2>{{ judge.name }}</h2>
+    <p>{{ judge.bio | safe }}</p>
+</div>
+{%- endmacro -%}
+
 {%- macro navbar() -%}
 <nav>
     <a class="ham hidden-desktop">
@@ -34,8 +42,8 @@
                 <li><a class="scroll" href="#about"><p>About</p></a></li>
                 <li><a class="scroll" href="#schedule"><p>Schedule</p></a></li>
                 <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
+                <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
                 <li><a class="scroll" href="#curriculum"><p>Curriculum</p></a></li>
-                <!-- <li><a class="scroll" href="#judges"><p>Judges</p></a></li> -->
                 <!-- <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li> -->
                 <!-- <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li> -->
                 <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
@@ -83,7 +91,7 @@
          style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
     </div>
     <div class="background with-nav hidden"
-         data-page="5"
+         data-page="6"
          style="background-image:url({{ url_for('static', filename='img/columbia.jpg') }})">
     </div>
 </div>
@@ -198,7 +206,22 @@
             </div>
         </div>
     </div>
-    <div id="curriculum" class="page white with-nav" data-page="4">
+    <div id="judges" class="page white with-nav" data-page="4">
+        <div class="inner">
+            {{ header("blue", "Amazing", "Judges", None, "/") }}
+            <div class="judges">
+                <div class="two-judges">
+                    {{ judge(judges.judges[0]) }}
+                    {{ judge(judges.judges[1]) }}
+                </div>
+                <div class="two-judges">
+                    {{ judge(judges.judges[2]) }}
+                    {{ judge(judges.judges[3]) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="curriculum" class="page white with-nav" data-page="5">
         <div class="inner">
             {{ header("blue", "The", "Curriculum", None) }}
             <h5>Because everyone is at different skill levels, we are offering two different tracks for your learning, depending on where you are.</h5>
@@ -218,12 +241,6 @@
             </div>
         </div>
     </div>
-    <!-- <div id="judges" class="page white with-nav" data-page="5">
-        <div class="inner">
-            {{ header("blue", "The", "Judges", None, "/") }}
-
-        </div>
-    </div> -->
     <!-- <div id="prizes" class="page blue with-nav" data-page="5">
         <div class="inner">
             {{ header("white", "The", "Prizes", None, "/") }}
@@ -253,14 +270,14 @@
             {%- endfor -%}
         </div>
     </div> -->
-    <div id="kickoff" class="page blue with-image with-nav" data-page="5">
+    <div id="kickoff" class="page blue with-image with-nav" data-page="6">
         <div class="inner">
             {{ header("white", "Until", "Kickoff&hellip;", None, "/") }}
         </div>
         <img class="hidden-desktop" class="tablet-image"
              src="{{ url_for('static', filename='img/columbia.jpg') }}">
     </div>
-    <div id="contact" class="page white with-nav" data-page="6">
+    <div id="contact" class="page white with-nav" data-page="7">
         <div class="inner">
             {{ header("blue", "Contact", "Us", None, "") }}
             <h5>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. <a href="mailto:devfest@adicu.com">Shoot us an email</a> if you have any questions. You can connect with ADI on <a href='https://www.facebook.com/ADICU'>Facebook</a> and <a href='https://twitter.com/adicu'>Twitter</a>.  You should read our <a href="https://adicu.com/blog">Blog</a>.</h5>

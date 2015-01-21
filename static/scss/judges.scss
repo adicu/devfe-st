@@ -1,0 +1,28 @@
+@import 'base';
+
+.judges {
+	.judge {
+		@include border-box;
+		padding: 1rem;
+		float: left;
+		display: inline-block;
+
+		img {
+			width: 100%;
+		}
+	}
+	.three-judges {
+		@include clearfix;
+		.judge {
+			width: 33.333333%;
+		}
+	}
+	.two-judges {
+		@include clearfix;
+		margin-left: 16.666666%;
+		margin-right: 16.666666%;
+		.judge {
+			width: 50%;
+		}
+	}
+}
