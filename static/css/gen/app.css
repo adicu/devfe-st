@@ -178,7 +178,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -422,7 +422,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -792,7 +792,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1222,7 +1222,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1484,7 +1484,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1786,7 +1786,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -2265,7 +2265,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -2616,7 +2616,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -2900,7 +2900,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -3185,7 +3185,7 @@ h2, .h2, .adjectives .adjective {
 }
 
 /* line 96, /Users/dan/working/devfe-st/static/scss/base.scss */
-h3, .h3, p.focus, #register-button, #registration-form input {
+h3, .h3, p.focus, #register-button, #registration-form input, .track ol {
   font-family: "Lato", Helvetica, Ariel sans-serif;
   font-weight: 300;
   font-size: 2.2rem;
@@ -3250,17 +3250,7 @@ h6, .h6 {
   }
 }
 /* line 3, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
-.tracks {
-  margin: 0 -1rem;
-}
-/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.tracks:after {
-  clear: both;
-  content: " ";
-  display: block;
-}
-/* line 7, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
-.tracks .track {
+.track {
   width: 50%;
   padding: 1rem;
   -webkit-box-sizing: border-box;
@@ -3270,18 +3260,41 @@ h6, .h6 {
   display: inline-block;
   float: left;
 }
-/* line 14, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
-.tracks .track > .inner {
+/* line 10, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+.track > .inner {
   border: 1px solid #32437A;
   padding: 1rem;
 }
+/* line 15, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+.track ol {
+  list-style: decimal;
+  list-style-position: outside;
+  margin-left: 3rem;
+  padding: 2rem 0;
+  vertical-align: top;
+}
+/* line 22, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+.track ol li {
+  margin-bottom: 1rem;
+}
+
+/* line 28, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+.two-tracks {
+  margin: 0 -1rem;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.two-tracks:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
 
 @media screen and (max-width: 640px) {
-  /* line 22, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+  /* line 35, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
   .tracks {
     margin: 0;
   }
-  /* line 25, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+  /* line 38, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
   .tracks .track {
     padding: 0;
     width: 100%;

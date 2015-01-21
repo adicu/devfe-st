@@ -1,21 +1,34 @@
 @import 'base';
 
-.tracks {
+.track {
+	width: 50%;
+	padding: 1rem;
+	@include border-box;
+	display: inline-block;
+	float: left;
+
+	& > .inner {
+		border: 1px solid $blue;
+		padding: 1rem;
+	}
+
+	ol {
+		list-style: decimal;
+		list-style-position: outside;
+		@extend .h3;
+		margin-left: 3rem;
+		padding: 2rem 0;
+		vertical-align: top;
+		li {
+			margin-bottom: 1rem;
+		}
+
+	}
+}
+.two-tracks {
 	@include clearfix;
 	margin: 0 -1rem;
 
-	.track {
-		width: 50%;
-		padding: 1rem;
-		@include border-box;
-		display: inline-block;
-		float: left;
-
-		& > .inner {
-			border: 1px solid $blue;
-			padding: 1rem;
-		}
-	}
 }
 
 @media screen and (max-width: $phone-max) {
