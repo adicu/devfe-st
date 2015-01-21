@@ -20,7 +20,7 @@
 		padding: 2rem 0;
 		vertical-align: top;
 		li {
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
 		}
 
 	}
@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: $phone-max) {
-	.tracks {
+	.two-tracks {
 		margin: 0;
 
 		.track {
@@ -40,6 +40,10 @@
 			width: 100%;
 			display: block;
 			margin-top: 1rem;
+
+			ol {
+				padding: 1rem 0 0;
+			}
 		}
 	}
 }

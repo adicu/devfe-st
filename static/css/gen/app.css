@@ -2720,6 +2720,22 @@ h6, .h6 {
   width: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+  /* line 31, /Users/dan/working/devfe-st/static/scss/judges.scss */
+  .judges .two-judges {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 37, /Users/dan/working/devfe-st/static/scss/judges.scss */
+  .judges .two-judges {
+    margin: 0;
+  }
+  /* line 39, /Users/dan/working/devfe-st/static/scss/judges.scss */
+  .judges .two-judges .judge {
+    width: 100%;
+  }
+}
 @-webkit-keyframes fade-in-up {
   0% {
     opacity: 0;
@@ -3275,7 +3291,7 @@ h6, .h6 {
 }
 /* line 22, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
 .track ol li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* line 28, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
@@ -3291,15 +3307,19 @@ h6, .h6 {
 
 @media screen and (max-width: 640px) {
   /* line 35, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
-  .tracks {
+  .two-tracks {
     margin: 0;
   }
   /* line 38, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
-  .tracks .track {
+  .two-tracks .track {
     padding: 0;
     width: 100%;
     display: block;
     margin-top: 1rem;
+  }
+  /* line 44, /Users/dan/working/devfe-st/static/scss/curriculum.scss */
+  .two-tracks .track ol {
+    padding: 1rem 0 0;
   }
 }
 /* line 13 */
