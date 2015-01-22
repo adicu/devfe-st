@@ -19,6 +19,11 @@
 			"name": "Chris Wiggins",
 			"bio": "Chris Wiggins is an associate professor of applied mathematics at Columbia University and the Chief Data Scientist at the New York Times. At Columbia he is a founding member of the Department of Systems Biology, the executive committee of the <a href='http://datascience.columbia.edu/'>Data Science Institute</a>, and the Institute’s education and entrepreneurship committees. He is a co-founder and co-organizer of <a href='http://hackny.org'>hackNY</a>, a nonprofit which since 2010 has organized once a semester student hackathons and the hackNY Fellows Program, a structured summer internship at NYC startups. Prior to joining the faculty at Columbia he was a Courant Instructor at NYU (1998-2001) and earned his PhD at Princeton University (1993-1998) in theoretical physics.",
 			"image": "chris_wiggins.jpg"
+		},
+		{
+			"name": "Grace Choi",
+			"bio": "Grace Choi is an inventor and the creator of Mink, a desktop printing system that can instantly transform any image into a wearable color cosmetic. Her innovation experience includes a variety of industries and disciplines across organizations ranging from startups to multinational corporations. Grace holds a B.S. from Cornell University and an M.B.A. from Harvard Business School.",
+			"image": "grace_choi.jpg"
 		}
 	]
 }
