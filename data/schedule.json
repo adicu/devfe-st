@@ -14,17 +14,32 @@
 					"description": "The official kickoff for DevFest! Enjoy a delicious lunch, meet and bond with other learners and hackers, and get pumped for the week ahead with a talk from our awesome keynote speaker."
 				},
 				{
-					"name": "Environment Setup",
+					"name": "Environment Setup A",
+					"display_name": "Environment Setup",
 					"id": "31-environment-setup",
-					"timespan": "2pm - 5pm",
+					"timespan": "2pm - 3pm",
 					"location": "233 Mudd",
-					"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
 					"buttons": [
 						{
 							"title": "Instructions",
 							"link": "http://squidarth.github.io/Devfest-Environment-Setup/"
 						}
 					]
+				},
+				{
+					"name": "Environment Setup B",
+					"id": "31-environment-setup",
+					"timespan": "3pm - 4pm",
+					"location": "233 Mudd",
+					"sidebar": false
+				},
+				{
+					"name": "Environment Setup C",
+					"id": "31-environment-setup",
+					"timespan": "4pm - 5pm",
+					"location": "233 Mudd",
+					"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
+					"sidebar": false
 				},
 				{
 					"name": "Open Hack Space",
@@ -39,7 +54,6 @@
 					"id": "31-introduction-to-python",
 					"timespan": "3pm - 4pm",
 					"location": "627 & 233 Mudd",
-					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
 					"buttons": [
 						{
 							"title": "Tutorial",
@@ -66,6 +80,7 @@
 					"id": "31-introduction-to-python",
 					"timespan": "6pm - 7pm",
 					"location": "627 & 233 Mudd",
+					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
 					"sidebar": false
 				}
 			]
