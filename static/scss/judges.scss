@@ -28,13 +28,13 @@
 }
 
 @media screen and (max-width: $tablet-landscape-max) {
-	.judges .two-judges {
-		margin: 0;
-	}
+	// .judges .two-judges {
+	// 	margin: 0;
+	// }
 }
 
 @media screen and (max-width: $phone-max) {
-	.judges .two-judges {
+	.judges .two-judges, .judges .three-judges {
 		margin: 0;
 		.judge {
 			width: 100%;
