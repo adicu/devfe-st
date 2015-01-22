@@ -34,9 +34,10 @@
 					"description": "If you know Python and your computer is already to go, come by our Open Hack Space. We’ll have snacks, friends, and programming, the only things a true hacker could want!"
 				},
 				{
-					"name": "Introduction to Python",
+					"name": "Introduction to Python A",
+					"display_name": "Introduction to Python",
 					"id": "31-introduction-to-python",
-					"timespan": "3pm - 7pm",
+					"timespan": "3pm - 4pm",
 					"location": "627 & 233 Mudd",
 					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
 					"buttons": [
@@ -45,6 +46,27 @@
 							"link": "http://adicu.com/intro-webdev/python/"
 						}
 					]
+				},
+				{
+					"name": "Introduction to Python B",
+					"id": "31-introduction-to-python",
+					"timespan": "4pm - 5pm",
+					"location": "627 & 233 Mudd",
+					"sidebar": false
+				},
+				{
+					"name": "Introduction to Python C",
+					"id": "31-introduction-to-python",
+					"timespan": "5pm - 6pm",
+					"location": "627 & 233 Mudd",
+					"sidebar": false
+				},
+				{
+					"name": "Introduction to Python D",
+					"id": "31-introduction-to-python",
+					"timespan": "6pm - 7pm",
+					"location": "627 & 233 Mudd",
+					"sidebar": false
 				}
 			]
 		},

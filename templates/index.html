@@ -149,10 +149,10 @@
                     <li class="day" data-day="{{ day.day_id }}">
                         <a class="scroll" href="#{{ day.id }}"><h4>{{ day.short_name }}</h4></a>
                         <ol class="events">
-                            {%- for event in day.events -%}
+                            {%- for event in day.events if event.get("sidebar", True) -%}
                             <li class="event">
                                 <a class="scroll" href="#{{ event.id }}">
-                                    <p>{{ event.name }}</p>
+                                    <p>{{ event.get("display_name", event.name) }}</p>
                                 </a>
                             </li>
                             {%- endfor -%}
