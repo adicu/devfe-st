@@ -44,11 +44,6 @@
 			"id": "mongodb",
 			"img": "mongodb.png",
 			"url": "http://www.mongodb.com/"
-		},
-		{
-			"id": "appnexus",
-			"img": "app_nexus.png",
-			"url": "http://www.appnexus.com/"
 		}
 	]
 }
