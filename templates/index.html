@@ -29,13 +29,9 @@
     <div class="outer">
         <div class="inner">
             <div class="logo">
-                <small>
-                    <a href="#register">
-                        <h1 class="title">
-                            <span class="bold">DEVFEST</span> 2015
-                        </h1>
-                    </a>
-                </small>
+                <a class="scroll" href="#top">
+                    <img src="{{ url_for('static', filename='img/logo/devfest-small.png')}}">
+                </a>
             </div>
             <ul class="menu">
                 <li><a href="#register"><p>Register</p></a></li>
@@ -93,9 +89,14 @@
     <div class="background with-nav hidden"
          data-page="6"
          style="background-image:url({{ url_for('static', filename='img/columbia.jpg') }})">
+         <div class="scrim">
+             <div class="fading-logo">
+                <i style="background-image: url({{ url_for('static', filename='img/logo/devfest-full.png')}});"></i>
+             </div>
+         </div>
     </div>
 </div>
-<div class="pages">
+<div class="pages" id="top">
     <div id="register" class="page hero with-image" data-page="1">
         <div class="background hidden-desktop"
              style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">

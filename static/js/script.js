@@ -109,12 +109,25 @@ if (md.mobile() == null) {
         var percentComplete = function(pageNo) {
             var $page = $('.page[data-page="' + pageNo + '"]'),
                 difference = $(window).scrollTop() - $page.offset().top;
-            return Math.min(Math.max(0, difference)/$page.height(), 1);
+            return Math.min(Math.max(-1 * $page.height(), difference)/$page.height(), 1);
         };
-        var a = percentComplete(1),
+        var a = Math.max(0, percentComplete(1)),
             $bluelayer = $('.page[data-page="1"] > .inner'),
             rgba = "rgba(50,67,122," + (0.5 + a) + ")";
         $bluelayer.css({"background-color": rgba});
+
+        var $page = $('#kickoff'),
+            start = $page.offset().top - $(window).height(),
+            total = $page.height() + $('#contact').height(),
+            diff = $(window).scrollTop() - start,
+            op = Math.min(Math.max(0,diff)/total, 1),
+            op = 0.5 + op * op / 2;
+            scale = Math.min(1, 0.5 + op/2);
+        console.log(diff, total)
+        $('.fading-logo').css({
+            'opacity': op,
+            'transform': 'scale(' + scale + ')'
+        });
 
 
         /* Hide the hero image after the first page */
@@ -209,6 +222,9 @@ if (md.mobile() == null) {
         } else if (bottomOfShortformInner > bottomOfShortformWrapper) {
             $shortformSidebar.addClass('bottom');
         }
+
+
+
     });
 } else {
     window.addEventListener("resize", mobileRespond, false);

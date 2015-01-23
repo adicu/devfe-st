@@ -85,6 +85,30 @@
         right: $navbar-width;
         left: 0;
         width: auto;
+
+        .scrim {
+            background-color: rgba(0,0,0,0.4);
+            width: 100%;
+            height: 100%;
+        }
+
+        .fading-logo {
+            position: absolute;
+            bottom: 20rem;
+            top: $header-height;
+            width: 100%;
+            opacity: 0;
+            padding: 2rem 0;
+
+            i {
+                height: 100%;
+                width: 100%;
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+            }
+        }
     }
 }
 
