@@ -44,6 +44,11 @@
 			"id": "mongodb",
 			"img": "mongodb.png",
 			"url": "http://www.mongodb.com/"
+		},
+		{
+			"id": "etsy",
+			"img": "etsy.png",
+			"url": "https://www.etsy.com/"
 		}
 	]
 }
