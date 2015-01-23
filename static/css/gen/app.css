@@ -129,7 +129,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -373,7 +373,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -743,7 +743,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -1177,7 +1177,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -1439,7 +1439,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -1741,7 +1741,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -2002,87 +2002,89 @@ p.focus a {
 .sponsors {
   text-align: center;
 }
-/* line 4, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
-.sponsors hr {
-  margin: 3em 0;
+
+/* line 5, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+#sponsors h4 {
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-/* line 9, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 10, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold, .silver, .bronze {
   display: inline-block;
   margin: 0 10px 10px 10px;
 }
-/* line 13, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 14, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold .inner, .silver .inner, .bronze .inner {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-/* line 22, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 23, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold {
   width: 600px;
-  height: 90px;
+  height: 150px;
   max-width: 100%;
   display: block;
   margin: 20px auto 10px;
 }
-/* line 29, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 30, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner {
   width: 600px;
-  height: 90px;
+  height: 150px;
   max-width: 100%;
   margin: 0 auto;
 }
-/* line 35, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 36, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner > a {
-  height: 90px;
+  height: 150px;
 }
-/* line 38, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 39, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner > a > img {
   max-width: 100%;
-  max-height: 90px;
+  max-height: 150px;
   margin: 0 auto;
 }
 
-/* line 49, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 50, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver {
-  width: 247px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
 }
-/* line 53, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 54, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner {
-  width: 247px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
 }
-/* line 57, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 58, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner > a {
-  width: 247px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
 }
-/* line 61, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 62, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner > a > img {
-  max-width: 247px;
-  max-height: 100px;
+  max-width: 400px;
+  max-height: 150px;
   margin: 0 auto;
 }
 
-/* line 73, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 74, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze {
-  width: 200px;
+  width: 30%;
   height: 80px;
 }
-/* line 77, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 78, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner {
   width: 200px;
   height: 80px;
 }
-/* line 81, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 82, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner > a {
   width: 200px;
   height: 80px;
 }
-/* line 85, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 86, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner > a > img {
   max-width: 200px;
   max-height: 80px;
@@ -2220,7 +2222,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -2571,7 +2573,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -2865,7 +2867,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;
@@ -3150,7 +3152,7 @@ img {
 /* line 51, /Users/dan/working/devfe-st/static/scss/base.scss */
 hr {
   background-color: #111;
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   border: 0;
   height: 1px;
   outline: 0;

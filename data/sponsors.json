@@ -2,43 +2,34 @@
 	"gold": [
 		{
 			"id": "bloomberg",
-			"img": "bloom.png",
+			"img": "bloomberg.png",
 			"url": "http://www.bloomberg.com/"
 		},
-		{
-			"id": "seas",
-			"img": "seas.png",
-			"url": "http://engineering.columbia.edu/"
-		},
-		{
-			"id": "venmo",
-			"img": "venmo.png",
-			"url": "https://venmo.com/"
-		}
-	],
-	"silver": [
 		{
 			"id": "a16z",
 			"img": "a16z.png",
 			"url": "http://a16z.com/"
-		},
+		}
+	],
+	"silver": [
+
 		{
-			"id": "codecademy",
-			"img": "codecademy.png",
-			"url": "http://www.codecademy.com/"
+			"id": "microsoft",
+			"img": "microsoft.png",
+			"url": "http://www.microsoft.com/"
 		},
 		{
 			"id": "yext",
 			"img": "yext.png",
 			"url": "http://www.yext.com/"
-		},
-		{
-			"id": "vimep",
-			"img": "vimeo.png",
-			"url": "https://vimeo.com/"
 		}
 	],
 	"bronze": [
+		{
+			"id": "codecademy",
+			"img": "codecademy.png",
+			"url": "http://www.codecademy.com/"
+		},
 		{
 			"id": "twilio",
 			"img": "twilio.png",
@@ -50,39 +41,14 @@
 			"url": "http://www.google.com/"
 		},
 		{
-			"id": "microsoft",
-			"img": "microsoft.png",
-			"url": "http://www.microsoft.com/"
-		},
-		{
 			"id": "mongodb",
 			"img": "mongodb.png",
 			"url": "http://www.mongodb.com/"
 		},
 		{
-			"id": "digitalocean",
-			"img": "digitalocean.png",
-			"url": "https://www.digitalocean.com/"
-		},
-		{
-			"id": "facebook",
-			"img": "facebook.png",
-			"url": "https://www.facebook.com/"
-		},
-		{
-			"id": "sendgrid",
-			"img": "sendgrid.png",
-			"url": "http://sendgrid.com/"
-		},
-		{
-			"id": "mashery",
-			"img": "mashery.png",
-			"url": "http://www.mashery.com/"
-		},
-		{
-			"id": "cucs",
-			"img": "cucs.gif",
-			"url": "http://www.cs.columbia.edu/"
+			"id": "appnexus",
+			"img": "app_nexus.png",
+			"url": "http://www.appnexus.com/"
 		}
 	]
 }

@@ -1,9 +1,10 @@
 .sponsors {
 	text-align: center;
+}
 
-	hr {
-		margin: 3em 0;
-	}
+#sponsors h4 {
+	margin-bottom: 3rem;
+	text-align: center;
 }
 
 .gold, .silver, .bronze {
@@ -17,7 +18,7 @@
 	}
 }
 
-$gold-height: 90px;
+$gold-height: 150px;
 $gold-width: 600px;
 .gold {
 	width: $gold-width;
@@ -44,8 +45,8 @@ $gold-width: 600px;
 	}
 }
 
-$silver-height: 100px;
-$silver-width: 247px;
+$silver-height: 150px;
+$silver-width: 400px;
 .silver{
 	width: $silver-width;
 	height: $silver-height;
@@ -71,7 +72,7 @@ $silver-width: 247px;
 $bronze-height: 80px;
 $bronze-width: 200px;
 .bronze {
-	width: $bronze-width;
+	width: 30%;
 	height: $bronze-height;
 
 	& > .inner {

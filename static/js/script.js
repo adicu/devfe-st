@@ -15,7 +15,6 @@ $(function() {
     var $headerMeasure = $('#measure-header'),
         mobileRespond = function() {
             /* mobile only */
-            console.log("change")
             $('.page:first-child').css({'min-height': $(window).height() * 2});
             $('.header.fixed').removeClass('fixed');
         };
@@ -123,7 +122,6 @@ if (md.mobile() == null) {
             op = Math.min(Math.max(0,diff)/total, 1),
             op = 0.5 + op * op / 2;
             scale = Math.min(1, 0.5 + op/2);
-        console.log(diff, total)
         $('.fading-logo').css({
             'opacity': op,
             'transform': 'scale(' + scale + ')'
