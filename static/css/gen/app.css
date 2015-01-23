@@ -2012,85 +2012,120 @@ p.focus a {
 /* line 10, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold, .silver, .bronze {
   display: inline-block;
-  margin: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 14, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
-.gold .inner, .silver .inner, .bronze .inner {
-  display: table-cell;
+/* line 15, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner, .silver > .inner, .bronze > .inner {
   vertical-align: middle;
+  max-width: 100%;
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 22, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner > a, .silver > .inner > a, .bronze > .inner > a {
+  max-width: 100%;
+}
+/* line 24, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+.gold > .inner > a > img, .silver > .inner > a > img, .bronze > .inner > a > img {
+  max-width: 100%;
 }
 
-/* line 23, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 34, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold {
   width: 600px;
   height: 150px;
   max-width: 100%;
   display: block;
-  margin: 20px auto 10px;
+  margin: 10px auto 0;
 }
-/* line 30, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 41, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner {
   width: 600px;
   height: 150px;
   max-width: 100%;
   margin: 0 auto;
 }
-/* line 36, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 47, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner > a {
   height: 150px;
 }
-/* line 39, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 50, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .gold > .inner > a > img {
   max-width: 100%;
   max-height: 150px;
   margin: 0 auto;
 }
 
-/* line 50, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 61, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver {
-  width: 400px;
+  width: 45%;
   height: 150px;
+  max-width: 100%;
 }
-/* line 54, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 66, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner {
   width: 400px;
   height: 150px;
 }
-/* line 58, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 70, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner > a {
   width: 400px;
   height: 150px;
 }
-/* line 62, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 74, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .silver > .inner > a > img {
   max-width: 400px;
   max-height: 150px;
   margin: 0 auto;
 }
 
-/* line 74, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 86, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze {
   width: 30%;
   height: 80px;
 }
-/* line 78, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 90, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner {
   width: 200px;
   height: 80px;
 }
-/* line 82, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 94, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner > a {
   width: 200px;
   height: 80px;
 }
-/* line 86, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+/* line 98, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
 .bronze > .inner > a > img {
   max-width: 200px;
   max-height: 80px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 640px) {
+  /* line 109, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+  .gold, .silver {
+    width: 100%;
+  }
+  /* line 111, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+  .gold > .inner > a > img, .silver > .inner > a > img {
+    max-width: 100%;
+  }
+
+  /* line 115, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+  .bronze {
+    width: 45%;
+  }
+  /* line 117, /Users/dan/working/devfe-st/static/scss/sponsors.scss */
+  .bronze > .inner > a > img {
+    max-width: 100%;
+  }
+}
 @-webkit-keyframes fade-in-up {
   0% {
     opacity: 0;

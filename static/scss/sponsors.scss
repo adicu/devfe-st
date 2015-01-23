@@ -9,13 +9,24 @@
 
 .gold, .silver, .bronze {
 	display: inline-block;
-	margin: 0 10px 10px 10px;
+	padding: 0 10px 10px 10px;
+	@include border-box;
 
-	.inner {
-		display: table-cell;
+	& > .inner {
 		vertical-align: middle;
+		max-width: 100%;
 		text-align: center;
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    & > a {
+	    	max-width: 100%;
+	    	& > img {
+	    		max-width: 100%;
+	    	}
+	    }
 	}
+
 }
 
 $gold-height: 150px;
@@ -25,7 +36,7 @@ $gold-width: 600px;
 	height: $gold-height;
 	max-width: 100%;
 	display: block;
-	margin: 20px auto 10px;
+	margin: 10px auto 0;
 
 	& > .inner {
 		width: $gold-width;
@@ -48,8 +59,9 @@ $gold-width: 600px;
 $silver-height: 150px;
 $silver-width: 400px;
 .silver{
-	width: $silver-width;
+	width: 45%;
 	height: $silver-height;
+	max-width: 100%;
 
 	& > .inner {
 		width: $silver-width;
@@ -88,6 +100,22 @@ $bronze-width: 200px;
 				max-height: $bronze-height;
 				margin: 0 auto;
 			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $phone-max) {
+	.gold, .silver {
+		width: 100%;
+		& > .inner > a > img {
+			max-width: 100%;
+		}
+	}
+	.bronze {
+		width: 45%;
+		& > .inner > a > img {
+			max-width: 100%;
 		}
 	}
 }
