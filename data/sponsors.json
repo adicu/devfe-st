@@ -9,6 +9,11 @@
 			"id": "a16z",
 			"img": "a16z.png",
 			"url": "http://a16z.com/"
+		},
+		{
+			"id": "columbiaentrepreneurship",
+			"img": "columbiaentrepreneurship.png",
+			"url": "http://entrepreneurship.columbia.edu/"
 		}
 	],
 	"silver": [
