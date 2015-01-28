@@ -53,7 +53,7 @@
 					"display_name": "Introduction to Python",
 					"id": "31-introduction-to-python",
 					"timespan": "3pm - 4pm",
-					"location": "627 & 233 Mudd",
+					"location": "627 Mudd",
 					"buttons": [
 						{
 							"title": "Tutorial",
@@ -65,21 +65,21 @@
 					"name": "Introduction to Python B",
 					"id": "31-introduction-to-python",
 					"timespan": "4pm - 5pm",
-					"location": "627 & 233 Mudd",
+					"location": "627 Mudd",
 					"sidebar": false
 				},
 				{
 					"name": "Introduction to Python C",
 					"id": "31-introduction-to-python",
 					"timespan": "5pm - 6pm",
-					"location": "627 & 233 Mudd",
+					"location": "627 Mudd",
 					"sidebar": false
 				},
 				{
 					"name": "Introduction to Python D",
 					"id": "31-introduction-to-python",
 					"timespan": "6pm - 7pm",
-					"location": "627 & 233 Mudd",
+					"location": "627 Mudd",
 					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
 					"sidebar": false
 				}
@@ -110,7 +110,7 @@
 					"name": "Build Apps with Flask",
 					"id": "2-build-apps-with-flask",
 					"timespan": "8pm - 10pm",
-					"location": "IAB 417",
+					"location": "Pupin 301",
 					"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
 					"buttons" : [
 						{
@@ -143,7 +143,7 @@
 					"name": "Leverage the Web with APIs",
 					"id": "3-leverage-the-web-with-apis",
 					"timespan": "8:30pm - 10pm",
-					"location": "IAB 417",
+					"location": "Pupin 301",
 					"description": "The internet has a lot of data; learn how to use it to power your applications! With APIs, you can do things like login to Facebook, get Yelp review information, or present a Google Map. In this workshop, we’ll make requests and take responses, uses the data we retrieve to make our app awesome.",
 					"buttons" : [
 						{
@@ -176,7 +176,7 @@
 					"name": "Build Websites with HTML",
 					"id": "4-build-websites-with-html",
 					"timespan": "8pm - 10pm",
-					"location": "IAB 417",
+					"location": "Pupin 301",
 					"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
 					"buttons" : [
 						{
@@ -229,10 +229,10 @@
 			"short_name": "Friday, 2/6",
 			"events": [
 				{
-					"name": "API Demos & The DevFest Hackathon",
+					"name": "DevFest Hackathon Opening Ceremony",
 					"id": "6-hackathon",
 					"timespan": "4pm Friday - 12pm Saturday",
-					"location": "Watson Library, Uris",
+					"location": "Havemeyer 309",
 					"description": "20 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. ",
 					"class": "blue"
 				},
@@ -255,7 +255,7 @@
 					"name": "Demos",
 					"id": "7-demos",
 					"timespan": "12pm - 3pm",
-					"location": "Havermeyer 309",
+					"location": "Havemeyer 309",
 					"description": "Show off your stuff! After a long night of building, you will be able to present your hacks in front of our judges and engineer sponsors. Unlike other hackathons, every project, no matter how small, can be demoed! DevFest demos are a great place to pitch your first application. Get great feedback from our judges, and even have a chance to win a prize!",
 					"class": "blue"
 				},
