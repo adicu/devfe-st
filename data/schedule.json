@@ -18,7 +18,7 @@
 					"display_name": "Environment Setup",
 					"id": "31-environment-setup",
 					"timespan": "2pm - 3pm",
-					"location": "233 Mudd",
+					"location": "633 Mudd",
 					"buttons": [
 						{
 							"title": "Instructions",
@@ -30,14 +30,14 @@
 					"name": "Environment Setup B",
 					"id": "31-environment-setup",
 					"timespan": "3pm - 4pm",
-					"location": "233 Mudd",
+					"location": "633 Mudd",
 					"sidebar": false
 				},
 				{
 					"name": "Environment Setup C",
 					"id": "31-environment-setup",
 					"timespan": "4pm - 5pm",
-					"location": "233 Mudd",
+					"location": "633 Mudd",
 					"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
 					"sidebar": false
 				},
@@ -110,7 +110,7 @@
 					"name": "Build Apps with Flask",
 					"id": "2-build-apps-with-flask",
 					"timespan": "8:30pm - 10pm",
-					"location": "Pupin 301",
+					"location": "Schermerhorn 501",
 					"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
 					"buttons" : [
 						{
@@ -143,7 +143,7 @@
 					"name": "Leverage the Web with APIs",
 					"id": "3-leverage-the-web-with-apis",
 					"timespan": "8:30pm - 10pm",
-					"location": "Pupin 301",
+					"location": "Schermerhorn 501",
 					"description": "The internet has a lot of data; learn how to use it to power your applications! With APIs, you can do things like login to Facebook, get Yelp review information, or present a Google Map. In this workshop, we’ll make requests and take responses, uses the data we retrieve to make our app awesome.",
 					"buttons" : [
 						{
@@ -176,7 +176,7 @@
 					"name": "Build Websites with HTML",
 					"id": "4-build-websites-with-html",
 					"timespan": "8:30pm - 10pm",
-					"location": "Pupin 301",
+					"location": "Pupin 428",
 					"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
 					"buttons" : [
 						{
@@ -204,7 +204,7 @@
 					"name": "Style and Layout with CSS",
 					"id": "5-style-and-layout-with-css",
 					"timespan": "8:30pm - 10pm",
-					"location": "Pupin 301",
+					"location": "Schermerhorn 501",
 					"description": "No one likes a plain website! Come and find out how to make your websites pop. We’ll learn Foundation, one of the most ubiquitous CSS frameworks that is used by many startups and applications. You’ll see how easy it is to have a professional-looking site up in no time.",
 					"buttons" : [
 						{
