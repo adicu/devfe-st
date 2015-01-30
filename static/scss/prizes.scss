@@ -32,3 +32,9 @@
 
 	}
 }
+
+@media screen and (max-width: $phone-max) {
+	.prize {
+		width: 100% !important;
+	}
+}

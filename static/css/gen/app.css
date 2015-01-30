@@ -3663,6 +3663,12 @@ h6, .h6 {
   height: 5rem;
 }
 
+@media screen and (max-width: 640px) {
+  /* line 37, /Users/dan/working/devfe-st/static/scss/prizes.scss */
+  .prize {
+    width: 100% !important;
+  }
+}
 /* line 14 */
 .pages {
   z-index: 1;
