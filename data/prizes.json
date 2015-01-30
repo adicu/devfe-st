@@ -33,12 +33,12 @@
 			}
 		},
 		{
-			"title": "Best Civic Hack for Social Good",
-			"prize": "Kindle",
+			"title": "Best Use of Google APIs",
+			"prize": "2 LG Smartwatches and 2 Google Chromecasts",
 			"sponsor": {
-				"id": "adi",
-				"img": "adi.png",
-				"url": "http://www.adicu.com/"
+				"id": "google",
+				"img": "google.png",
+				"url": "http://www.google.com/"
 			}
 		},
 		{
@@ -48,6 +48,24 @@
 				"id": "mongodb",
 				"img": "mongodb.png",
 				"url": "http://www.mongodb.com/"
+			}
+		},
+		{
+			"title": "Best Civic Hack for Social Good",
+			"prize": "Kindle",
+			"sponsor": {
+				"id": "adi",
+				"img": "adi.png",
+				"url": "http://www.adicu.com/"
+			}
+		},
+		{
+			"title": "Best CULPA Hack",
+			"prize": "Amazon Gift Card",
+			"sponsor": {
+				"id": "culpa",
+				"img": "culpa.png",
+				"url": "http://culpa.info"
 			}
 		}
 	]
