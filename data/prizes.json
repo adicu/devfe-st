@@ -40,6 +40,15 @@
 				"img": "adi.png",
 				"url": "http://www.adicu.com/"
 			}
+		},
+		{
+			"title": "Best Use of MongoDB",
+			"prize": "MongoDB Swag and Amazon Gift Card",
+			"sponsor": {
+				"id": "mongodb",
+				"img": "mongodb.png",
+				"url": "http://www.mongodb.com/"
+			}
 		}
 	]
 }
