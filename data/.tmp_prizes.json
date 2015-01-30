@@ -33,6 +33,15 @@
 			}
 		},
 		{
+			"title": "Best Use of MongoDB",
+			"prize": "",
+			"sponsor": {
+				"id": "mongodb",
+				"img": "mongodb.png",
+				"url": "http://www.mongodb.com/"
+			}
+		},
+		{
 			"title": "Best Civic Hack for Social Good",
 			"prize": "Kindle",
 			"sponsor": {
