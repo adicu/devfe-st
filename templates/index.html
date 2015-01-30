@@ -40,9 +40,9 @@
                 <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
                 <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
                 <li><a class="scroll" href="#curriculum"><p>Curriculum</p></a></li>
-                <!-- <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li> -->
-                <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li>
+                <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li>
                 <li><a class="scroll" href="#code-of-conduct"><p>Code of Conduct</p></a></li>
+                <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li>
                 <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
             </ul>
             <div class="bottom-spacer"></div>
@@ -88,7 +88,7 @@
          style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
     </div>
     <div class="background with-nav hidden"
-         data-page="8"
+         data-page="9"
          style="background-image:url({{ url_for('static', filename='img/columbia.jpg') }})">
          <div class="scrim">
              <div class="fading-logo">
@@ -282,13 +282,48 @@
             </div>
         </div>
     </div>
-    {# <div id="prizes" class="page blue with-nav" data-page="5">
+    <div id="prizes" class="page white with-nav" data-page="6">
         <div class="inner">
-            {{ header("white", "The", "Prizes", None) }}
+            {{ header("blue", "The", "Prizes", None) }}
+            <ul class="top-prizes">
+                {% for prize in prizes.prizes %}
+                <li class="prize second">
+                    <h2>{{ prize.title }}: <strong>{{ prize.prize }}</strong></h2>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="sponsor-prizes">
+                {% for prize in prizes.sponsor_prizes %}
+                {% if loop.index %2 == 1 %}
+                <li class="two-prizes">
+                {% endif %}
+                    <div class="prize">
 
+                        <h3>{{ prize.title }}</h3>
+                        <h3><strong>{{ prize.prize }}</strong></h3>
+                        <p>Sponsored by</p>
+                        <a href="{{ prize.sponsor.url }}">
+                            <img src="{{ url_for('static', filename='img/logos/' + prize.sponsor.img) }}">
+                        </a>
+                    </div>
+                {% if loop.index %2 == 0 %}
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% if prizes.sponsor_prizes | length % 2 == 0 %}
+                </li>
+                {% endif %}
+            </ul>
         </div>
-    </div> #}
-    <div id="sponsors" class="page white with-nav" data-page="6">
+    </div>
+    <div id="code-of-conduct" class="page blue with-nav" data-page="7">
+        <div class="inner">
+            {{ header("white", "Code", "of Conduct", None) }}
+            <h3>All DevFest participants and organizers are expected to adhere to our <a href="{{ url_for('static', filename='Code-of-Conduct.pdf')}}">code of conduct</a>.</h3>
+            <p>All particpants are should be familiar to our code of conduct.  By attending any DevFest or any related event, you agree to its contents.</p>
+        </div>
+    </div>
+    <div id="sponsors" class="page white with-nav" data-page="8">
         <div class="inner">
             {{ header("blue", "Our", "Sponsors", None) }}
             {%- for level in ['gold', 'silver', 'bronze'] -%}
@@ -312,21 +347,14 @@
             {%- endfor -%}
         </div>
     </div>
-    <div id="code-of-conduct" class="page blue with-nav" data-page="7">
-        <div class="inner">
-            {{ header("white", "Code", "of Conduct", None) }}
-            <h3>All DevFest participants and organizers are expected to adhere to our <a href="{{ url_for('static', filename='Code-of-Conduct.pdf')}}">code of conduct</a>.</h3>
-            <p>All particpants are should be familiar to our code of conduct.  By attending any DevFest or any related event, you agree to its contents.</p>
-        </div>
-    </div>
-    <div id="kickoff" class="page blue with-image with-nav" data-page="8">
+    <div id="kickoff" class="page blue with-image with-nav" data-page="9">
         <div class="inner">
             {{ header("white", "Until", "Kickoff&hellip;", None) }}
         </div>
         <img class="hidden-desktop" class="tablet-image"
              src="{{ url_for('static', filename='img/columbia.jpg') }}">
     </div>
-    <div id="contact" class="page white with-nav" data-page="9">
+    <div id="contact" class="page white with-nav" data-page="10">
         <div class="inner">
             {{ header("blue", "Contact", "Us", None) }}
             <h5>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. <a href="mailto:devfest@adicu.com">Shoot us an email</a> if you have any questions. You can connect with ADI on <a href='https://www.facebook.com/ADICU'>Facebook</a> and <a href='https://twitter.com/adicu'>Twitter</a>.  You should read our <a href="https://adicu.com/blog">Blog</a>.</h5>

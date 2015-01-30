@@ -13,7 +13,7 @@
 			"prize": "$500"
 		}
 	],
-	"sponsor-prizes": [
+	"sponsor_prizes": [
 		{
 			"title": "Most Technically Impressive Hack",
 			"prize": "Anki Drive",
