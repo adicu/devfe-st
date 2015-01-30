@@ -11,7 +11,7 @@
 					"id": "31-kickoff-lunch-and-keynote",
 					"timespan": "12pm - 2pm",
 					"location": "Davis Auditorium",
-					"description": "The official kickoff for DevFest! Enjoy a delicious lunch, meet and bond with other learners and hackers, and get pumped for the week ahead with a talk from our awesome keynote speaker."
+					"description": "The official kickoff for DevFest! Enjoy a delicious lunch, meet and bond with other learners and hackers, and get pumped for the week ahead with a talk from our awesome keynote speaker @bitchwhocodes, also known as Stacey Mulcahy, a Developer Evangelist at Microsoft!"
 				},
 				{
 					"name": "Environment Setup A",
@@ -109,7 +109,7 @@
 				{
 					"name": "Build Apps with Flask",
 					"id": "2-build-apps-with-flask",
-					"timespan": "8pm - 10pm",
+					"timespan": "8:30pm - 10pm",
 					"location": "Pupin 301",
 					"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
 					"buttons" : [
@@ -120,15 +120,15 @@
 					]
 				},
 				{
-					"name": "Open Hack Space",
+					"name": "Bloomberg Open Hack Space - Sponsored by Bloomberg",
 					"id": "2-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
 					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks.",
 					"sponsor": {
-						"id": "venmo",
-						"img": "venmo.png",
-						"url": "https://venmo.com/"
+						"id": "bloomberg",
+						"img": "bloomberg.png",
+						"url": "https://bloomberg.com/"
 					}
 				}
 			]
@@ -153,9 +153,9 @@
 					]
 				},
 				{
-					"name": "Open Hack Space",
+					"name": "Buzzfeed Open Hack Space - Sponsored by a16z",
 					"id": "3-open-hack-space",
-					"timespan": "8pm - 12am",
+					"timespan": "8:30pm - 12am",
 					"location": "CS Lounge",
 					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks.",
 					"sponsor": {
@@ -175,7 +175,7 @@
 				{
 					"name": "Build Websites with HTML",
 					"id": "4-build-websites-with-html",
-					"timespan": "8pm - 10pm",
+					"timespan": "8:30pm - 10pm",
 					"location": "Pupin 301",
 					"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
 					"buttons" : [
