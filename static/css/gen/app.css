@@ -927,14 +927,30 @@ nav .bottom-spacer {
 nav .logo {
   padding: 1rem 1.4rem 0;
 }
-/* line 66, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 67, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav > .outer {
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+}
+/* line 72, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav > .outer > .inner {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+/* line 79, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+nav > .outer::-webkit-scrollbar {
+  display: none;
+}
+/* line 84, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul {
   width: 18rem;
   width: 100%;
   position: relative;
   z-index: 1000;
 }
-/* line 72, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 90, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -943,7 +959,7 @@ nav ul li {
   width: 100%;
   z-index: 1000;
 }
-/* line 76, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 94, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -953,11 +969,11 @@ nav ul li a p {
   width: 100%;
   margin-bottom: 0;
 }
-/* line 81, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 99, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul li a p:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 86, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 104, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.bottom {
   position: absolute;
   bottom: 0;
@@ -968,31 +984,31 @@ nav ul.triple:after {
   content: " ";
   display: block;
 }
-/* line 92, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 110, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li {
   width: 33.333333%;
   display: inline-block;
   float: left;
 }
-/* line 96, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 114, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:first-child {
   text-align: left;
 }
-/* line 99, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 117, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) {
   text-align: center;
 }
-/* line 101, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 119, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) a p {
   padding: 1rem 0;
 }
-/* line 105, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+/* line 123, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(3) {
   text-align: right;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 114, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 132, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav {
     -webkit-transition: 0.3s 0 ease all;
     -moz-transition: 0.3s 0 ease all;
@@ -1005,41 +1021,25 @@ nav ul.triple li:nth-child(3) {
     bottom: 0;
     height: auto;
   }
-  /* line 123, /Users/dan/working/devfe-st/static/scss/navbar.scss */
-  nav > .outer {
-    overflow-y: scroll;
-    height: 100%;
-    position: relative;
-  }
-  /* line 128, /Users/dan/working/devfe-st/static/scss/navbar.scss */
-  nav > .outer > .inner {
-    height: auto;
-    min-height: 100%;
-    position: relative;
-  }
-  /* line 135, /Users/dan/working/devfe-st/static/scss/navbar.scss */
-  nav > .outer::-webkit-scrollbar {
-    display: none;
-  }
-  /* line 140, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 141, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open {
     right: 0 !important;
   }
-  /* line 144, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 145, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar {
     width: 30px;
   }
-  /* line 146, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 147, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.one {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 149, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 150, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.two {
     opacity: 0;
   }
-  /* line 152, /Users/dan/working/devfe-st/static/scss/navbar.scss */
+  /* line 153, /Users/dan/working/devfe-st/static/scss/navbar.scss */
   nav.open .ham .bar.three {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -1864,7 +1864,7 @@ p.focus.focus-centered {
   text-align: center;
 }
 /* line 10, /Users/dan/working/devfe-st/static/scss/registration.scss */
-p.focus a {
+p.focus .button {
   text-decoration: none !important;
 }
 
@@ -3044,12 +3044,25 @@ h6, .h6 {
   padding-left: 1rem;
 }
 
+/* line 28, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.featured-faqs {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 60rem;
+  margin-bottom: 4rem;
+}
+/* line 34, /Users/dan/working/devfe-st/static/scss/faq.scss */
+.featured-faqs .faq h2 {
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+
 @media screen and (max-width: 640px) {
-  /* line 30, /Users/dan/working/devfe-st/static/scss/faq.scss */
+  /* line 43, /Users/dan/working/devfe-st/static/scss/faq.scss */
   .faqs .two-faqs {
     margin-top: 0 !important;
   }
-  /* line 32, /Users/dan/working/devfe-st/static/scss/faq.scss */
+  /* line 45, /Users/dan/working/devfe-st/static/scss/faq.scss */
   .faqs .two-faqs .faq {
     width: 100%;
     margin-top: 1rem;
@@ -3471,12 +3484,21 @@ h6, .h6 {
   background-size: contain;
 }
 
+/* line 116 */
+#code-of-conduct h3 {
+  margin-bottom: 1rem;
+}
+/* line 119 */
+#code-of-conduct .inner {
+  min-height: 25rem;
+}
+
 @media screen and (max-width: 1024px) {
-  /* line 117 */
+  /* line 126 */
   .pages .page.with-nav > .inner {
     padding-right: 1rem;
   }
-  /* line 120 */
+  /* line 129 */
   .pages .page:first-child > .inner {
     background: -moz-linear-gradient(top, rgba(50, 67, 122, 0) 0%, rgba(50, 67, 122, 0.4) 45%, #32437a 55%, #32437a 65%, #32437a 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(50, 67, 122, 0)), color-stop(45%, rgba(50, 67, 122, 0.4)), color-stop(55%, #32437a), color-stop(65% #32437a), color-stop(100% #32437a));
@@ -3486,11 +3508,11 @@ h6, .h6 {
     background: linear-gradient(to bottom, rgba(50, 67, 122, 0) 0%, rgba(50, 67, 122, 0.4) 45%, #32437a 55%, #32437a 65%, #32437a 100%);
   }
 
-  /* line 126 */
+  /* line 135 */
   .background.with-nav {
     display: none;
   }
-  /* line 130 */
+  /* line 139 */
   .background.hidden-desktop {
     position: absolute;
     top: 0;
@@ -3503,15 +3525,15 @@ h6, .h6 {
     background-position: top center;
   }
 
-  /* line 143 */
+  /* line 152 */
   #kickoff {
     height: auto;
   }
-  /* line 145 */
+  /* line 154 */
   #kickoff .background {
     background-size: cover;
   }
-  /* line 148 */
+  /* line 157 */
   #kickoff img {
     margin-top: -12.5rem;
   }

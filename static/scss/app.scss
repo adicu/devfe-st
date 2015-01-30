@@ -112,6 +112,15 @@
     }
 }
 
+#code-of-conduct {
+    h3 {
+        margin-bottom: 1rem;
+    }
+    .inner {
+        min-height: 25rem;
+    }
+}
+
 @media screen and (max-width: $tablet-landscape-max) {
     .pages .page {
         &.with-nav > .inner{

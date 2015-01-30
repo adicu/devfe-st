@@ -63,6 +63,24 @@ nav {
     .logo {
         padding: 1rem 1.4rem 0;
     }
+
+    & > .outer {
+        overflow-y: scroll;
+        height: 100%;
+        position: relative;
+
+        & > .inner {
+            height: auto;
+            min-height: 100%;
+            position: relative;
+
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     ul {
         width: $navbar-width;
         width: 100%;
@@ -119,23 +137,6 @@ nav {
         right: 0;
         bottom: 0;
         height: auto;
-
-        & > .outer {
-            overflow-y: scroll;
-            height: 100%;
-            position: relative;
-
-            & > .inner {
-                height: auto;
-                min-height: 100%;
-                position: relative;
-
-            }
-
-            &::-webkit-scrollbar {
-                display: none;
-            }
-        }
 
         &.open {
             right: 0 !important;

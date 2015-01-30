@@ -1,7 +1,13 @@
 {
+	"featured_faqs": [
+		{
+			"question": "I'm confused about something.",
+			"answer": "Get your questions answered on the <a href='https://www.facebook.com/events/779857615439938/'>Facebook event</a>, on ADI's <a href='https://twitter.com/adicu'>Twitter account</a>, and on the <a href='https://piazza.com/class/i5iqkep3d9n50n'>DevFest Piazza Page</a>. Or, <a href='mailto:devfest@adicu.com'>email us</a>."
+		}
+	],
 	"faqs": [
 		{
-			"question": "What is Devfest?",
+			"question": "What is DevFest?",
 			"answer": "DevFest is a <strong>week-long series of technical workshops</strong> held by <a href='https://adicu.com'>ADI</a> culminating in a <strong>24-hour hackathon</strong>. DevFest focuses on fostering community, and helping new developers end the week with a completed project."
 		},
 		{
@@ -39,10 +45,6 @@
 		{
 			"question": "Where do I sign up?",
 			"answer": "Register <a href='#register' class='scroll'>here</a>!"
-		},
-		{
-			"question": "I have another question.  Who should I ask?",
-			"answer": "You can get in touch with us via <a href='mailto:devfest@adicu.com'>email</a>, <a href='https://www.facebook.com/ADICU'>Facebook</a>, or <a href='https://twitter.com/adicu'>Twitter</a>."
 		}
 	]
 }
