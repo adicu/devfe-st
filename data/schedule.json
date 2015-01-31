@@ -14,34 +14,6 @@
 					"description": "The official kickoff for DevFest! Enjoy a delicious lunch, meet and bond with other learners and hackers, and get pumped for the week ahead with a talk from our awesome keynote speaker @bitchwhocodes, also known as Stacey Mulcahy, a Developer Evangelist at Microsoft!"
 				},
 				{
-					"name": "Environment Setup A",
-					"display_name": "Environment Setup",
-					"id": "31-environment-setup",
-					"timespan": "2pm - 3pm",
-					"location": "633 Mudd",
-					"buttons": [
-						{
-							"title": "Instructions",
-							"link": "http://squidarth.github.io/Devfest-Environment-Setup/"
-						}
-					]
-				},
-				{
-					"name": "Environment Setup B",
-					"id": "31-environment-setup",
-					"timespan": "3pm - 4pm",
-					"location": "633 Mudd",
-					"sidebar": false
-				},
-				{
-					"name": "Environment Setup C",
-					"id": "31-environment-setup",
-					"timespan": "4pm - 5pm",
-					"location": "633 Mudd",
-					"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
-					"sidebar": false
-				},
-				{
 					"name": "Open Hack Space",
 					"id": "31-open-hack-space",
 					"timespan": "2pm - 12am",
@@ -49,39 +21,109 @@
 					"description": "If you know Python and your computer is already to go, come by our Open Hack Space. We’ll have snacks, friends, and programming, the only things a true hacker could want!"
 				},
 				{
-					"name": "Introduction to Python A",
-					"display_name": "Introduction to Python",
-					"id": "31-introduction-to-python",
-					"timespan": "3pm - 4pm",
-					"location": "627 Mudd",
-					"buttons": [
+					"subsection": true,
+					"title": "Build your First App Track",
+					"id": "build-your-frist-app-track",
+					"events": [
 						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/python/"
+							"name": "Environment Setup A",
+							"display_name": "Environment Setup",
+							"id": "31-environment-setup",
+							"timespan": "2pm - 3pm",
+							"location": "633 Mudd"
+						},
+						{
+							"name": "Environment Setup B",
+							"id": "31-environment-setup",
+							"timespan": "3pm - 4pm",
+							"location": "633 Mudd",
+							"sidebar": false
+						},
+						{
+							"name": "Environment Setup C",
+							"id": "31-environment-setup",
+							"timespan": "4pm - 5pm",
+							"location": "633 Mudd",
+							"description": "Is your computer ready for the week? Not sure? We’ll help you setup your computer with an awesome development workflow that makes building apps easy. Stop by any of our three sessions to get ready to build!",
+							"sidebar": false,
+							"buttons": [
+								{
+									"title": "Instructions",
+									"link": "http://squidarth.github.io/Devfest-Environment-Setup/"
+								}
+							]
+						},
+						{
+							"name": "Introduction to Python A",
+							"display_name": "Introduction to Python",
+							"id": "31-introduction-to-python",
+							"timespan": "3pm - 4pm",
+							"location": "627 Mudd"
+						},
+						{
+							"name": "Introduction to Python B",
+							"id": "31-introduction-to-python",
+							"timespan": "4pm - 5pm",
+							"location": "627 Mudd",
+							"sidebar": false
+						},
+						{
+							"name": "Introduction to Python C",
+							"id": "31-introduction-to-python",
+							"timespan": "5pm - 6pm",
+							"location": "627 Mudd",
+							"sidebar": false
+						},
+						{
+							"name": "Introduction to Python D",
+							"id": "31-introduction-to-python",
+							"timespan": "6pm - 7pm",
+							"location": "627 Mudd",
+							"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
+							"sidebar": false,
+							"buttons": [
+								{
+									"title": "Tutorial",
+									"link": "http://adicu.com/intro-webdev/python/"
+								}
+							]
 						}
 					]
 				},
 				{
-					"name": "Introduction to Python B",
-					"id": "31-introduction-to-python",
-					"timespan": "4pm - 5pm",
-					"location": "627 Mudd",
-					"sidebar": false
-				},
-				{
-					"name": "Introduction to Python C",
-					"id": "31-introduction-to-python",
-					"timespan": "5pm - 6pm",
-					"location": "627 Mudd",
-					"sidebar": false
-				},
-				{
-					"name": "Introduction to Python D",
-					"id": "31-introduction-to-python",
-					"timespan": "6pm - 7pm",
-					"location": "627 Mudd",
-					"description": "A quick introduction to Python, one of the programming languages we will using for the week. If you have programmed before, whether on your own or in a class, this will provide all the necessary knowledge to build your first app. Any of the four sessions will do!",
-					"sidebar": false
+					"subsection": true,
+					"title": "Learn to Program Track",
+					"id": "learn-to-program-track",
+					"events": [
+						{
+							"name": "Learn to Program A",
+							"display_name": "Learn to Program",
+							"id": "learn-to-program",
+							"timespan": "2pm - 3pm",
+							"location": "337 Mudd"
+						},
+						{
+							"name": "Learn to Program B",
+							"id": "learn-to-program",
+							"timespan": "3pm - 4pm",
+							"location": "337 Mudd",
+							"sidebar": false
+						},
+						{
+							"name": "Learn to Program C",
+							"id": "learn-to-program",
+							"timespan": "4pm - 5pm",
+							"location": "337 Mudd",
+							"sidebar": false,
+							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"buttons": [
+								{
+									"title": "Codecademy",
+									"link": "http://www.codecademy.com/en/tracks/python"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -107,20 +149,7 @@
 			"short_name": "Monday, 2/2",
 			"events": [
 				{
-					"name": "Build Apps with Flask",
-					"id": "2-build-apps-with-flask",
-					"timespan": "8:30pm - 10pm",
-					"location": "Schermerhorn 501",
-					"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
-					"buttons" : [
-						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/#flask"
-						}
-					]
-				},
-				{
-					"name": "Bloomberg Open Hack Space - Sponsored by Bloomberg",
+					"name": "Open Hack Space - Sponsored by Bloomberg",
 					"id": "2-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
@@ -130,6 +159,46 @@
 						"img": "bloomberg.png",
 						"url": "https://bloomberg.com/"
 					}
+				},
+				{
+					"subsection": true,
+					"title": "Build your First App Track",
+					"id": "2-build-your-frist-app-track",
+					"events": [
+						{
+							"name": "Build Apps with Flask",
+							"id": "2-build-apps-with-flask",
+							"timespan": "8:30pm - 10pm",
+							"location": "Schermerhorn 501",
+							"description": "Learn about Python’s premier micro-framework and how we can use it to build awesome apps fast. With just a few lines of Python, you’ll have an interactive web application running using the same technology that applications like Pinterest use. We’ll start building our application for the week.",
+							"buttons" : [
+								{
+									"title": "Tutorial",
+									"link": "http://adicu.com/intro-webdev/#flask"
+								}
+							]
+						}
+					]
+				},
+				{
+					"subsection": true,
+					"title": "Learn to Program Track",
+					"id": "2-learn-to-program-track",
+					"events": [
+						{
+							"name": "Learn to Program",
+							"id": "2-learn-to-program",
+							"timespan": "8:30pm - 10pm",
+							"location": "CS Lounge",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"buttons": [
+								{
+									"title": "Codecademy",
+									"link": "http://www.codecademy.com/en/tracks/python"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -140,29 +209,56 @@
 			"short_name": "Tuesday, 2/3",
 			"events": [
 				{
-					"name": "Leverage the Web with APIs",
-					"id": "3-leverage-the-web-with-apis",
-					"timespan": "8:30pm - 10pm",
-					"location": "Schermerhorn 501",
-					"description": "The internet has a lot of data; learn how to use it to power your applications! With APIs, you can do things like login to Facebook, get Yelp review information, or present a Google Map. In this workshop, we’ll make requests and take responses, uses the data we retrieve to make our app awesome.",
-					"buttons" : [
-						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/#apis"
-						}
-					]
-				},
-				{
 					"name": "Buzzfeed Open Hack Space - Sponsored by a16z",
 					"id": "3-open-hack-space",
 					"timespan": "8:30pm - 12am",
 					"location": "CS Lounge",
 					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks.",
 					"sponsor": {
-						"id": "bloomberg",
-						"img": "bloom.png",
-						"url": "http://www.bloomberg.com/"
+						"id": "a16z",
+						"img": "a16z.png",
+						"url": "http://a16z.com/"
 					}
+				},
+				{
+					"subsection": true,
+					"title": "Build your First App Track",
+					"id": "3-build-your-frist-app-track",
+					"events": [
+						{
+							"name": "Leverage the Web with APIs",
+							"id": "3-leverage-the-web-with-apis",
+							"timespan": "8:30pm - 10pm",
+							"location": "Schermerhorn 501",
+							"description": "The internet has a lot of data; learn how to use it to power your applications! With APIs, you can do things like login to Facebook, get Yelp review information, or present a Google Map. In this workshop, we’ll make requests and take responses, uses the data we retrieve to make our app awesome.",
+							"buttons" : [
+								{
+									"title": "Tutorial",
+									"link": "http://adicu.com/intro-webdev/#apis"
+								}
+							]
+						}
+					]
+				},
+				{
+					"subsection": true,
+					"title": "Learn to Program Track",
+					"id": "3-learn-to-program-track",
+					"events": [
+						{
+							"name": "Learn to Program",
+							"id": "3-learn-to-program",
+							"timespan": "8:30pm - 10pm",
+							"location": "CS Lounge",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"buttons": [
+								{
+									"title": "Codecademy",
+									"link": "http://www.codecademy.com/en/tracks/python"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -173,24 +269,51 @@
 			"short_name": "Wednesday, 2/4",
 			"events": [
 				{
-					"name": "Build Websites with HTML",
-					"id": "4-build-websites-with-html",
-					"timespan": "8:30pm - 10pm",
-					"location": "Pupin 428",
-					"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
-					"buttons" : [
-						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/#html-and-css"
-						}
-					]
-				},
-				{
 					"name": "Open Hack Space",
 					"id": "4-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
 					"description": "Chill with other DevFest-ers. See tech talks and meet engineers from our sponsor companies. Learn more about the material for the day. Level up your hack. The Open Hack Space has something for everyone. You bring the enthusiasm, we’ll provide the snacks."
+				},
+				{
+					"subsection": true,
+					"title": "Build your First App Track",
+					"id": "4-build-your-frist-app-track",
+					"events": [
+						{
+							"name": "Build Websites with HTML",
+							"id": "4-build-websites-with-html",
+							"timespan": "8:30pm - 10pm",
+							"location": "Pupin 428",
+							"description": "We’ve laid the bricks for our application, now let’s make it a real website! HTML is the foundation of the internet and allows to build web pages that users will see and interact with. Learn how to make forms, structure pages, create links, and lots of other fun things. In the end, you’ll have a website your friends can use!",
+							"buttons" : [
+								{
+									"title": "Tutorial",
+									"link": "http://adicu.com/intro-webdev/#html-and-css"
+								}
+							]
+						}
+					]
+				},
+				{
+					"subsection": true,
+					"title": "Learn to Program Track",
+					"id": "4-learn-to-program-track",
+					"events": [
+						{
+							"name": "Learn to Program",
+							"id": "4-learn-to-program",
+							"timespan": "8:30pm - 10pm",
+							"location": "CS Lounge",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"buttons": [
+								{
+									"title": "Codecademy",
+									"link": "http://www.codecademy.com/en/tracks/python"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -201,24 +324,51 @@
 			"short_name": "Thursday, 2/5",
 			"events": [
 				{
-					"name": "Style and Layout with CSS",
-					"id": "5-style-and-layout-with-css",
-					"timespan": "8:30pm - 10pm",
-					"location": "Schermerhorn 501",
-					"description": "No one likes a plain website! Come and find out how to make your websites pop. We’ll learn Foundation, one of the most ubiquitous CSS frameworks that is used by many startups and applications. You’ll see how easy it is to have a professional-looking site up in no time.",
-					"buttons" : [
-						{
-							"title": "Tutorial",
-							"link": "http://adicu.com/intro-webdev/#css"
-						}
-					]
-				},
-				{
 					"name": "Open Hack Space",
 					"id": "5-open-hack-space",
 					"timespan": "8pm - 12am",
 					"location": "CS Lounge",
 					"description": "Come hack with your peers and soak in the ambiance of the CS lounge. Crunch time approaches! SNACKS PRESENT"
+				},
+				{
+					"subsection": true,
+					"title": "Build your First App Track",
+					"id": "5-build-your-frist-app-track",
+					"events": [
+						{
+							"name": "Style and Layout with CSS",
+							"id": "5-style-and-layout-with-css",
+							"timespan": "8:30pm - 10pm",
+							"location": "Schermerhorn 501",
+							"description": "No one likes a plain website! Come and find out how to make your websites pop. We’ll learn Foundation, one of the most ubiquitous CSS frameworks that is used by many startups and applications. You’ll see how easy it is to have a professional-looking site up in no time.",
+							"buttons" : [
+								{
+									"title": "Tutorial",
+									"link": "http://adicu.com/intro-webdev/#css"
+								}
+							]
+						}
+					]
+				},
+				{
+					"subsection": true,
+					"title": "Learn to Program Track",
+					"id": "5-learn-to-program-track",
+					"events": [
+						{
+							"name": "Learn to Program",
+							"id": "5-learn-to-program",
+							"timespan": "8:30pm - 10pm",
+							"location": "CS Lounge",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"buttons": [
+								{
+									"title": "Codecademy",
+									"link": "http://www.codecademy.com/en/tracks/python"
+								}
+							]
+						}
+					]
 				}
 			]
 		},
@@ -229,11 +379,11 @@
 			"short_name": "Friday, 2/6",
 			"events": [
 				{
-					"name": "DevFest Hackathon Opening Ceremony",
+					"name": "DevFest Hackathon",
 					"id": "6-hackathon",
 					"timespan": "4pm Friday - 12pm Saturday",
 					"location": "Havemeyer 309",
-					"description": "20 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. ",
+					"description": "20 hours to show your skills. Use everything that you’ve learned across the entire week and build something cool! Take risks, work with friends, enjoy our delicious midnight snacks, and, most importantly, have fun. Whether you’re a first-time hacker or a jaded builder, the hackathon provides an awesome opportunity to show off your creativity. Enjoy API demos from our sponsor companies, and then move to Uris Library for the hackathon!",
 					"class": "blue"
 				},
 				{

@@ -2375,12 +2375,18 @@ h6, .h6 {
   padding-left: 20rem;
   margin-top: -3rem;
 }
-/* line 12, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.days-longform .day:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 14, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .days-longform .day h2 {
   padding-top: 1rem;
   margin-top: 1rem;
 }
-/* line 16, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 18, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .days-longform .day .events {
   margin: 1rem 0;
 }
@@ -2390,7 +2396,7 @@ h6, .h6 {
   content: " ";
   display: block;
 }
-/* line 20, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 22, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .days-longform .day .event {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2398,12 +2404,30 @@ h6, .h6 {
   box-sizing: border-box;
   padding-top: 1rem;
 }
-/* line 23, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 25, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .days-longform .day .event h5 {
   margin: 0;
 }
+/* line 28, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+.days-longform .day .event img {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+}
+/* line 34, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+.days-longform .day .subsection {
+  margin-top: 2rem;
+  padding-right: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
 
-/* line 30, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 45, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar {
   position: absolute;
   left: 0;
@@ -2417,64 +2441,73 @@ h6, .h6 {
   background-color: #f5f5f5;
   overflow: scroll;
 }
-/* line 39, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 54, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar > .inner {
   padding-top: 8.5rem;
 }
-/* line 44, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 59, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day h4 {
   background-color: #e5e5e5;
   padding: 0.5rem 1rem;
 }
-/* line 48, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 63, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day a, .shortform-sidebar .day a:hover {
   text-decoration: none !important;
   color: inherit !important;
 }
-/* line 52, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 67, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day .events {
   padding: 0.5rem 0;
 }
-/* line 54, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 70, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+.shortform-sidebar .day .events strong {
+  padding: 1rem 1rem 0rem;
+  display: block;
+}
+/* line 74, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day .events .event {
   padding: 0 1rem;
 }
-/* line 56, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 76, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day .events .event p {
   margin: 0;
 }
-/* line 59, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 79, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar .day .events .event:hover {
   background-color: #e5e5e5;
 }
-/* line 65, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 85, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar.fixed {
   position: fixed;
 }
-/* line 68, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 88, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar.fixed.bottom {
   position: absolute;
   bottom: 0;
 }
-/* line 71, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 91, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar.fixed.bottom > .inner {
   position: absolute;
   bottom: 0;
 }
-/* line 77, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+/* line 97, /Users/dan/working/devfe-st/static/scss/schedule.scss */
 .shortform-sidebar::-webkit-scrollbar {
   display: none;
 }
 
 @media screen and (max-width: 640px) {
-  /* line 83, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+  /* line 103, /Users/dan/working/devfe-st/static/scss/schedule.scss */
   .shortform-sidebar {
     display: none;
   }
 
-  /* line 86, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+  /* line 106, /Users/dan/working/devfe-st/static/scss/schedule.scss */
   .days-longform {
     padding-left: 0;
+  }
+  /* line 109, /Users/dan/working/devfe-st/static/scss/schedule.scss */
+  .days-longform .day .subsection {
+    width: 100%;
   }
 }
 @-webkit-keyframes fade-in-up {

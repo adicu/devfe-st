@@ -152,11 +152,21 @@
                         <a class="scroll" href="#{{ day.id }}"><h4>{{ day.short_name }}</h4></a>
                         <ol class="events">
                             {%- for event in day.events if event.get("sidebar", True) -%}
-                            <li class="event">
-                                <a class="scroll" href="#{{ event.id }}">
-                                    <p>{{ event.get("display_name", event.name) }}</p>
-                                </a>
-                            </li>
+                                {%- if event.get('subsection', False) -%}
+                                    {%- for e in event.events if e.get("sidebar", True) -%}
+                                        <li class="event">
+                                            <a class="scroll" href="#{{ e.id }}">
+                                                <p>{{ e.get("display_name", e.name) }}</p>
+                                            </a>
+                                        </li>
+                                    {%- endfor -%}
+                                {%- else -%}
+                                <li class="event">
+                                    <a class="scroll" href="#{{ event.id }}">
+                                        <p>{{ event.get("display_name", event.name) }}</p>
+                                    </a>
+                                </li>
+                                {%- endif -%}
                             {%- endfor -%}
                         </ol>
                     </li>
@@ -169,13 +179,41 @@
                     <h2>{{ day.name }}</h2>
                     <ol class="events">
                         {%- for event in day.events -%}
-                        <li class="event" id="{{ event.id }}" data-offset="header">
-                            <h5>{{ event.name }}</h5>
-                            <h6>{{ event.timespan }} | <i class="fa fa-location"></i> {{ event.location }}</h6>
-                            <div class="details">
-                                <p>{{ event.description | safe }}</p>
-                            </div>
-                        </li>
+                            {%- if event.get('subsection', False) -%}
+                            <li class="subsection" data-offset="header" id="{{ event.id }}">
+                                <h3>{{ event.title }}</h3>
+                                {%- for e in event.events -%}
+                                    <div class="event" id="{{ e.id }}" data-offset="header">
+                                        <h5>{{ e.name }}</h5>
+                                        <h6>{{ e.timespan }} | <i class="fa fa-location"></i> {{ e.location }}</h6>
+                                        <div class="details">
+                                            <p>{{ e.description | safe }}</p>
+                                        </div>
+                                        {%- if e.buttons -%}
+                                            {%- for button in e.buttons -%}
+                                            <p class="center"><a href="{{ button.link }}" class="button inverse">{{ button.title }}</a></p>
+                                            {%- endfor -%}
+                                        {%- endif -%}
+                                    </div>
+                                {%- endfor -%}
+                            </li>
+                            {%- else -%}
+                            <li class="event" id="{{ event.id }}" data-offset="header">
+                                <h5>{{ event.name }}</h5>
+                                <h6>{{ event.timespan }} | <i class="fa fa-location"></i> {{ event.location }}</h6>
+                                <div class="details">
+                                    <p>{{ event.description | safe }}</p>
+                                </div>
+                                {%- if event.buttons -%}
+                                    {%- for button in event.buttons -%}
+                                    <p class="center"><a href="{{ button.link }}" class="button">{{ button.title }}</a></p>
+                                    {%- endfor -%}
+                                {%- endif -%}
+                                {%- if event.sponsor -%}
+                                    <a href="{{ event.sponsor.url }}"><img src="{{ url_for('static', filename='img/logos/' + event.sponsor.img) }}"></a>
+                                {%- endif -%}
+                            </li>
+                            {%- endif -%}
                         {%- endfor -%}
                     </ol>
                 </li>
