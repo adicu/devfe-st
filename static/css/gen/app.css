@@ -2755,7 +2755,7 @@ h6, .h6 {
   }
 }
 /* line 4, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .judge {
+.judges .judge, .speakers .judge {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -2765,42 +2765,42 @@ h6, .h6 {
   display: inline-block;
 }
 /* line 10, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .judge img {
+.judges .judge img, .speakers .judge img {
   width: 100%;
 }
 /* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.judges .three-judges:after {
+.judges .three-judges:after, .speakers .three-judges:after {
   clear: both;
   content: " ";
   display: block;
 }
 /* line 16, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .three-judges .judge {
+.judges .three-judges .judge, .speakers .three-judges .judge {
   width: 33.333333%;
 }
 /* line 20, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .two-judges {
+.judges .two-judges, .judges .two-speakers, .speakers .two-judges, .speakers .two-speakers {
   margin-left: 16.666666%;
   margin-right: 16.666666%;
 }
 /* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.judges .two-judges:after {
+.judges .two-judges:after, .judges .two-speakers:after, .speakers .two-judges:after, .speakers .two-speakers:after {
   clear: both;
   content: " ";
   display: block;
 }
 /* line 24, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .two-judges .judge {
+.judges .two-judges .judge, .judges .two-speakers .judge, .speakers .two-judges .judge, .speakers .two-speakers .judge {
   width: 50%;
 }
 
 @media screen and (max-width: 640px) {
   /* line 37, /Users/dan/working/devfe-st/static/scss/judges.scss */
-  .judges .two-judges, .judges .three-judges {
+  .judges .two-judges, .judges .three-judges, .speakers .two-speakers {
     margin: 0;
   }
   /* line 39, /Users/dan/working/devfe-st/static/scss/judges.scss */
-  .judges .two-judges .judge, .judges .three-judges .judge {
+  .judges .two-judges .judge, .judges .three-judges .judge, .speakers .two-speakers .judge {
     width: 100%;
   }
 }
