@@ -96,25 +96,10 @@
 					"id": "learn-to-program-track",
 					"events": [
 						{
-							"name": "Learn to Program A",
-							"display_name": "Learn to Program",
+							"name": "Learn to Program",
 							"id": "learn-to-program",
-							"timespan": "2pm - 3pm",
-							"location": "337 Mudd"
-						},
-						{
-							"name": "Learn to Program B",
-							"id": "learn-to-program",
-							"timespan": "3pm - 4pm",
+							"timespan": "2pm - 5pm",
 							"location": "337 Mudd",
-							"sidebar": false
-						},
-						{
-							"name": "Learn to Program C",
-							"id": "learn-to-program",
-							"timespan": "4pm - 5pm",
-							"location": "337 Mudd",
-							"sidebar": false,
 							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
 							"buttons": [
 								{
@@ -136,7 +121,7 @@
 				{
 					"name": "Open Hack Space",
 					"id": "1-open-hack-space",
-					"timespan": "1pm - 5pm",
+					"timespan": "2pm - 6pm",
 					"location": "CS Lounge",
 					"description": "Not a football fan, or you just can’t get enough ADI? Perfect! Skip the Super Bowl and join us for more open hacking! Form a team, brainstorm project ideas, or start your project early!"
 				}
