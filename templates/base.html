@@ -21,6 +21,7 @@
         {%- endblock author -%}">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="iXjEnyS-JZkiL-BT3g9VzyydT3S6C33nL0TAQeO5oB8" />
+    <link rel="alternate" hreflang="en" href="http://www.example.com/" />
 
     <!-- Google Authorship and Publisher Markup -->
     <meta itemprop="name" content="{{ self.title() }}">
@@ -80,7 +81,16 @@
 
     {%- block analytics -%}
 	<!--Google Analytics-->
-    <!-- (10) GOOGLE ANALYTICS JAVASCRIPT GOES HERE -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-18504951-6', 'auto');
+      ga('send', 'pageview');
+
+    </script>
     {%- endblock analytics -%}
 
 {%- endblock head -%}
