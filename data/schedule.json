@@ -174,8 +174,8 @@
 							"name": "Learn to Program",
 							"id": "2-learn-to-program",
 							"timespan": "8:30pm - 10pm",
-							"location": "CS Lounge",
-							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"location": "Computer Science Open Area",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started! If you don't know where the Computer Science Open Area is, come to the Computer Science Lounge and someone will direct you.",
 							"buttons": [
 								{
 									"title": "Codecademy",
@@ -234,8 +234,8 @@
 							"name": "Learn to Program",
 							"id": "3-learn-to-program",
 							"timespan": "8:30pm - 10pm",
-							"location": "CS Lounge",
-							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"location": "Computer Science Open Area",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started! If you don't know where the Computer Science Open Area is, come to the Computer Science Lounge and someone will direct you.",
 							"buttons": [
 								{
 									"title": "Codecademy",
@@ -289,8 +289,8 @@
 							"name": "Learn to Program",
 							"id": "4-learn-to-program",
 							"timespan": "8:30pm - 10pm",
-							"location": "CS Lounge",
-							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"location": "Computer Science Open Area",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started! If you don't know where the Computer Science Open Area is, come to the Computer Science Lounge and someone will direct you.",
 							"buttons": [
 								{
 									"title": "Codecademy",
@@ -344,8 +344,8 @@
 							"name": "Learn to Program",
 							"id": "5-learn-to-program",
 							"timespan": "8:30pm - 10pm",
-							"location": "CS Lounge",
-							"description": "Never coded before but want to learn python? Come to this workshop to get started!",
+							"location": "Computer Science Open Area",
+							"description": "Never coded before but want to learn python? Come to this workshop to get started! If you don't know where the Computer Science Open Area is, come to the Computer Science Lounge and someone will direct you.",
 							"buttons": [
 								{
 									"title": "Codecademy",
