@@ -84,7 +84,7 @@
 							"buttons": [
 								{
 									"title": "Tutorial",
-									"link": "http://adicu.com/intro-webdev/python/"
+									"link": "http://learn.adicu.com/python"
 								}
 							]
 						}
@@ -159,7 +159,7 @@
 							"buttons" : [
 								{
 									"title": "Tutorial",
-									"link": "http://adicu.com/intro-webdev/#flask"
+									"link": "http://learn.adicu.com/webdev/#flask"
 								}
 							]
 						}
@@ -219,7 +219,7 @@
 							"buttons" : [
 								{
 									"title": "Tutorial",
-									"link": "http://adicu.com/intro-webdev/#apis"
+									"link": "http://learn.adicu.com/webdev/#apis"
 								}
 							]
 						}
@@ -274,7 +274,7 @@
 							"buttons" : [
 								{
 									"title": "Tutorial",
-									"link": "http://adicu.com/intro-webdev/#html-and-css"
+									"link": "http://learn.adicu.com/webdev/#html-and-css"
 								}
 							]
 						}
@@ -329,7 +329,7 @@
 							"buttons" : [
 								{
 									"title": "Tutorial",
-									"link": "http://adicu.com/intro-webdev/#css"
+									"link": "http://learn.adicu.com/webdev/#css"
 								}
 							]
 						}
