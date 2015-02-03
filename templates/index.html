@@ -11,9 +11,9 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {%- endblock -%}
 
-{%- macro judge(judge) -%}
+{%- macro judge(judge, folder='judges') -%}
 <div class="judge">
-    <img src="{{ url_for('static', filename=('img/judges/' + judge.image)) }}">
+    <img src="{{ url_for('static', filename=('img/' + folder + '/' + judge.image)) }}">
     <h2>{{ judge.name }}</h2>
     <p>{{ judge.bio | safe }}</p>
 </div>
@@ -39,6 +39,7 @@
                 <li><a class="scroll" href="#schedule"><p>Schedule</p></a></li>
                 <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
                 <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
+                <li><a class="scroll" href="#speakers"><p>Speakers</p></a></li>
                 <li><a class="scroll" href="#curriculum"><p>Curriculum</p></a></li>
                 <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li>
                 <li><a class="scroll" href="#code-of-conduct"><p>Code of Conduct</p></a></li>
@@ -88,7 +89,7 @@
          style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
     </div>
     <div class="background with-nav hidden"
-         data-page="9"
+         data-page="10"
          style="background-image:url({{ url_for('static', filename='img/columbia.jpg') }})">
          <div class="scrim">
              <div class="fading-logo">
@@ -152,11 +153,21 @@
                         <a class="scroll" href="#{{ day.id }}"><h4>{{ day.short_name }}</h4></a>
                         <ol class="events">
                             {%- for event in day.events if event.get("sidebar", True) -%}
-                            <li class="event">
-                                <a class="scroll" href="#{{ event.id }}">
-                                    <p>{{ event.get("display_name", event.name) }}</p>
-                                </a>
-                            </li>
+                                {%- if event.get('subsection', False) -%}
+                                    {%- for e in event.events if e.get("sidebar", True) -%}
+                                        <li class="event">
+                                            <a class="scroll" href="#{{ e.id }}">
+                                                <p>{{ e.get("display_name", e.name) }}</p>
+                                            </a>
+                                        </li>
+                                    {%- endfor -%}
+                                {%- else -%}
+                                <li class="event">
+                                    <a class="scroll" href="#{{ event.id }}">
+                                        <p>{{ event.get("display_name", event.name) }}</p>
+                                    </a>
+                                </li>
+                                {%- endif -%}
                             {%- endfor -%}
                         </ol>
                     </li>
@@ -169,13 +180,41 @@
                     <h2>{{ day.name }}</h2>
                     <ol class="events">
                         {%- for event in day.events -%}
-                        <li class="event" id="{{ event.id }}" data-offset="header">
-                            <h5>{{ event.name }}</h5>
-                            <h6>{{ event.timespan }} | <i class="fa fa-location"></i> {{ event.location }}</h6>
-                            <div class="details">
-                                <p>{{ event.description | safe }}</p>
-                            </div>
-                        </li>
+                            {%- if event.get('subsection', False) -%}
+                            <li class="subsection" data-offset="header" id="{{ event.id }}">
+                                <h3>{{ event.title }}</h3>
+                                {%- for e in event.events -%}
+                                    <div class="event" id="{{ e.id }}" data-offset="header">
+                                        <h5>{{ e.name }}</h5>
+                                        <h6>{{ e.timespan }} | <i class="fa fa-location"></i> {{ e.location }}</h6>
+                                        <div class="details">
+                                            <p>{{ e.description | safe }}</p>
+                                        </div>
+                                        {%- if e.buttons -%}
+                                            {%- for button in e.buttons -%}
+                                            <p class="center"><a href="{{ button.link }}" class="button inverse">{{ button.title }}</a></p>
+                                            {%- endfor -%}
+                                        {%- endif -%}
+                                    </div>
+                                {%- endfor -%}
+                            </li>
+                            {%- else -%}
+                            <li class="event" id="{{ event.id }}" data-offset="header">
+                                <h5>{{ event.name }}</h5>
+                                <h6>{{ event.timespan }} | <i class="fa fa-location"></i> {{ event.location }}</h6>
+                                <div class="details">
+                                    <p>{{ event.description | safe }}</p>
+                                </div>
+                                {%- if event.buttons -%}
+                                    {%- for button in event.buttons -%}
+                                    <p class="center"><a href="{{ button.link }}" class="button">{{ button.title }}</a></p>
+                                    {%- endfor -%}
+                                {%- endif -%}
+                                {%- if event.sponsor -%}
+                                    <a href="{{ event.sponsor.url }}"><img src="{{ url_for('static', filename='img/logos/' + event.sponsor.img) }}"></a>
+                                {%- endif -%}
+                            </li>
+                            {%- endif -%}
                         {%- endfor -%}
                     </ol>
                 </li>
@@ -232,7 +271,18 @@
             </div>
         </div>
     </div>
-    <div id="curriculum" class="page blue with-nav" data-page="5">
+    <div id="speakers" class="page white with-nav" data-page="5">
+        <div class="inner">
+            {{ header("blue", "Inspiring", "Speakers", None) }}
+            <div class="speakers">
+                <div class="two-speakers">
+                    {{ judge(speakers.speakers[0], folder='speakers') }}
+                    {{ judge(speakers.speakers[1], folder='speakers') }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="curriculum" class="page blue with-nav" data-page="6">
         <div class="inner">
             {{ header("white", "The", "Curriculum", None) }}
             <h5>Because everyone is at different skill levels, we are offering two different tracks for your learning, depending on where you are.</h5>
@@ -247,6 +297,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="https://docs.google.com/a/adicu.com/document/d/1m37QXiu-JtiBLimpWEICWf4m8rzYwcVaU1LmVR1nF8s/edit" class="button white-inverse">
+                                <h3>Project Ideas</h3>
+                            </a>
+                        </li>
+                        <li>
                             <a href="https://adicu.com/resources" class="button white-inverse">
                                 <h3>More Resources</h3>
                             </a>
@@ -258,7 +313,7 @@
                     <h5>You can program in at least one language.</h5>
                     <ol>
                         <li>
-                            <a href="http://squidarth.github.io/Devfest-Environment-Setup/" class="button white-inverse">
+                            <a href="http://learn.adicu.com/setup" class="button white-inverse">
                                 <h3>Environment Setup</h3>
                             </a>
                         </li>
@@ -282,7 +337,7 @@
             </div>
         </div>
     </div>
-    <div id="prizes" class="page white with-nav" data-page="6">
+    <div id="prizes" class="page white with-nav" data-page="7">
         <div class="inner">
             {{ header("blue", "The", "Prizes", None) }}
             <ul class="top-prizes">
@@ -316,14 +371,14 @@
             </ul>
         </div>
     </div>
-    <div id="code-of-conduct" class="page blue with-nav" data-page="7">
+    <div id="code-of-conduct" class="page blue with-nav" data-page="8">
         <div class="inner">
             {{ header("white", "Code", "of Conduct", None) }}
             <h3>All DevFest participants and organizers are expected to adhere to our <a href="{{ url_for('static', filename='Code-of-Conduct.pdf')}}">code of conduct</a>.</h3>
             <p>All particpants are should be familiar to our code of conduct.  By attending any DevFest or any related event, you agree to its contents.</p>
         </div>
     </div>
-    <div id="sponsors" class="page white with-nav" data-page="8">
+    <div id="sponsors" class="page white with-nav" data-page="9">
         <div class="inner">
             {{ header("blue", "Our", "Sponsors", None) }}
             {%- for level in ['gold', 'silver', 'bronze'] -%}
@@ -347,14 +402,14 @@
             {%- endfor -%}
         </div>
     </div>
-    <div id="kickoff" class="page blue with-image with-nav" data-page="9">
+    <div id="kickoff" class="page blue with-image with-nav" data-page="10">
         <div class="inner">
             {{ header("white", "Until", "Kickoff&hellip;", None) }}
         </div>
         <img class="hidden-desktop" class="tablet-image"
              src="{{ url_for('static', filename='img/columbia.jpg') }}">
     </div>
-    <div id="contact" class="page white with-nav" data-page="10">
+    <div id="contact" class="page white with-nav" data-page="11">
         <div class="inner">
             {{ header("blue", "Contact", "Us", None) }}
             <h5>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. <a href="mailto:devfest@adicu.com">Shoot us an email</a> if you have any questions. You can connect with ADI on <a href='https://www.facebook.com/ADICU'>Facebook</a> and <a href='https://twitter.com/adicu'>Twitter</a>.  You should read our <a href="https://adicu.com/blog">Blog</a>.</h5>

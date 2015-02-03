@@ -1,0 +1,14 @@
+{
+	"speakers": [
+		{
+			"name": "Mary Boyce",
+			"bio": "Mary C. Boyce is Dean of Engineering and Morris A. and Alma Schapiro Professor at Columbia University’s Fu Foundation School of Engineering and Applied Science. Prior to joining Columbia, Dean Boyce served on the faculty of Massachusetts Institute of Technology (MIT) for over 25 years, leading the Mechanical Engineering Department from 2008 to 2013.Dean Boyce earned her BS degree in engineering science and mechanics from Virginia Tech, and her MS and PhD degrees in mechanical engineering from MIT.",
+			"image": "dean_boyce.jpg"
+		},
+		{
+			"name": "Stacey Mulcahy",
+			"bio": "Stacey Mulcahy, also known as <a href='https://twitter.com/bitchwhocodes'>@bitchwhocodes</a>, is a self-described tinkerer and a Microsoft Technology Evangelist for Windows 8. She has held a variety of technical positions in companies in New York City and abroad, including Big Spaceship, IQ Interactive, and Fuel Industries. As a writer, she has served as a technical editor and <a href='http://thebitchwhocodes.com/blog/'>blogger</a>&nbsp;whose range of topics includes physical computing, game development, and technical design. She is also the author of <a href='http://futurewomanintech.com/'>To A Future Woman in Tech</a>.",
+			"image": "staceymulcahy.jpg"
+		}
+	]
+}

@@ -9,6 +9,8 @@ $sidebar-padding: 1rem;
 	padding-left: $shortform-width;
 	margin-top: -3rem;
 	.day {
+		@include clearfix;
+
 		h2 {
 			padding-top: 1rem;
 			margin-top: 1rem;
@@ -23,6 +25,19 @@ $sidebar-padding: 1rem;
 			h5 {
 				margin: 0;
 			}
+			img {
+				height: 5rem;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		.subsection {
+			margin-top: 2rem;
+			padding-right: 1rem;
+			@include border-box;
+			float: left;
+			width: 50%;
+			display: inline-block;
 		}
 	}
 }
@@ -51,6 +66,11 @@ $sidebar-padding: 1rem;
 		}
 		.events {
 			padding: 0.5rem 0;
+
+			strong {
+				padding: 1rem 1rem 0rem;
+				display: block;
+			}
 			.event {
 				padding: 0 $sidebar-padding;
 				p {
@@ -85,5 +105,9 @@ $sidebar-padding: 1rem;
 	}
 	.days-longform {
 		padding-left: 0;
+
+		.day .subsection {
+			width: 100%;
+		}
 	}
 }
