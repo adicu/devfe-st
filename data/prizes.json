@@ -24,12 +24,30 @@
 			}
 		},
 		{
+			"title": "Best Use of Bloomberg API",
+			"prize": "Choice of Xbox One, PS4, or Wii U",
+			"sponsor": {
+				"id": "bloomberg",
+				"img": "bloomberg.png",
+				"url": "http://www.bloomberg.com/"
+			}
+		},
+		{
 			"title": "Best Microsoft Hack",
 			"prize": "Xbox One",
 			"sponsor": {
 				"id": "microsoft",
 				"img": "microsoft.png",
 				"url": "http://www.microsoft.com/"
+			}
+		},
+		{
+			"title": "Best Use of the Twilio API",
+			"prize": "4 Phonejoys",
+			"sponsor": {
+				"id": "twilio",
+				"img": "twilio.png",
+				"url": "https://www.twilio.com/"
 			}
 		},
 		{
@@ -50,15 +68,7 @@
 				"url": "http://www.mongodb.com/"
 			}
 		},
-		{
-			"title": "Best Use of the Twilio",
-			"prize": "4 Phonejoys",
-			"sponsor": {
-				"id": "twilio",
-				"img": "twilio.png",
-				"url": "https://www.twilio.com/"
-			}
-		},
+
 		{
 			"title": "Best Civic Hack for Social Good",
 			"prize": "Kindle",
@@ -75,24 +85,6 @@
 				"id": "culpa",
 				"img": "culpa.png",
 				"url": "http://culpa.info"
-			}
-		},
-		{
-			"title": "Best Use of Bloomberg API",
-			"prize": "Choice of Xbox One, PS4, or Wii U",
-			"sponsor": {
-				"id": "bloomberg",
-				"img": "bloomberg.png",
-				"url": "http://www.bloomberg.com/"
-			}
-		},
-		{
-			"title": "Best Use of Twilio API",
-			"prize": "Phonejoys",
-			"sponsor": {
-				"id": "twilio",
-				"img": "twilio.png",
-				"url": "http://www.twilio.com/"
 			}
 		}
 	]
