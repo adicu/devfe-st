@@ -76,6 +76,24 @@
 				"img": "culpa.png",
 				"url": "http://culpa.info"
 			}
+		},
+		{
+			"title": "Best Use of Bloomberg API",
+			"prize": "Choice of Xbox One, PS4, or Wii U",
+			"sponsor": {
+				"id": "bloomberg",
+				"img": "bloomberg.png",
+				"url": "http://www.bloomberg.com/"
+			}
+		},
+		{
+			"title": "Best Use of Twilio API",
+			"prize": "Phonejoys",
+			"sponsor": {
+				"id": "twilio",
+				"img": "twilio.png",
+				"url": "http://www.twilio.com/"
+			}
 		}
 	]
 }
