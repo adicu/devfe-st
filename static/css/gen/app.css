@@ -2755,7 +2755,7 @@ h6, .h6 {
   }
 }
 /* line 4, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .judge, .speakers .judge {
+.judges .judge, .speakers .judge, .mentors .judge {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -2765,43 +2765,98 @@ h6, .h6 {
   display: inline-block;
 }
 /* line 10, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .judge img, .speakers .judge img {
+.judges .judge img, .speakers .judge img, .mentors .judge img {
   width: 100%;
 }
 /* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.judges .three-judges:after, .speakers .three-judges:after {
+.judges .three-judges:after, .speakers .three-judges:after, .mentors .three-judges:after {
   clear: both;
   content: " ";
   display: block;
 }
 /* line 16, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .three-judges .judge, .speakers .three-judges .judge {
+.judges .three-judges .judge, .speakers .three-judges .judge, .mentors .three-judges .judge {
   width: 33.333333%;
 }
-/* line 20, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .two-judges, .judges .two-speakers, .speakers .two-judges, .speakers .two-speakers {
-  margin-left: 16.666666%;
-  margin-right: 16.666666%;
-}
 /* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
-.judges .two-judges:after, .judges .two-speakers:after, .speakers .two-judges:after, .speakers .two-speakers:after {
+.judges .four-mentors:after, .speakers .four-mentors:after, .mentors .four-mentors:after {
   clear: both;
   content: " ";
   display: block;
 }
-/* line 24, /Users/dan/working/devfe-st/static/scss/judges.scss */
-.judges .two-judges .judge, .judges .two-speakers .judge, .speakers .two-judges .judge, .speakers .two-speakers .judge {
+/* line 22, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .four-mentors .judge, .speakers .four-mentors .judge, .mentors .four-mentors .judge {
+  width: 25%;
+}
+/* line 26, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .two-mentors, .speakers .two-mentors, .mentors .two-mentors {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.judges .two-mentors:after, .speakers .two-mentors:after, .mentors .two-mentors:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 30, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .two-mentors .judge, .speakers .two-mentors .judge, .mentors .two-mentors .judge {
   width: 50%;
+}
+/* line 34, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .two-judges, .judges .two-speakers, .speakers .two-judges, .speakers .two-speakers, .mentors .two-judges, .mentors .two-speakers {
+  margin-left: 16.666666%;
+  margin-right: 16.666666%;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.judges .two-judges:after, .judges .two-speakers:after, .speakers .two-judges:after, .speakers .two-speakers:after, .mentors .two-judges:after, .mentors .two-speakers:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 38, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .two-judges .judge, .judges .two-speakers .judge, .speakers .two-judges .judge, .speakers .two-speakers .judge, .mentors .two-judges .judge, .mentors .two-speakers .judge {
+  width: 50%;
+}
+/* line 42, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .one-mentor, .speakers .one-mentor, .mentors .one-mentor {
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.judges .one-mentor:after, .speakers .one-mentor:after, .mentors .one-mentor:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 46, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .one-mentor .judge, .speakers .one-mentor .judge, .mentors .one-mentor .judge {
+  width: 100%;
+}
+/* line 50, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .three-mentors, .speakers .three-mentors, .mentors .three-mentors {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+/* line 63, /Users/dan/working/devfe-st/static/scss/utils.scss */
+.judges .three-mentors:after, .speakers .three-mentors:after, .mentors .three-mentors:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 54, /Users/dan/working/devfe-st/static/scss/judges.scss */
+.judges .three-mentors .judge, .speakers .three-mentors .judge, .mentors .three-mentors .judge {
+  width: 33.333333%;
 }
 
 @media screen and (max-width: 640px) {
-  /* line 37, /Users/dan/working/devfe-st/static/scss/judges.scss */
-  .judges .two-judges, .judges .three-judges, .speakers .two-speakers {
-    margin: 0;
+  /* line 62, /Users/dan/working/devfe-st/static/scss/judges.scss */
+  .judges > div, .speakers > div, .mentors > div {
+    margin: 0 !important;
   }
-  /* line 39, /Users/dan/working/devfe-st/static/scss/judges.scss */
-  .judges .two-judges .judge, .judges .three-judges .judge, .speakers .two-speakers .judge {
-    width: 100%;
+  /* line 64, /Users/dan/working/devfe-st/static/scss/judges.scss */
+  .judges > div .judge, .speakers > div .judge, .mentors > div .judge {
+    width: 100% !important;
   }
 }
 @-webkit-keyframes fade-in-up {

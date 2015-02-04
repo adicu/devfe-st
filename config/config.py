@@ -10,7 +10,8 @@ DATA_FILENAMES = {
     'judges': 'data/judges.json',
     'prizes': 'data/prizes.json',
     'alerts': 'data/alerts.json',
-    'speakers': 'data/speakers.json'
+    'speakers': 'data/speakers.json',
+    'mentors': 'data/mentors.json'
 }
 
 if len(argv) >= 2 and argv[1] == 'debug':

@@ -11,6 +11,8 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {%- endblock -%}
 
+{% set len = mentors.mentors | length %}
+
 {%- macro judge(judge, folder='judges') -%}
 <div class="judge">
     <img src="{{ url_for('static', filename=('img/' + folder + '/' + judge.image)) }}">
@@ -39,6 +41,9 @@
                 <li><a class="scroll" href="#schedule"><p>Schedule</p></a></li>
                 <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
                 <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
+                {% if len > 0 %}
+                <li><a class="scroll" href="#mentors"><p>Mentors</p></a></li>
+                {% endif %}
                 <li><a class="scroll" href="#speakers"><p>Speakers</p></a></li>
                 <li><a class="scroll" href="#curriculum"><p>Curriculum</p></a></li>
                 <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li>
@@ -89,7 +94,7 @@
          style="background-image:url({{ url_for('static', filename='img/cover.jpg') }})">
     </div>
     <div class="background with-nav hidden"
-         data-page="10"
+         data-page="{{11 if len > 0 else 10}}"
          style="background-image:url({{ url_for('static', filename='img/columbia.jpg') }})">
          <div class="scrim">
              <div class="fading-logo">
@@ -271,7 +276,42 @@
             </div>
         </div>
     </div>
-    <div id="speakers" class="page white with-nav" data-page="5">
+
+    {% if len > 0 %}
+    <div id="mentors" class="page blue with-nav" data-page="5">
+        <div class="inner">
+            {{ header("white", "Helpful", "Mentors", None) }}
+            <div class="mentors">
+                {% if len >= 4 %}
+                    {% for quad in range(len // 4) %}
+                        <div class="four-mentors">
+                        {% for single in range(4) %}
+                            {{ judge(mentors.mentors[quad * 4 + single], folder='mentors') }}
+                        {% endfor %}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if len % 4 == 1 %}
+                <div class="one-mentor">
+                    {{ judge(mentors.mentors[-1], folder='mentors') }}
+                </div>
+                {% elif len % 4 == 2 %}
+                <div class="two-mentors">
+                    {{ judge(mentors.mentors[-2], folder='mentors') }}
+                    {{ judge(mentors.mentors[-1], folder='mentors') }}
+                </div>
+                {% elif len % 4 == 3 %}
+                <div class="three-mentors">
+                    {{ judge(mentors.mentors[-3], folder='mentors') }}
+                    {{ judge(mentors.mentors[-2], folder='mentors') }}
+                    {{ judge(mentors.mentors[-1], folder='mentors') }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div id="speakers" class="page white with-nav" data-page="{{6 if len > 0 else 5}}">
         <div class="inner">
             {{ header("blue", "Inspiring", "Speakers", None) }}
             <div class="speakers">
@@ -282,7 +322,7 @@
             </div>
         </div>
     </div>
-    <div id="curriculum" class="page blue with-nav" data-page="6">
+    <div id="curriculum" class="page blue with-nav" data-page="{{7 if len > 0 else 6}}">
         <div class="inner">
             {{ header("white", "The", "Curriculum", None) }}
             <h5>Because everyone is at different skill levels, we are offering two different tracks for your learning, depending on where you are.</h5>
@@ -337,7 +377,7 @@
             </div>
         </div>
     </div>
-    <div id="prizes" class="page white with-nav" data-page="7">
+    <div id="prizes" class="page white with-nav" data-page="{{8 if len > 0 else 7}}">
         <div class="inner">
             {{ header("blue", "The", "Prizes", None) }}
             <ul class="top-prizes">
@@ -371,14 +411,14 @@
             </ul>
         </div>
     </div>
-    <div id="code-of-conduct" class="page blue with-nav" data-page="8">
+    <div id="code-of-conduct" class="page blue with-nav" data-page="{{9 if len > 0 else 8}}">
         <div class="inner">
             {{ header("white", "Code", "of Conduct", None) }}
             <h3>All DevFest participants and organizers are expected to adhere to our <a href="{{ url_for('static', filename='Code-of-Conduct.pdf')}}">code of conduct</a>.</h3>
             <p>All particpants are should be familiar to our code of conduct.  By attending any DevFest or any related event, you agree to its contents.</p>
         </div>
     </div>
-    <div id="sponsors" class="page white with-nav" data-page="9">
+    <div id="sponsors" class="page white with-nav" data-page="{{10 if len > 0 else 9}}">
         <div class="inner">
             {{ header("blue", "Our", "Sponsors", None) }}
             {%- for level in ['gold', 'silver', 'bronze'] -%}
@@ -402,14 +442,14 @@
             {%- endfor -%}
         </div>
     </div>
-    <div id="kickoff" class="page blue with-image with-nav" data-page="10">
+    <div id="kickoff" class="page blue with-image with-nav" data-page="{{11 if len > 0 else 10}}">
         <div class="inner">
             {{ header("white", "Until", "Kickoff&hellip;", None) }}
         </div>
         <img class="hidden-desktop" class="tablet-image"
              src="{{ url_for('static', filename='img/columbia.jpg') }}">
     </div>
-    <div id="contact" class="page white with-nav" data-page="11">
+    <div id="contact" class="page white with-nav" data-page="{{12 if len > 0 else 11}}">
         <div class="inner">
             {{ header("blue", "Contact", "Us", None) }}
             <h5>DevFest is organized by <a href="https://adicu.com">ADI</a>, at <a href="https://columbia.edu">Columbia University</a>. <a href="mailto:devfest@adicu.com">Shoot us an email</a> if you have any questions. You can connect with ADI on <a href='https://www.facebook.com/ADICU'>Facebook</a> and <a href='https://twitter.com/adicu'>Twitter</a>.  You should read our <a href="https://adicu.com/blog">Blog</a>.</h5>
