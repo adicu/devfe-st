@@ -965,7 +965,7 @@ nav ul li a p {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   width: 100%;
   margin-bottom: 0;
 }
@@ -1000,7 +1000,7 @@ nav ul.triple li:nth-child(2) {
 }
 /* line 119, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(2) a p {
-  padding: 1rem 0;
+  padding: 0.75rem 0;
 }
 /* line 123, /Users/dan/working/devfe-st/static/scss/navbar.scss */
 nav ul.triple li:nth-child(3) {
