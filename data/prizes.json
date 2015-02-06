@@ -86,6 +86,15 @@
 				"img": "culpa.png",
 				"url": "http://culpa.info"
 			}
-		}
+		},
+        {
+            "title": "Best Use of Location Data",
+            "prize": " Ayra wireless speakers",
+            "sponsor": {
+                "id": "yext",
+                "img": "yext.png",
+                "url": "http://www.yext.com"
+            }
+        }   
 	]
 }
