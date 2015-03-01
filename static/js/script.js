@@ -4,6 +4,8 @@ $(function() {
      * Buttons *
      ***********/
 
+    // Add a registration button back in at the top of the page
+    // and this will click it
     $('a[href="#register"]').click(function(e) {
         e.preventDefault();
         $('nav').removeClass('open');

@@ -1,6 +1,7 @@
 .webassets-cache/
 include/
 emails.txt
+bin
 
 
 # Byte-compiled / optimized / DLL files
