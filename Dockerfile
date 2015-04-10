@@ -11,6 +11,5 @@ ADD ./ /
 WORKDIR /
 
 # expose the port and start the server
-EXPOSE 6000
+EXPOSE 6001
 CMD gunicorn app:app -b 0.0.0.0:6001 --log-level debug
-
