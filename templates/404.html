@@ -1,0 +1,67 @@
+{%- extends "base.html" -%}
+
+{%- block css -%}
+{{ super() }}
+{%- assets "scss_app" -%}
+<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+
+{%- endassets -%}
+{%- endblock -%}
+{%- block bodyJs -%}
+{{ super() }}
+<meta http-equiv="refresh" content="0; url=/" />
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+{%- endblock -%}
+
+{%- macro navbar() -%}
+<nav>
+    <a class="ham hidden-desktop">
+        <span class="bar one"></span>
+        <span class="bar two"></span>
+        <span class="bar three"></span>
+    </a>
+    <div class="outer">
+        <div class="inner">
+            <div class="logo">
+                <a class="scroll" href="#top">
+                    <img src="{{ url_for('static', filename='img/logo/devfest-small.png')}}">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a class="scroll" href="#about"><p>About</p></a></li>
+                <li><a class="scroll" href="#schedule"><p>Schedule</p></a></li>
+                <li><a class="scroll" href="#faq"><p>FAQ</p></a></li>
+                <li><a class="scroll" href="#judges"><p>Judges</p></a></li>
+                {% if len > 0 %}
+                <li><a class="scroll" href="#mentors"><p>Mentors</p></a></li>
+                {% endif %}
+                <li><a class="scroll" href="#speakers"><p>Speakers</p></a></li>
+                <li><a class="scroll" href="#curriculum"><p>Curriculum</p></a></li>
+                <li><a class="scroll" href="#prizes"><p>Prizes</p></a></li>
+                <li><a class="scroll" href="#code-of-conduct"><p>Code of Conduct</p></a></li>
+                <li><a class="scroll" href="#sponsors"><p>Sponsors</p></a></li>
+                <li><a class="scroll" href="#contact"><p>Contact</p></a></li>
+            </ul>
+            <div class="bottom-spacer"></div>
+            <ul class="menu bottom">
+                <li>
+                    <ul class="menu triple">
+                        <li><a href="https://adicu.com"><p>ADI</p></a></li>
+                        <li><a href="https://adicu.com/labs"><p>ADI Labs</p></a></li>
+                        <li><a href="http://old.adicu.com/devfest"><p>Old</p></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{%- endmacro -%}
+
+{%- block body -%}
+
+<center>
+
+<h1><img class="img_error" src="http://i.giphy.com/tpwwhv1BLd31e.gif"></h1>
+<p> That Page Doesn't Exist Here </p>
+<a href="/">Return to Safety</a></center>
+{%- endblock -%}

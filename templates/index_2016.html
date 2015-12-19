@@ -1,0 +1,53 @@
+{%- extends "base.html" -%}
+
+{%- block css -%}
+{{ super() }}
+{%- assets "scss_app" -%}
+<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+{%- endassets -%}
+{%- endblock -%}
+{%- block bodyJs -%}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+{%- endblock -%}
+
+{%- block body -%}
+
+<div style=" background-color: rgba(50, 67, 122, 0.9);" id="about" class="pages page blue">
+<div style="margin-left: 2rem" class="header inner">
+<h1 class="title"><span class="bold">DevFest 2016:</span> Coming Soon </h1>
+<h3 class="subtitle" id="sub">Passport to Explore. Discover. Create. </h3>
+    <h4 class="date hidden-phone">January 30th - February 6th&nbsp;&nbsp;|&nbsp;&nbsp;Columbia University&nbsp;&nbsp;|&nbsp;&nbsp;NYC</h4>
+    <h4 class="date phone-only">January 30st - February 6th</h4>
+    <h4 class="date phone-only">Columbia University&nbsp;&nbsp;|&nbsp;&nbsp;NYC</h4>
+
+  <div class="sub-page centered">
+  <p class="focus focus-centered fade-out">If you've ever wanted to build an app, <br class="hidden-desktop"><strong>now's the time to learn</strong>.</p>
+  <p class="focus focus-centered fade-out">DevFest is Columbia's week-long workshop series and hackathon.  DevFest is about <strong>learning, community, and building amazing things with technology</strong>.</p>
+  </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+  // var sub = new Sub([
+  //     "DevFest 2016: Coming Soon",
+  //     "DevFest 2016: Adventure to Exciting Destinations",
+  //     "DevFest 2016: Dare to Dive into Game Development",
+  //     "DevFest 2016: Give in to Your Curiosity about Machine Learning",
+  //     "Devfest 2016: Get Up Close and Personal with Hardware",
+  //     "DevFest 2016: Push Your Limits. Learning Something New",
+  //     "DevFest 2016: Explore. Discover. Create."
+  // ]).run();
+
+var sub = new Sub([
+      "Passport to Exciting Destinations",
+      "Passport to Game Development",
+      "Passport to Machine Learning",
+      "Passport to Hardware Hacking",
+      "Passport to Inspring Leaders in Tech",
+      "Passport to Explore, Discover, and Create"
+  ]).run();
+
+</script>
+{%- endblock -%}
