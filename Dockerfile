@@ -1,15 +1,11 @@
-# use Docker's provided python image
-FROM python:2.7
-MAINTAINER natebrennand <natebrennand@gmail.com>
+FROM python:2.7-alpine
+MAINTAINER ADI <hello@adicu.com>
 
-# install all packages
-COPY ./requirements.txt /requirements.txt
-RUN pip install -r /requirements.txt
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install -r /app/requirements.txt
 
-# add the application directories
-ADD ./ /
-WORKDIR /
+ADD ./ /app
+WORKDIR /app
 
-# expose the port and start the server
 EXPOSE 6001
-CMD gunicorn app:app -b 0.0.0.0:6001 --log-level debug
+CMD gunicorn app:app -b 0.0.0.0:6001
