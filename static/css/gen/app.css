@@ -18,6 +18,9 @@
     transform: translateY(0);
   }
 }
+.img_error{
+  margin-top: 25%;
+}
 /* line 30, /Users/Ray/Desktop/devfe-st/static/scss/animations.scss */
 .fade-in-up {
   -webkit-animation-name: fade-in-up;

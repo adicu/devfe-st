@@ -6,9 +6,12 @@ import json
 app = Flask(__name__)
 data = {}
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    return render_template('index_2016.html')
+
+@app.route('/2015', methods=['GET', 'POST'])
+def index_2015():
     if request.method == 'POST':
         email = request.form['email']
         with open(app.config['EMAILS_FILENAME'], 'a') as emails:
@@ -42,6 +45,11 @@ def register_scss():
                                 depends=depends,
                                 filters='scss')
                 assets.register(bundle_name, bundle)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 assets = Environment(app)
 app.config.from_object('config.config')
